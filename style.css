@@ -1,0 +1,145 @@
+/* Duel Masters English — shared styles
+   One file for every page. Change it here, it changes everywhere. */
+
+:root{
+  /* cool paper, not cream: this is a record, not a magazine */
+  --paper:#E9ECF0; --card:#F7F8FA; --ink:#12161D; --ink-2:#59616E; --rule:#C6CCD5;
+  /* the five civilizations, deepened so all five can sit together without shouting */
+  --light:#C99527; --water:#2E6FB0; --dark:#4A3B5C; --fire:#B93B2C; --nature:#487C46;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Zen Kaku Gothic New',system-ui,sans-serif; font-weight:400;
+  font-size:16px; line-height:1.75; letter-spacing:.005em;
+}
+.wrap{max-width:var(--max,64rem); margin:0 auto; padding:0 1.5rem}
+.wrap.narrow{max-width:52rem}
+h1,h2,h3{font-family:'Zen Old Mincho',Georgia,serif; font-weight:600; letter-spacing:-.01em; margin:0}
+.mono{font-family:'DM Mono',ui-monospace,monospace; font-weight:400}
+a{color:inherit; text-decoration:none; border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--ink)}
+a:focus-visible{outline:2px solid var(--water); outline-offset:3px; border-radius:2px}
+
+/* ---------- masthead: five bands, like the five shields ---------- */
+.shields{display:grid; grid-template-columns:repeat(5,1fr); height:5px}
+.shields span{transform-origin:left; animation:set .5s cubic-bezier(.2,.8,.3,1) both}
+.shields span:nth-child(1){background:var(--light); animation-delay:.00s}
+.shields span:nth-child(2){background:var(--water); animation-delay:.07s}
+.shields span:nth-child(3){background:var(--dark);  animation-delay:.14s}
+.shields span:nth-child(4){background:var(--fire);  animation-delay:.21s}
+.shields span:nth-child(5){background:var(--nature);animation-delay:.28s}
+@keyframes set{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+header{padding:1.2rem 0; border-bottom:1px solid var(--rule)}
+.back{font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-2); border:0}
+.back:hover{color:var(--ink)}
+
+/* ---------- article ---------- */
+article{padding:3rem 0 1rem}
+.kicker{font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--fire); margin:0 0 1.2rem}
+article h1{font-size:clamp(1.7rem,4.6vw,2.6rem); line-height:1.3; max-width:24ch}
+.standfirst{margin:1.6rem 0 0; font-size:1.05rem; color:var(--ink-2); max-width:56ch}
+.standfirst strong{color:var(--ink); font-weight:700}
+
+article h2{font-size:1.45rem; margin:3rem 0 1rem; padding-top:2rem; border-top:1px solid var(--rule)}
+article h3{font-size:1.08rem; margin:2rem 0 .5rem}
+article p{margin:0 0 1.1rem}
+article ul,article ol{margin:0 0 1.2rem; padding-left:1.4rem}
+article li{margin-bottom:.45rem}
+.jp{font-size:.92em; color:var(--ink-2)}
+strong{font-weight:700}
+
+/* ---------- tables ---------- */
+table{width:100%; border-collapse:collapse; margin:0 0 1.4rem; font-size:.94rem}
+th,td{text-align:left; padding:.55rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top}
+th{font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-2); font-weight:500}
+td.num{font-family:'DM Mono',monospace; white-space:nowrap}
+
+/* ---------- civilization dots: the signature ---------- */
+.civ{display:inline-flex; gap:3px; vertical-align:middle; margin-right:.45em; translate:0 -1px}
+.civ i{width:9px; height:9px; border-radius:50%; display:block; border:1px solid rgba(0,0,0,.22)}
+.c-light{background:var(--light)} .c-water{background:var(--water)} .c-dark{background:var(--dark)}
+.c-fire{background:var(--fire)} .c-nature{background:var(--nature)} .c-zero{background:#DDE1E7}
+
+/* ---------- pull-out note ---------- */
+.note{background:var(--card); border-left:3px solid var(--water); padding:1rem 1.2rem; margin:0 0 1.4rem; font-size:.94rem}
+.note b{display:block; margin-bottom:.3rem}
+.note.warn{border-left-color:var(--fire)}
+
+/* ---------- source blocks (embeds and citations) ---------- */
+.source{background:var(--card); border:1px solid var(--rule); padding:.9rem; margin:0 0 1.4rem}
+.source > .label{font-size:.68rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-2); display:block; margin-bottom:.7rem}
+.source blockquote{margin:0}
+.fallback{font-size:.88rem; color:var(--ink-2); line-height:1.6; margin:0}
+.fallback .jp{display:block; margin:.3rem 0 .5rem; color:var(--ink)}
+
+/* dated entry, for announcement round-ups */
+.entry{margin:0 0 2.6rem}
+.entry .stamp{font-size:.74rem; letter-spacing:.1em; color:var(--fire); display:block; margin-bottom:.4rem}
+.entry .summary{margin:0 0 1rem}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid var(--rule); padding:2.5rem 0 4rem; color:var(--ink-2); font-size:.82rem; line-height:1.8}
+footer p{margin:0 0 1rem; max-width:70ch}
+.rights{font-size:.76rem; opacity:.85}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important; transition:none!important}}
+
+/* ---------- front page only ---------- */
+.masthead{display:flex; align-items:baseline; gap:1rem; flex-wrap:wrap; padding-top:.2rem}
+.masthead h1{font-size:1.15rem; font-weight:900; letter-spacing:.18em; text-transform:uppercase}
+.masthead .sub{font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-2)}
+.masthead .stamp{margin-left:auto; font-size:.72rem; letter-spacing:.08em; color:var(--ink-2); white-space:nowrap}
+.masthead .stamp b{color:var(--fire); font-weight:500}
+header.front{border-bottom:0; padding:1.4rem 0 0}
+
+.thesis{padding:4.5rem 0 3.5rem; border-bottom:1px solid var(--rule)}
+.thesis p.kicker{font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-2); margin:0 0 1.6rem}
+.thesis h2{font-size:clamp(1.9rem,5.2vw,3.1rem); line-height:1.28; font-weight:600; max-width:22ch}
+.thesis h2 em{font-style:normal; font-weight:900; border-bottom:3px solid var(--fire); padding-bottom:.05em}
+.thesis .lede{margin:1.8rem 0 0; max-width:56ch; color:var(--ink-2); font-size:1.02rem}
+.thesis .lede strong{color:var(--ink); font-weight:700}
+
+section{padding:3.5rem 0; border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:.72rem; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-2); margin:0 0 1.6rem; display:flex; align-items:center; gap:.9rem}
+.eyebrow::after{content:''; flex:1; height:1px; background:var(--rule)}
+
+.posts{display:grid; gap:1px; background:var(--rule); border:1px solid var(--rule)}
+.post{background:var(--card); padding:1.7rem 1.6rem; display:block; border-bottom:0}
+.post:hover{background:#fff}
+.post .date{font-size:.72rem; letter-spacing:.1em; color:var(--fire)}
+.post h3{font-size:1.32rem; line-height:1.4; margin:.5rem 0 .55rem}
+.post p{margin:0; color:var(--ink-2); font-size:.93rem; line-height:1.7}
+.post .more{display:inline-block; margin-top:.9rem; font-size:.76rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink)}
+
+.tier{display:grid; grid-template-columns:auto 1fr; gap:0 1.4rem}
+.tier .band{font-family:'Zen Old Mincho',serif; font-size:1.5rem; font-weight:900; padding-top:.55rem}
+.tier ul{list-style:none; margin:0 0 1.6rem; padding:0}
+.tier li{display:flex; align-items:baseline; gap:.5rem; flex-wrap:wrap; padding:.5rem 0; border-bottom:1px dotted var(--rule); font-size:.96rem}
+.tier li .move{margin-left:auto; font-size:.74rem; letter-spacing:.06em; color:var(--ink-2); white-space:nowrap}
+.tier li .move.up{color:var(--nature)}
+.note-plain{font-size:.86rem; color:var(--ink-2); margin:1.4rem 0 0; max-width:62ch}
+
+.legend{display:flex; flex-wrap:wrap; gap:.4rem 1.5rem; margin:0; padding:0; list-style:none}
+.legend li{display:flex; align-items:center; gap:.5rem; font-size:.86rem; color:var(--ink-2)}
+.legend i{width:10px; height:10px; border-radius:50%; border:1px solid rgba(0,0,0,.22)}
+.legend b{color:var(--ink); font-weight:500}
+
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(9rem,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule)}
+.stat{background:var(--card); padding:1.3rem 1.2rem}
+.stat .n{font-family:'Zen Old Mincho',serif; font-size:1.85rem; font-weight:900; line-height:1}
+.stat .l{font-size:.74rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-2); margin-top:.5rem; display:block}
+
+.links{display:grid; grid-template-columns:repeat(auto-fit,minmax(15rem,1fr)); gap:1.1rem 2rem; list-style:none; padding:0; margin:0}
+.links li{border-top:1px solid var(--rule); padding-top:.9rem}
+.links b{display:block; font-weight:700; font-size:.98rem}
+.links span{display:block; color:var(--ink-2); font-size:.86rem; margin-top:.2rem}
+
+@media(max-width:640px){
+  .thesis{padding:3rem 0 2.5rem}
+  .tier{grid-template-columns:1fr; gap:0}
+  .tier .band{padding:1rem 0 .3rem}
+  .masthead .stamp{margin-left:0; width:100%}
+}
