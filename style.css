@@ -143,3 +143,9 @@ section{padding:3.5rem 0; border-bottom:1px solid var(--rule)}
   .tier .band{padding:1rem 0 .3rem}
   .masthead .stamp{margin-left:0; width:100%}
 }
+
+/* ---------- comments ---------- */
+.comments{border-top:1px solid var(--rule); margin-top:3rem; padding-top:2rem}
+.comments h2{font-size:1.45rem; margin:0 0 .8rem; border-top:0; padding-top:0}
+.comments-lede{font-size:.92rem; color:var(--ink-2); max-width:60ch; margin:0 0 1.6rem}
+.giscus{margin-top:1rem}
