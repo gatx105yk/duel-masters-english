@@ -1,75 +1,99 @@
-# Article queue
+# What this site covers
 
-Three tiers, in descending order of how safe they are to write.
-
----
-
-## Tier 1 — Official announcements
-
-**Safest.** A primary source exists, it can be quoted, and the article is a translation rather than a
-claim. Errors here are transcription errors, not judgement errors.
-
-**Rule: report what was posted. Do not report what it means.**
-
-| Item | Source | Status |
-|---|---|---|
-| Grand Prix lottery results | Official event page | Results out 19–20 Aug |
-| **GP payment timing** | Official terms | A player reports automatic charging on winning. **The site currently says "lottery, then purchase" — verify or correct** |
-| Next PLAY'S regular set (DMPP-37) | Official news | Not announced; due on the two-month cadence |
-| DM26-RP3 | Official product page | 19 Sep, paper |
-| DM26-EX4 Dueking FOREVER | Official product page | 17 Oct, paper |
-
-### Checklist for every one of these
-
-- Read **every** official page on the subject, not the most recent one
-- Copy Japanese names; never retype
-- State explicitly what the notice does *not* say
-- A hashtag is not membership
+Four things. Nothing else.
 
 ---
 
-## Tier 2 — Weekly metagame data
+## 1. PLAY'S official announcements
 
-**Safe if the numbers are real.** Unsafe the moment it becomes "the format feels like X".
+**The core.** New sets, cards, events, campaigns, balance changes, maintenance that matters.
 
-| Source | What it gives | Access |
-|---|---|---|
-| Kamigame ND/AD tier list | Placements, movement, build cost, difficulty | **Blocked in browser** |
-| Kamigame metagame page | Usage rates, platinum–master bracket | Same page family |
-| REIGN DMPS VERTEX CUP | Winning decklists, sanctioned | Published after each event |
-| @kamigame_dmps | Commentary when the list moves | Readable |
+Sources: `dmps.takaratomy.co.jp/news/` and `@dmps_info`.
 
-**Confirmed:** Dragerion and Lionel described as the format's two pillars — from a post three weeks
-old. Three separate Lionel builds have their own deck pages. Dragerion is a control deck built on
-HADES Dragerion.
-
-**Not confirmed:** whether the format is actually control-dominated. Players say so, loudly, and both
-named pillars are control decks — but current placements have not been read.
+Report what was posted. Do not report what it means. A hashtag is not membership. Read **every**
+official page on a subject — a sale-day notice can omit its own contents and point back to an
+advance notice.
 
 ---
 
-## Tier 3 — Community topics
+## 2. Paper TCG official announcements — selectively
 
-**Report volume, not voices.** Never quote an individual. Never assess mood as fact.
+**Filter harder than for PLAY'S.** English speakers cannot buy paper Duel Masters, so most product
+news is not actionable for them.
 
-| Topic | Evidence | Writable? |
-|---|---|---|
-| GP winners posting | Steady stream 19–20 Aug, many accounts, 71–625 views each | Yes, as volume |
-| Frustration with slow decks | Several independent posts, one at 304 views saying it is putting them off the GP | **Only alongside tier data** |
-| Automatic payment surprise | One post, 221 views | **Verify official terms first** |
-| Lionel Krone | Covered 18 Aug | Done |
+| Cover | Skip |
+|---|---|
+| Hall of Fame revisions | Individual card reveals |
+| Anything Magic-adjacent | Retail promotions |
+| Things that explain the game's history or scale | Store campaigns |
+| Set releases, briefly, as calendar entries | Deck product listings |
 
-Describe a pattern only when independent accounts raise the same specific thing. One loud post is not
-a trend.
+Sources: `dm.takaratomy.co.jp`, and `/rule/regulation/` every time regardless of the front page.
 
 ---
 
-## Order of work
+## 3. Tournament results
 
-1. **Verify GP payment terms** — the site may already be wrong, which outranks new writing
-2. **Read the tier list** — unblocks the metagame article
-3. **GP results** — Tier 1, safe, timely
-4. Metagame article, if the data supports it
-5. Community volume, only as a section inside something else
+**Yes.** Sanctioned events publish deck usage and winning lists. This is real data with a sample
+size, not an opinion.
 
-Publishing nothing beats publishing a fourth correction.
+REIGN DMPS VERTEX CUP runs roughly weekly; Kamigame publishes the metagame breakdown afterwards,
+credited to the organiser.
+
+What to write:
+- Usage percentages and field size, as published
+- Whole-field versus upper-bracket split — they differ, and the difference is the story
+- **A one-line description of each deck**: civilizations, deck type, key card, build and operating
+  difficulty. Classification, not strategy
+- Winning decklist and pilot
+
+What not to write: how to pilot anything. That is the Japanese guides' work.
+
+---
+
+## 4. What Japanese players are talking about
+
+**The most valuable thing here, and the easiest to get wrong.**
+
+Nobody else is translating this. English readers can find a ban list; they cannot find out that a
+card is making people quit, or that a format is being called a grind.
+
+**Report volume, not voices.**
+
+| Do | Do not |
+|---|---|
+| "Several independent posts raise X" | "Players are unhappy" |
+| Post counts, view counts, how many accounts | Quote or name individuals |
+| Note when a complaint matches tournament data | Present a complaint as fact on its own |
+
+A pattern needs independent accounts raising the same specific thing. One loud post is not a trend.
+
+Best when paired with section 3 — a complaint that the format has slowed down is an opinion until
+the usage data shows control decks taking the top tables, and then it is a finding.
+
+---
+
+## Not covered: tier lists
+
+**Dropped deliberately.**
+
+Tier placements are one editorial team's judgement, stated as such on their own page. Translating
+them means republishing someone's opinion and then inheriting the obligation to track every revision
+of it — several times a week, indefinitely.
+
+Tournament data does the same job better: it is measured, it has a sample size, it arrives on a
+schedule, and it is nobody's opinion.
+
+Existing tier articles stay up as dated snapshots. No new ones.
+
+---
+
+## Order when several are available
+
+1. Corrections to anything already published
+2. PLAY'S official announcements
+3. Tournament results
+4. Community topics
+5. Paper TCG, if it clears the filter
+
+Publishing nothing beats publishing a correction.
