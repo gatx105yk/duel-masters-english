@@ -16,19 +16,29 @@ advance notice.
 
 ---
 
-## 2. Paper TCG official announcements — selectively
+## 2. Paper TCG official announcements
 
-**Filter harder than for PLAY'S.** English speakers cannot buy paper Duel Masters, so most product
-news is not actionable for them.
+**Including individual card reveals — they are PLAY'S previews.**
+
+PLAY'S rebuilds the paper game's card pool a few years behind. A card revealed on paper now is a
+card PLAY'S players will be playing with later, often with its numbers adjusted. For an English
+reader following the digital game, paper reveals are advance notice of their own format.
+
+That changes the filter. Cover reveals, and say what they are:
 
 | Cover | Skip |
 |---|---|
-| Hall of Fame revisions | Individual card reveals |
-| Anything Magic-adjacent | Retail promotions |
-| Things that explain the game's history or scale | Store campaigns |
-| Set releases, briefly, as calendar entries | Deck product listings |
+| **Individual card reveals** — with the caveat that PLAY'S may adjust them | Retail promotions |
+| Hall of Fame revisions | Store campaigns |
+| Anything Magic-adjacent | Sleeve and accessory listings |
+| Set releases, as calendar entries | Anything requiring a Japanese address to act on |
 
-Sources: `dm.takaratomy.co.jp`, and `/rule/regulation/` every time regardless of the front page.
+**The caveat matters.** A card is not guaranteed to reach PLAY'S, and when it does, cost, power and
+text are frequently changed — the digital game rebalances rather than ports. Write "this exists on
+paper", not "this is coming to PLAY'S".
+
+Sources: `dm.takaratomy.co.jp`, `@t2duema`, and `/rule/regulation/` every time regardless of what
+the front page says.
 
 ---
 
@@ -94,6 +104,6 @@ Existing tier articles stay up as dated snapshots. No new ones.
 2. PLAY'S official announcements
 3. Tournament results
 4. Community topics
-5. Paper TCG, if it clears the filter
+5. Paper TCG — card reveals included, framed as what exists on paper today
 
 Publishing nothing beats publishing a correction.
