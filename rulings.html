@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rulings that catch people out | Duel Masters English</title>
+<meta name="description" content="Trigger order, replacement effects, when-it-enters versus when-it-is-entering, blockers redirecting rather than stopping, and places where the digital game resolves things differently from paper.">
+<link rel="canonical" href="https://duelmasters.editioncompass.com/rulings.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://duelmasters.editioncompass.com/rulings.html">
+<meta property="og:title" content="Rulings that catch people out | Duel Masters English">
+<meta property="og:description" content="Trigger order, replacement effects, when-it-enters versus when-it-is-entering, blockers redirecting rather than stopping, and places where the digital game resolves things differently from paper.">
+<meta property="og:site_name" content="Duel Masters English">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rulings that catch people out | Duel Masters English">
+<meta name="twitter:description" content="Trigger order, replacement effects, when-it-enters versus when-it-is-entering, blockers redirecting rather than stopping, and places where the digital game resolves things differently from paper.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Rulings that catch people out","description":"Trigger order, replacement effects, when-it-enters versus when-it-is-entering, blockers redirecting rather than stopping, and places where the digital game resolves things differently from paper.","datePublished":"2026-08-31","dateModified":"2026-08-31","inLanguage":"en","isAccessibleForFree":true,"mainEntityOfPage":{"@type":"WebPage","@id":"https://duelmasters.editioncompass.com/rulings.html"},"publisher":{"@type":"Organization","name":"Duel Masters English"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.rule{border-left:3px solid var(--water);padding:.9rem 0 .9rem 1.2rem;margin:0 0 1.6rem}
+.rule .q{display:block;font-family:'Zen Old Mincho',serif;font-size:1.08rem;font-weight:600;margin-bottom:.5rem}
+.rule .a{display:block;font-size:.95rem;margin-bottom:.5rem}
+.rule .src{display:block;font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.06em;color:var(--ink-2)}
+.rule.digital{border-left-color:var(--fire)}
+.seq{display:grid;grid-template-columns:1.6rem 1fr;gap:.5rem .7rem;margin:0 0 1.4rem;font-size:.93rem;align-items:baseline}
+.seq .n{font-family:'DM Mono',monospace;color:var(--fire);text-align:right}
+.warnbox{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--fire);padding:1rem 1.2rem;margin:0 0 1.6rem;font-size:.94rem}
+.warnbox b{display:block;margin-bottom:.3rem}
+</style>
+</head>
+<body>
+
+<div class="shields" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<header><div class="wrap narrow"><a class="back" href="index.html">← Duel Masters English</a></div></header>
+
+<main class="wrap narrow">
+<article>
+
+  <p class="kicker mono">Reference · 31 Aug 2026</p>
+  <h1>Rulings that catch people out</h1>
+  <p class="standfirst">
+    Duel Masters has no stack. It resolves simultaneous effects by a fixed priority order instead,
+    and that difference produces a set of interactions that look wrong if you are reasoning from
+    Magic. <strong>Here are the ones worth knowing before they cost you a game.</strong>
+  </p>
+  <p class="standfirst">
+    Rule numbers refer to the official Comprehensive Rules, version 1.49, February 2026.
+  </p>
+
+  <h2>There is no stack</h2>
+  <p>
+    When several effects trigger at once, they do not go on a stack and resolve in reverse order.
+    <strong>They resolve in a fixed sequence:</strong>
+  </p>
+  <div class="seq">
+    <span class="n">1</span><span>Shield Triggers, turn player first</span>
+    <span class="n">2</span><span>Shield Triggers, non-turn player</span>
+    <span class="n">3</span><span>Everything else the turn player controls, in whatever order they choose</span>
+    <span class="n">4</span><span>Everything else the non-turn player controls</span>
+  </div>
+  <p>
+    One effect resolves completely before the next begins. If something new triggers mid-resolution,
+    it waits — it does not interrupt.
+  </p>
+  <div class="warnbox">
+    <b>What this means in practice</b>
+    You cannot respond to a spell. There is no window between announcement and resolution.
+    <strong>Every "instant-speed" interaction in this game comes from the shield zone</strong>,
+    because that is the only place a card can act on your opponent's turn.
+  </div>
+  <p class="mono" style="font-size:.78rem;color:var(--ink-2)">Rule 101.4, 101.4a</p>
+
+  <h2>Multiple Shield Triggers at once</h2>
+  <div class="rule">
+    <span class="q">Three shields break together and two of them have Shield Trigger. What order?</span>
+    <span class="a">Your choice. Since a 2020 rule change, shields entering hand from a single
+    break-event arrive <strong>simultaneously</strong>, so you declare which Triggers you are using
+    and resolve them in any order you like.</span>
+    <span class="src">Official rules revision notice</span>
+  </div>
+  <div class="rule">
+    <span class="q">Can I use a Trigger creature's "when it enters" ability before resolving the
+    other Trigger?</span>
+    <span class="a"><strong>No.</strong> For a spell, the Shield Trigger ability covers casting it.
+    For a creature, it covers <em>summoning</em> it — and nothing further. If another declared
+    Trigger is still pending, the creature's enter-the-battlefield ability waits.</span>
+    <span class="src">Official rules revision notice</span>
+  </div>
+
+  <h2>"When it is entering" versus "when it entered"</h2>
+  <p>
+    This is the distinction that produces the most confusing board states, and Japanese card text
+    marks it with two characters that are easy to skim past.
+  </p>
+  <table>
+    <tr><th>Japanese</th><th>Timing</th><th>Type</th></tr>
+    <tr><td class="jp">出る時</td><td><strong>Before</strong> the creature arrives</td><td>Replacement effect</td></tr>
+    <tr><td class="jp">出た時</td><td><strong>After</strong> the creature arrives</td><td>Triggered ability</td></tr>
+  </table>
+  <div class="rule">
+    <span class="q">I control two different cards that punish cheating creatures into play. Which
+    one applies?</span>
+    <span class="a">The one that reads <span class="jp">出る時</span> — "as it is entering."
+    That is a replacement effect: it applies <em>before</em> the event happens, and once replaced,
+    <strong>the event never occurred at all.</strong> The card that reads
+    <span class="jp">出た時</span> never gets to trigger, because nothing ever entered.</span>
+    <span class="src">Consequence of the replacement-effect rules</span>
+  </div>
+  <p>
+    A Magic player will recognise replacement effects. The trap is that the two wordings look nearly
+    identical in Japanese and are frequently both present on the board at once, since
+    cheat-punishing cards are a staple of the format.
+  </p>
+
+  <h2>Blockers redirect, they do not stop</h2>
+  <p>
+    The reminder text is precise about this and it matters:
+  </p>
+  <div class="rule">
+    <span class="q">What does Blocker actually do?</span>
+    <span class="a"><strong>Tap this creature and change the attack's target to it.</strong> It is a
+    redirect, not an interception — and it costs you a tap.</span>
+    <span class="src">Official reminder text</span>
+  </div>
+  <div class="rule">
+    <span class="q">Can a creature that "cannot be attacked" block?</span>
+    <span class="a"><strong>Yes.</strong> "Cannot be attacked" means it cannot be <em>declared</em>
+    as a target when the attack is announced. Redirecting an attack onto it afterwards is a different
+    operation, and it is legal.</span>
+    <span class="src">Community ruling, consistent with the redirect wording</span>
+  </div>
+  <div class="rule">
+    <span class="q">Can a creature that "cannot be chosen" be attacked or blocked?</span>
+    <span class="a"><strong>Yes.</strong> Being unselectable applies to abilities and effects that
+    choose targets. Attacking and blocking are not that.</span>
+    <span class="src">Official PLAY'S rules FAQ</span>
+  </div>
+  <p>
+    Three separate protections that a Magic player would file under "hexproof" and expect to behave
+    the same way. They do not.
+  </p>
+
+  <h2>Summoning sickness has an exception you will meet immediately</h2>
+  <div class="rule">
+    <span class="q">A Shield Trigger creature arrives during my opponent's attack. Can it block that
+    attack?</span>
+    <span class="a"><strong>Yes.</strong> Blocker beats summoning sickness — the rules state this
+    explicitly. A Trigger creature with Blocker can block the very attack that put it into
+    play.</span>
+    <span class="src">Comprehensive Rules, summoning sickness section</span>
+  </div>
+  <p>
+    This is a large part of why attacking is risky. A shield you break can produce a blocker that
+    stops the same attack.
+  </p>
+
+  <h2>Where PLAY'S differs from paper</h2>
+  <p>
+    The digital game is a re-implementation, not a port, and a handful of interactions resolve
+    differently. These are documented by players rather than by Takara Tomy, and are worth treating
+    as observations rather than rules.
+  </p>
+  <div class="rule digital">
+    <span class="q">Two identical creatures with a "when it would be destroyed" effect battle each
+    other. What happens?</span>
+    <span class="a">In PLAY'S, <strong>the turn player's survives and the non-turn player's is
+    destroyed.</strong> In the paper game, the correct resolution is reportedly that both are
+    destroyed. Whether the digital behaviour is deliberate or a bug has never been stated.</span>
+    <span class="src">Mikegamo, "Fine rules and behaviour in PLAY'S"</span>
+  </div>
+  <div class="warnbox">
+    <b>The general warning</b>
+    If you learn a ruling from a video, a wiki or a blog, <strong>check when it was written.</strong>
+    Duel Masters rulings change — one well-known 2020 revision altered how a whole class of
+    interaction resolves, and older explanations of it are still online and still confidently wrong.
+    Japanese guides say this to their own readers; it applies double in translation.
+  </div>
+
+  <h2>Where to check</h2>
+  <ul>
+    <li><strong>Comprehensive Rules</strong> — published as a PDF, in Japanese, updated several
+      times a year. Version 1.49 dates from February 2026. This is the authority.</li>
+    <li><strong>Official Q&amp;A</strong> — <span class="jp">dm.takaratomy.co.jp/rule/qa/</span>
+      for paper, and a separate card-rules FAQ on the PLAY'S site. Hard to search, but definitive.</li>
+    <li><strong>Duel Masters Wiki</strong> — <span class="jp">dmwiki.net</span>. Thorough, and it
+      cites rulings, but it is a wiki.</li>
+  </ul>
+
+  <h2>Sources</h2>
+  <ul>
+    <li>Effect resolution order, and the Blocker exception to summoning sickness:
+      <strong>official Comprehensive Rules, version 1.49</strong>, 13 February 2026 — rules 101.4
+      and 101.4a. Earlier versions carry identical wording.</li>
+    <li>Simultaneous Shield Triggers, and the limit on creature enter-the-battlefield abilities:
+      the official rules revision notice.</li>
+    <li>"Cannot be chosen" not preventing attacks or blocks: the official PLAY'S card-rules FAQ.</li>
+    <li>Replacement effects taking precedence over triggered abilities: a Japanese player's
+      write-up working through a specific board state, consistent with the rules text.</li>
+    <li>The digital-versus-paper battle resolution: <strong>Mikegamo</strong>, whose collected notes
+      on PLAY'S implementation details are the only such record in existence, in any language.</li>
+  </ul>
+  <p>
+    Rule numbers and official wording are translated from the Japanese and can be checked against the
+    PDF. Community rulings are marked as such. Terms are defined in
+    <a href="glossary.html">the glossary</a>.
+  </p>
+
+</article>
+  <section class="comments">
+    <h2>Corrections and questions</h2>
+    <p class="comments-lede">
+      If something here is wrong, please say so — that is the most useful thing you can do with this
+      page. Comments use GitHub, so you will need an account, and everything posted lives in this
+      site's own repository rather than on a third-party service. No tracking, no ads.
+    </p>
+    <div class="giscus"></div>
+  </section>
+
+  <script src="https://giscus.app/client.js"
+    data-repo="gatx105yk/duel-masters-english"
+    data-repo-id="R_kgDOT52V3Q"
+    data-category="Announcements"
+    data-category-id="DIC_kwDOT52V3c4DDggt"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+  </script>
+
+</main>
+
+<footer>
+  <div class="wrap narrow">
+    <p>
+      Translated and summarised from Japanese sources. Official posts are embedded as sources rather
+      than reproduced, so images stay on X's servers. No card artwork is copied to this site and no
+      card text is reproduced.
+    </p>
+    <p class="rights">
+      Duel Masters PLAY'S is operated by Takara Tomy and DeNA. Duel Masters is © Wizards of the
+      Coast / Shogakukan / WHC and © TOMY. This site is unofficial and is not affiliated with,
+      endorsed by, or approved by any of them. It earns no revenue.
+    </p>
+  </div>
+</footer>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script>
+window.addEventListener('load', function(){
+  setTimeout(function(){
+    document.querySelectorAll('.source').forEach(function(box){
+      if (box.querySelector('iframe')) {
+        var f = box.querySelector('.fallback');
+        if (f) f.remove();
+      }
+    });
+  }, 2500);
+});
+</script>
+
+</body>
+</html>
