@@ -149,3 +149,43 @@ section{padding:3.5rem 0; border-bottom:1px solid var(--rule)}
 .comments h2{font-size:1.45rem; margin:0 0 .8rem; border-top:0; padding-top:0}
 .comments-lede{font-size:.92rem; color:var(--ink-2); max-width:60ch; margin:0 0 1.6rem}
 .giscus{margin-top:1rem}
+
+
+/* ---------- glossary tooltips ----------
+   Mark a term with <span class="gl" data-gl="explanation">Shield Trigger</span>
+   and the explanation appears on hover, or on tap for touch devices. */
+.gl{
+  border-bottom:1px dashed var(--water); cursor:help; position:relative;
+  text-decoration:none;
+}
+.gl::after{
+  content:attr(data-gl);
+  position:absolute; left:0; bottom:calc(100% + .55rem); z-index:20;
+  width:max-content; max-width:min(26rem,80vw);
+  background:var(--ink); color:#F7F8FA;
+  font-family:'Zen Kaku Gothic New',system-ui,sans-serif;
+  font-size:.82rem; font-weight:400; line-height:1.55; letter-spacing:0;
+  padding:.6rem .8rem; border-radius:2px;
+  opacity:0; visibility:hidden; transform:translateY(3px);
+  transition:opacity .13s ease, transform .13s ease, visibility .13s;
+  pointer-events:none;
+  box-shadow:0 2px 12px rgba(18,22,29,.18);
+}
+.gl::before{
+  content:''; position:absolute; left:.9rem; bottom:calc(100% + .2rem); z-index:21;
+  border:5px solid transparent; border-top-color:var(--ink);
+  opacity:0; visibility:hidden; transition:opacity .13s ease, visibility .13s;
+  pointer-events:none;
+}
+.gl:hover::after,.gl:focus::after,.gl:hover::before,.gl:focus::before{
+  opacity:1; visibility:visible; transform:translateY(0);
+}
+/* keep the bubble on screen near the right edge */
+.gl.right::after{left:auto; right:0}
+.gl.right::before{left:auto; right:.9rem}
+@media(max-width:640px){
+  .gl::after{max-width:calc(100vw - 3rem)}
+}
+@media(prefers-reduced-motion:reduce){
+  .gl::after,.gl::before{transition:none}
+}
