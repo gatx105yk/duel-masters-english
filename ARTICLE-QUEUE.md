@@ -68,18 +68,50 @@ What not to write: how to pilot anything. That is the Japanese guides' work.
 Nobody else is translating this. English readers can find a ban list; they cannot find out that a
 card is making people quit, or that a format is being called a grind.
 
-**Report volume, not voices.**
+### The hard limit, measured
+
+X search **returns 6–11 posts and stops.** Scrolling does not load more — tested repeatedly, in
+both latest and top ordering, with and without date ranges. Whether that is rate limiting or
+automation detection is unknown, and working around it is not something to attempt.
+
+**So statistical claims about sentiment are off the table.** Eleven posts cannot support "players
+are unhappy."
+
+### What to write instead
 
 | Do | Do not |
 |---|---|
-| "Several independent posts raise X" | "Players are unhappy" |
-| Post counts, view counts, how many accounts | Quote or name individuals |
-| Note when a complaint matches tournament data | Present a complaint as fact on its own |
+| Quote the engagement figure: "a post with 680 likes says" | "Several independent posts say" |
+| State the count seen: "of the 11 posts checked, 4 raise" | "Most posts raise" |
+| Report a single large post as a single large post | Extrapolate one post into a trend |
 
-A pattern needs independent accounts raising the same specific thing. One loud post is not a trend.
+**A post with 331,000 views is a fact on its own.** That is the sample-size problem solved rather
+than dodged — the reach is the evidence, not the count of similar posts.
 
-Best when paired with section 3 — a complaint that the format has slowed down is an opinion until
-the usage data shows control decks taking the top tables, and then it is a finding.
+Never quote individuals by name. Paraphrase.
+
+---
+
+## 5. Metagame data
+
+**Numbers exist, but not the ones people expect.**
+
+| Source | What it gives | Sample |
+|---|---|---|
+| BEANS daily survey | Ranked deck distribution, ND and AD separately | ~400 games/day |
+| Kamigame ranked data | Same, split into all players and top 500 | ~100 games |
+| Tournament breakdowns | Submitted decklists, cleanest data available | 250–320 decks |
+| Kamigame deck guides | Full 40-card lists, build cost in DMP, tier, deck type | — |
+
+**No win rates exist anywhere.** Not officially, not from third parties. Every claim that a deck is
+"strong" is inference from play rate and placement.
+
+Deck lists and build costs are published as **images**, which means reading them requires opening
+the page and enlarging the graphic. They are worth the effort: a 40-card list with a build cost in
+DMP is the most concretely useful thing this site can carry for someone deciding what to make.
+
+Always state which source, which date, and which bracket. The tournament and ladder pictures
+disagree — [by six weeks of drift, in the last case](2026-09-08-the-three-decks.html).
 
 ---
 
@@ -104,6 +136,7 @@ Existing tier articles stay up as dated snapshots. No new ones.
 2. PLAY'S official announcements
 3. Tournament results
 4. Community topics
-5. Paper TCG — card reveals included, framed as what exists on paper today
+5. Metagame data, when a survey or tournament breakdown lands
+6. Paper TCG — card reveals included, framed as what exists on paper today
 
 Publishing nothing beats publishing a correction.
