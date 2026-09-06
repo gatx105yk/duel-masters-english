@@ -81,6 +81,50 @@ here.
 
 ---
 
+## Do not claim to be first
+
+An article said its decklists were translated "for the first time in English." **That was never
+checked.** Someone maintains an English patch for this game and posts deck content; assuming nobody
+had done it before was an assumption dressed as a fact.
+
+A claim about what does not exist needs the same verification as a claim about what does. Usually it
+is not worth the trouble — the article read fine with the sentence removed. **Say what this site
+has, not what others lack.**
+
+---
+
+## Rule numbers are looked up, not remembered
+
+A rulings article cited **101.4a**, which does not appear to exist, and gave the comprehensive rules
+version as 1.49 when 1.50 had been published four months earlier. It also described trigger
+resolution backwards — saying a newly triggered effect waits, when the rule says turn-player effects
+are handled ahead of whatever the non-turn player still has queued.
+
+That last one changes outcomes. **Rule numbers and version numbers get verified against the PDF.**
+
+---
+
+## When a source has a ceiling, say what it is
+
+X search returns six to eleven posts and stops. Scrolling does not load more — tested repeatedly,
+both orderings, with and without date ranges.
+
+**So "many players think" is unsupported here.** What replaces it: the engagement figure on a single
+post, or the count actually checked. A post with 331,000 views is evidence by itself. Four out of
+eleven is a countable observation. Neither requires pretending to a sample that does not exist.
+
+---
+
+## Data published as images
+
+Decklists, build costs and metagame graphs are published as **images** by their authors. Reading
+them means opening the page and enlarging the graphic — slow, but the numbers are exact once read,
+and a 40-card list with a build cost is the most concretely useful thing to carry.
+
+Never republish the image. Read it, translate the contents, cite the source.
+
+---
+
 ## Before publishing
 
 1. **Every number.** Dates, counts, costs, power, player caps, prices.
