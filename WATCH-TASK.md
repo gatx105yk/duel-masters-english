@@ -1,106 +1,81 @@
-# Duel Masters watch — scheduled task
+# Where to look
 
-A collection routine, run daily. It **collects and reports**. It does not write articles and does not
-judge anything.
-
----
-
-## The instruction
-
-```
-Duel Masters / Duel Masters PLAY'S — daily collection run.
-
-Report only. Do not draft an article. Do not evaluate cards, decks or news.
-
-=== SOURCES, in this order ===
-
-1. https://dmps.takaratomy.co.jp/news/
-   List every item published since the last run. For each: date, title, URL.
-   Open any item whose title mentions a set, a card, a regulation change,
-   an event, or a balance adjustment, and copy the relevant lines verbatim.
-
-2. https://dm.takaratomy.co.jp/
-   Same treatment. Always check
-   https://dm.takaratomy.co.jp/rule/regulation/ regardless of whether the
-   front page mentions it — Hall of Fame changes are announced there first.
-
-3. https://x.com/dmps_info
-4. https://x.com/t2duema
-   For each post since the last run, record:
-     - timestamp
-     - the post text, copied exactly, in Japanese
-     - any card names in 《》, copied exactly, character for character
-     - repost count, like count, view count
-     - the post URL
-
-=== HARD RULES ===
-
-- Copy Japanese text. Never retype it. A card name transcribed by hand is a
-  card name with a wrong kanji in it.
-- Do not infer which set a card belongs to. If a post carries a hashtag,
-  record the hashtag. Do not conclude anything from it.
-- Do not translate. Report the Japanese as-is.
-- If a fact appears on X but not on the official site, say so explicitly:
-  "X only, not on the official site as of <time>".
-- If a page fails to load, say so. Never fill a gap with a guess.
-- No adjectives. "A card was revealed" — not "an exciting new card".
-
-=== COMMUNITY VOLUME ===
-
-Search X for デュエプレ and デュエマ, last 24 hours, top posts.
-
-Report only the shape of the response:
-  - roughly how many posts mention a given card or topic
-  - the highest view count seen on any single post about it
-  - whether the posts come from many separate accounts or a few
-
-Do NOT quote individual users. Do NOT name accounts other than the two
-official ones. Do NOT characterise sentiment as positive or negative —
-report volume, not mood.
-
-=== OUTPUT FORMAT ===
-
-## Since last run
-(one line per item, or "nothing new")
-
-## Official site — PLAY'S
-date | title | URL
-verbatim excerpt of anything substantive
-
-## Official site — paper TCG
-same
-
-## Hall of Fame page
-"unchanged" or the full diff
-
-## Official X posts
-timestamp | JP text | card names | RP / likes / views | URL
-
-## Community volume
-topic | approx post count | peak views | many accounts or few
-
-## Flagged for a human
-Anything that looks like it might matter, with no explanation of why.
-Just the item and where it came from.
-```
+Fixed list. Checking these in order takes a few minutes and catches almost everything.
+**Two things were missed in September by not having this written down:** a Magic collaboration
+announced through a shop page, and a pre-Grand Prix column that only appears under /special/.
 
 ---
 
-## Why it is shaped this way
+## Every check
 
-Three errors in one article, all in the interpretation layer:
+| Source | URL | What it carries |
+|---|---|---|
+| PLAY'S official X | `@dmps_info` | Cards, events, maintenance. Fastest, but posts vanish from the timeline within a day |
+| PLAY'S news index | `dmps.takaratomy.co.jp/news/` | The documented version. **Announcements sometimes appear on X days before a page exists** |
+| Paper official X | `@t2duema` | Set reveals, tournaments, collaborations |
 
-| Error | Cause |
+**X and the news index disagree regularly.** X is faster; the news index is citable. When only X has
+it, say so in the article — that distinction has already mattered once, over a new-player offer that
+was advertised but never documented.
+
+---
+
+## Every few days
+
+| Source | URL | Why it is here |
+|---|---|---|
+| PLAY'S columns | `dmps.takaratomy.co.jp/special/column/` | **Pre-event analysis, official deck names, rules details.** The Grand Prix time limit and the official name for the top deck were both only here |
+| Takara Tomy Mall | `takaratomymall.jp/shop/c/cDmGodart/` | **Premium art sets launch here, not through the news feed.** Made-to-order, short windows |
+| Magic Japan | `@mtgjp` | Crossovers are announced by both companies. Half the cards appear only on this account |
+
+---
+
+## Weekly
+
+| Source | What to take |
 |---|---|
-| Assigned a card to the wrong set | Inferred set membership from a shared hashtag |
-| Wrong kanji in a card name | Retyped instead of copied |
-| Attributed wiki data to an official notice | Merged two sources |
+| `beans-duelplays.com` | Daily ranked survey — a few hundred games, ND and AD separately. **Graphs are images**; open the page and enlarge |
+| Kamigame tier list | Movement, and which archetypes got their pages updated. The deck guides carry **full 40-card lists and build costs in DMP**, also as images |
+| Kamigame metagame page | Tournament breakdowns, credited to organisers. Field sizes are published; they have moved 21% in three weeks |
 
-None of those are possible if the task only copies and never concludes. Anything the collector
-cannot do without reasoning is left for a person.
+---
 
-## What stays manual
+## When there is reason to
 
-Deciding whether something is worth an article. Working out what a change means. Writing. All of it.
+| Source | Limit |
+|---|---|
+| X search for `デュエプレ` | **Returns 6–11 posts and stops.** Not fixable. Use it for individual large posts, never for proportions |
+| `r/DuelMastersPlays` | ~13 posts a week, mostly install and rules questions. Good signal for what confuses new English speakers |
+| Official comprehensive rules PDF | Authority for anything mechanical. **Check the version number** — 1.50 as of April 2026 |
 
-The collector answers "what happened". A person answers "so what".
+---
+
+## Not used
+
+**Aggregator sites reprinting the Japanese message boards.** The thread moved hosts specifically to
+stop being republished for ad revenue. This site earns nothing, which removes the money objection
+but not the consent one. Described in articles where relevant, never quoted.
+
+---
+
+## Order of checking
+
+1. `@dmps_info` — anything new since last time
+2. PLAY'S news index — does a documented version exist yet
+3. `@t2duema`
+4. Columns and Mall, if it has been a few days
+5. `@mtgjp`, if anything crossover-shaped is moving
+6. Environment data, if it has been about a week
+
+**Stop when nothing is new.** The official accounts post one or two things a day. Checking again
+twenty minutes later returns the same answer.
+
+---
+
+## What to record when something turns up
+
+- Date and time of the post, and which account
+- Whether a news-index page exists or it is X only
+- Card names copied, never retyped — 課 and 誋 are different characters
+- Engagement figures if the reaction is the story
+- The URL, for the sources list
