@@ -39,6 +39,17 @@
     "O-Drive": "Pay an additional cost on top of the normal one when you use the card, and get an extra effect for it.",
     "Dragheart": "Arrives from outside the deck as a weapon or fortress rather than a creature, and flips to its creature side when a condition is met. Counts against the seven-card board limit.",
     "Dragsolution": "The flip that turns a Dragheart from its weapon or fortress side into its creature side.",
+    "Evolution": "Summoned by stacking it onto a creature you already control that meets a condition. The pile counts as one creature and can usually attack immediately.",
+    "NEO Evolution": "May be played either as an evolution or as an ordinary creature.",
+    "Invasion": "When a qualifying creature attacks, you may stack this on top of it for no mana. The attack continues with the new creature.",
+    "Meteorburn": "Puts a stated number of cards from underneath an evolution creature into the graveyard to pay for an ability.",
+    "Ninja Strike": "Played from hand for free during the opponent's attack, but only while your shield count is at or below a stated number.",
+    "Power Attacker": "Gains the stated power while attacking only \u2014 it is smaller on defence.",
+    "Charger": "A spell that goes to your mana zone after resolving instead of the graveyard.",
+    "Awaken": "A Psychic creature flips to a stronger reverse side once a stated condition is met.",
+    "Dragsolution": "A Dragheart flips from its equipment or fortress side into a creature when its condition is met.",
+    "Final Revolution": "Triggers when the creature arrives specifically by Revolution Change. Playing it normally does not switch it on.",
+    "D2 Field": "A battle zone card that is not a creature, so creature removal misses it. Only one per player \u2014 a new one replaces the old.",
     "Rinfinity": "Lets you cast a Twinpact's spell half while the creature stays in play, paying the cost, with an effect that scales off how many copies of the creature you control."
   };
 
