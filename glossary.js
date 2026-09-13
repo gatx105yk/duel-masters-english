@@ -28,6 +28,17 @@
     "mana zone": "There are no land cards. Once per turn you put one card from your hand face-up here, permanently, and it counts as one mana.",
     "direct attack": "Attacking a player who has no shields left. This is how games are won.",
     "battle zone limit": "PLAY'S caps each player at seven cards in the battle zone \u2014 creatures, Cross Gear and Dragheart combined. The paper game has no limit.",
+    "Evolution": "Placed on top of a creature you already control rather than summoned to an empty space. The stack counts as one creature, occupies one board slot, and can attack straight away if the one underneath could.",
+    "Charger": "Spells only. After it resolves, the spell goes to your mana zone instead of the graveyard \u2014 an effect now, plus a mana afterwards.",
+    "Invasion": "When a creature of a stated civilization and race attacks, you may stack this on top of it from hand for free, as an evolution. The attack carries on.",
+    "Ninja Strike": "Shinobi creatures only. Summons from your hand during your opponent's attack \u2014 a moment you normally could not act \u2014 with the condition tied to how few shields you have left.",
+    "Seal": "Cards placed face-down on top of a card in the battle zone. While sealed, that card is treated as though it were not there at all.",
+    "Forbidden": "A card that starts in the battle zone before the game begins, sealed. Remove all its seals and it flips into an enormous creature.",
+    "D2 Field": "Sits in the battle zone but is not a creature, so creature removal does not touch it. Only one can be out at a time.",
+    "D Switch": "A one-per-game effect on a D2 Field, used by turning the card upside down.",
+    "O-Drive": "Pay an additional cost on top of the normal one when you use the card, and get an extra effect for it.",
+    "Dragheart": "Arrives from outside the deck as a weapon or fortress rather than a creature, and flips to its creature side when a condition is met. Counts against the seven-card board limit.",
+    "Dragsolution": "The flip that turns a Dragheart from its weapon or fortress side into its creature side.",
     "Rinfinity": "Lets you cast a Twinpact's spell half while the creature stays in play, paying the cost, with an effect that scales off how many copies of the creature you control."
   };
 
