@@ -30,6 +30,8 @@
     "battle zone limit": "盤面制限 banmen seigen — PLAY'S caps each player at seven cards in the battle zone \u2014 creatures, Cross Gear and Dragheart combined. The paper game has no limit.",
     "B・A・D": "Lets you play the card for a stated amount less, at the price of it being destroyed at end of turn. On a Speed Attacker the drawback costs almost nothing on the turn you want it.",
     "G・G・G": "A conditional ability that switches on when your hand is down to one card or fewer \u2014 the state an aggressive deck ends up in naturally.",
+    "shields": "Five face-down cards standing in for a life total. When one breaks it goes into the defender's hand, so attacking hands your opponent material.",
+    "charge": "Putting a card from your hand into the mana zone, face-up and permanently. Once per turn, and the card is gone from your hand for good.",
     "civilization": "\u6587\u660e bunmei \u2014 the five colours, plus Zero. In PLAY'S a civilization is either present in your mana zone or it is not; the count does not matter.",
     "DP Hall of Fame": "DP\u6bbf\u5802 DP dend\u014d \u2014 the digital game's own restriction list, separate from paper. It can also do something paper cannot: rewrite a card's text.",
     "prohibited cards": "\u4f7f\u7528\u7981\u6b62\u30ab\u30fc\u30c9 shiy\u014d kinshi card \u2014 a short, unchanging banned list, separate from the Hall of Fame.",
