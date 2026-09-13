@@ -72,6 +72,38 @@ twenty minutes later returns the same answer.
 
 ---
 
+## X announces, the product page documents
+
+**Three articles written on 11–12 September all needed correcting, and all for the same reason:**
+they were written from the announcement post alone.
+
+| Article | What was missing |
+|---|---|
+| Kami Art × Magic | Price, closing date, product codes, contents. The article said the closing date "had not been announced" — it had |
+| Grand Prix viewing guide | The columnist's name, while the article itself argued for naming sources |
+| B-Reishu Raid | The card's tournament submission rate, which was the evidence behind the complaint being quoted |
+
+**X posts sell. Product pages and wikis document.** A reveal post gives a name, a date and a hook.
+It does not give price, run length, product code, or contents — and those are what a reader needs
+to understand what the thing actually is.
+
+### Before publishing anything product-shaped, check
+
+1. `dm.takaratomy.co.jp/product/` or the PLAY'S equivalent — official spec page
+2. `dmwiki.net` — has product codes, price, contents, usually within a day
+3. The shop listing, if it is a Mall exclusive — purchase limits and the close date
+
+### Before publishing anything card-shaped, check
+
+1. Card text against **two** sources minimum — the card database, the wiki, Kamigame's evaluation page
+2. **Whether the card has a tournament record.** Submission rates from Battle Arena and sanctioned
+   events are published and are the strongest evidence available
+3. **Interactions between its own abilities.** The Raid article claimed the cheap copy would
+   self-destruct and could be waited out; its own protection ability prevents that. Reading each
+   ability separately is not the same as reading the card
+
+---
+
 ## What to record when something turns up
 
 - Date and time of the post, and which account
