@@ -134,6 +134,25 @@ community small enough that it cannot afford that.
 So where the patch has a name, use it. A character was published here as *Ga Rumiiz* on 13 September
 and corrected to **Ga Ryumizu** the next day, because that is how the patch's maintainer spells it.
 
+### Names only. Effects are ours.
+
+**The line is between a label and a piece of work.**
+
+A card name is a short identifier whose whole purpose is that everyone uses the same one. Matching it
+costs the patch nothing and saves the reader from having to guess that two articles are about the
+same card.
+
+**Card text is different.** Somebody sat down and translated it. Lifting that is taking their work,
+and it also produces worse writing here — a literal rules translation reads like a rules translation.
+
+So: **describe what a card does, in plain English, in your own words.** Say that a creature mills
+four and returns a Darkness card to hand; do not paste a translated ability line. That is what the
+articles already do, and it is why they can say things like *"a taunt that wins most fights it is
+dragged into"* — which no translation of the card would give you.
+
+The same applies to the Japanese original: **do not reproduce the printed text either.** Read it,
+understand it, write the explanation yourself.
+
 ### The convention, as observed from the maintainer's public posts
 
 - **Romanise, do not translate.** Ga Ryumizu, Minogami, Balga — not attempts at meaning.
