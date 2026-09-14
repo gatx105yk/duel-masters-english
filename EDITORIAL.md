@@ -125,6 +125,34 @@ Never republish the image. Read it, translate the contents, cite the source.
 
 ---
 
+## Match the patch's names, not your own
+
+**There is exactly one English naming for this game's cards: the community patch.** Readers using it
+see those names on screen. Inventing a second set of English names fragments the vocabulary of a
+community small enough that it cannot afford that.
+
+So where the patch has a name, use it. A character was published here as *Ga Rumiiz* on 13 September
+and corrected to **Ga Ryumizu** the next day, because that is how the patch's maintainer spells it.
+
+### The convention, as observed from the maintainer's public posts
+
+- **Romanise, do not translate.** Ga Ryumizu, Minogami, Balga — not attempts at meaning.
+- **English loanwords stay English.** Oriotis Judge, not an invented transliteration of it.
+- **Japanese fandom terms are left alone** where no English word fits.
+
+### Keep the Japanese alongside regardless
+
+```
+Centuria Dragon (ケントゥリア・ドラゴン)
+```
+
+The patch cannot be consulted directly — it is distributed outside anything reachable from here — so
+some names will be guesses. **The Japanese name is the fallback that always works**: it is what the
+card databases are indexed by, and it does not change. When a name here turns out to disagree with
+the patch, fix the English and leave the Japanese as it was.
+
+---
+
 ## Before publishing
 
 1. **Every number.** Dates, counts, costs, power, player caps, prices.
