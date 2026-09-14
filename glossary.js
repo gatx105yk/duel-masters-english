@@ -38,6 +38,7 @@
     "Evolution": "進化 shinka — Placed on top of a creature you already control rather than summoned to an empty space. The stack counts as one creature, occupies one board slot, and can attack straight away if the one underneath could.",
     "Charger": "Spells only. After it resolves, the spell goes to your mana zone instead of the graveyard \u2014 an effect now, plus a mana afterwards.",
     "Invasion": "侵略 shinryaku — When a creature of a stated civilization and race attacks, you may stack this on top of it from hand for free, as an evolution. The attack carries on.",
+    "Invasion ZERO": "\u4fb5\u7565ZERO \u2014 the defensive version: puts this into play for free on a stated trigger during your opponent's turn, rather than during your own attack.",
     "Ninja Strike": "Shinobi creatures only. Summons from your hand during your opponent's attack \u2014 a moment you normally could not act \u2014 with the condition tied to how few shields you have left.",
     "Seal": "封印 fūin — Cards placed face-down on top of a card in the battle zone. While sealed, that card is treated as though it were not there at all.",
     "Forbidden": "A card that starts in the battle zone before the game begins, sealed. Remove all its seals and it flips into an enormous creature.",
@@ -46,18 +47,12 @@
     "O-Drive": "Pay an additional cost on top of the normal one when you use the card, and get an extra effect for it.",
     "Dragheart": "Arrives from outside the deck as a weapon or fortress rather than a creature, and flips to its creature side when a condition is met. Counts against the seven-card board limit.",
     "Dragsolution": "龍解 ryūkai — The flip that turns a Dragheart from its weapon or fortress side into its creature side.",
-    "Evolution": "Summoned by stacking it onto a creature you already control that meets a condition. The pile counts as one creature, and it does not suffer summoning sickness at all \u2014 even stacking onto a creature that arrived this turn clears it, so it can attack straight away.",
     "hand limit": "PLAY'S caps your hand at ten cards. Anything drawn beyond that goes straight to the graveyard. The paper game has no such cap.",
     "NEO Evolution": "NEO進化 NEO shinka — May be played either as an evolution or as an ordinary creature.",
-    "Invasion": "When a qualifying creature attacks, you may stack this on top of it for no mana. The attack continues with the new creature.",
     "Meteorburn": "Puts a stated number of cards from underneath an evolution creature into the graveyard to pay for an ability.",
-    "Ninja Strike": "Played from hand for free during the opponent's attack, but only while your shield count is at or below a stated number.",
     "Power Attacker": "Gains the stated power while attacking only \u2014 it is smaller on defence.",
-    "Charger": "A spell that goes to your mana zone after resolving instead of the graveyard.",
     "Awaken": "覚醒 kakusei — A Psychic creature flips to a stronger reverse side once a stated condition is met.",
-    "Dragsolution": "A Dragheart flips from its equipment or fortress side into a creature when its condition is met.",
     "Final Revolution": "ファイナル革命 final kakumei — Triggers when the creature arrives specifically by Revolution Change. Playing it normally does not switch it on.",
-    "D2 Field": "A battle zone card that is not a creature, so creature removal misses it. Only one per player \u2014 a new one replaces the old.",
     "Rinfinity": "輪廻∞ rinne infinity — Lets you cast a Twinpact's spell half while the creature stays in play, paying the cost, with an effect that scales off how many copies of the creature you control."
   };
 
