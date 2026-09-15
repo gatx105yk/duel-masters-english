@@ -104,6 +104,34 @@ to understand what the thing actually is.
 
 ---
 
+## Scroll past the headline
+
+On Grand Prix day the official account posted the tournament result and the set teaser — and
+**four card reveals underneath them**. Checking the top of the timeline and stopping there missed
+all four, and an article went out describing the set from the wrong half of it.
+
+**A big story pushes the ordinary posts down, it does not replace them.** On any day with a major
+announcement, scroll further than usual, not less.
+
+### Card reveals come through at least three channels
+
+| Channel | Note |
+|---|---|
+| `@dmps_info` | Roughly one an hour during a reveal run |
+| Corocoro Online | Has its own exclusives — not mirrored on the official account |
+| Japanese guide sites | Also given exclusives; their set roundups list every card known so far |
+
+**A guide site's set roundup is the fastest way to find out what you have missed**, because it
+aggregates all three. Check it against your own coverage before writing that a set has *n* cards.
+
+### Names disagree between sources
+
+The same card appeared as <span class="jp">凶鬼卍号</span> on the official account and
+<span class="jp">凶鬼09号</span> on a guide site. **Where two secondary sources disagree, read the
+card image, or say plainly that they disagree.** Do not pick one silently.
+
+---
+
 ## What to record when something turns up
 
 - Date and time of the post, and which account
