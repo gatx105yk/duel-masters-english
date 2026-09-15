@@ -9,6 +9,7 @@
     "Strike Back": "A spell that, when cast from hand, goes face-up on top of one of your own shields instead of to the graveyard, so it can be used a second time when that shield breaks.",
     "Revolution Change": "\u9769命チェンジ kakumei change — When a qualifying creature attacks, you may swap it with a Revolution Change card from your hand. The new creature continues the attack, arriving for no mana and already attacking.",
     "Rev. 0 Trigger": "革命0トリガー kakumei zero trigger — Playable from your hand for free, but only when a creature attacks you and you have no shields left. Several can be declared at once and resolve in the order you choose.",
+    "Smash Burst": "\u30b9\u30de\u30c3\u30b7\u30e5\u30fb\u30d0\u30fc\u30b9\u30c8 \u2014 on a Twinpact creature: when it attacks, you may cast the card's own spell half without paying for it. The two halves stop being an either-or choice.",
     "Twinpact": "A single card with a creature on one half and a spell on the other. You choose which half to play; it has two costs printed on it.",
     "Blocker": "A keyword, not a default ability \u2014 only creatures with it can block. What it does is tap this creature and redirect the attack onto it.",
     "Speed Attacker": "Can attack the turn it arrives. Magic calls this haste.",
