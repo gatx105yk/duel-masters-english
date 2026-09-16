@@ -110,8 +110,8 @@ On Grand Prix day the official account posted the tournament result and the set 
 **four card reveals underneath them**. Checking the top of the timeline and stopping there missed
 all four, and an article went out describing the set from the wrong half of it.
 
-**A big story pushes the ordinary posts down, it does not replace them.** On any day with a major
-announcement, scroll further than usual, not less.
+**A big story pushes the ordinary posts down, it does not replace them.** On any day with a major announcement, scroll further than usual, not less — with real input
+scrolling, see below.
 
 ### Card reveals come through at least four channels
 
@@ -122,13 +122,30 @@ announcement, scroll further than usual, not less.
 | Japanese guide sites | Also given exclusives; their set roundups list every card known so far |
 | **Official YouTube** | **A whole card was shown here and nowhere else.** Not checked until 15 Sep |
 
-**X cannot tell you whether you have them all.** Its search returns roughly five posts however you
-query it — timeline, search, date-bounded, it makes no difference. On 15 September the site had ten
-of sixteen revealed cards and I had twice reported "nothing new".
+### Scrolling X: use real input, not scripted scrolling
 
-**A guide site's set roundup is the only practical way to count.** It aggregates every channel.
-Check it against your own coverage before saying a set has *n* cards, and before saying there is
-nothing new.
+**This was wrong for most of a day and cost two missed reveals.** Scripted scrolling — calling
+`window.scrollTo` and friends from the console — moves the page but **does not make X load the next
+batch.** The loader never fires, no follow-up request is sent, and the timeline sits at six or seven
+posts however long you scroll. It looks exactly like a hard cap. It is not one.
+
+**Use real input events instead** — the browser tool's own scroll action, which the page receives as
+a genuine wheel event. Then it pages normally:
+
+```
+scripted scrolling      7 posts, page height frozen at 7205
+real input scrolling    7 → 13 → 16 → 19, height 7205 → 12480, still climbing
+```
+
+So **X can be read back through properly**, and the official account is usable as a primary source
+on its own. Alternate scrolling with collecting, because only about ten posts stay mounted at once —
+anything scrolled past is discarded from the page.
+
+### Still check a roundup afterwards
+
+Not because X is capped, but because **reveals do not all go to X.** Corocoro Online, Japanese guide
+sites and the official YouTube channel each carry cards that appear nowhere else. A guide site's set
+roundup aggregates all four and is the fastest way to see what you have missed.
 
 ### Names disagree between sources
 
