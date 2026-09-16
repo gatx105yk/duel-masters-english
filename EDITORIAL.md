@@ -172,6 +172,37 @@ the patch, fix the English and leave the Japanese as it was.
 
 ---
 
+## Counted is not the same as measured
+
+A community site polls players on new cards before release. Those polls produce a number, and a
+number looks like evidence. **It is not evidence of the thing it appears to be evidence of.**
+
+```
+BEANS ranked survey     304 games that were played        a measurement
+Pre-release card poll   hundreds of people guessing       a forecast, counted
+```
+
+Both are numbers. Only one is about what happened. A card polling 3.00/5 tells you what players
+**expect**, which is worth reporting and worth labelling as such. **Write "a poll of expectations",
+never "an actual number".** That phrasing went out on this site and had to be corrected within the
+hour.
+
+The same test applies to anything with a decimal point in it: **ask what was counted.** Games, or
+opinions?
+
+### Quoting other people's aggregates
+
+A single figure with the source named is a fact you may use. **Their table is their work.**
+
+```
+fine    "a Japanese community site polls new cards; this one sits at 3.00/5"
+not     reproducing the poll for all sixteen cards
+```
+
+Same line as the card names: **short facts travel, assembled work does not.**
+
+---
+
 ## Before publishing
 
 1. **Every number.** Dates, counts, costs, power, player caps, prices.
