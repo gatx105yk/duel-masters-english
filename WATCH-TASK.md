@@ -141,6 +141,15 @@ So **X can be read back through properly**, and the official account is usable a
 on its own. Alternate scrolling with collecting, because only about ten posts stay mounted at once —
 anything scrolled past is discarded from the page.
 
+### The guide site's exclusive slot has a pattern
+
+Across 14, 15 and 16 September it posted **one card a day**, and **all three were PLAY'S originals
+with no paper printing.** If that holds, the slot exists for cards that cannot be looked up anywhere
+else — which makes it the highest-value thing on this list to check daily, not the lowest.
+
+A paper card revealed on X can be cross-checked against paper databases. **An original revealed
+there cannot be checked anywhere.** Miss it and it is simply absent from your coverage.
+
 ### Still check a roundup afterwards
 
 Not because X is capped, but because **reveals do not all go to X.** Corocoro Online, Japanese guide
