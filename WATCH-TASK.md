@@ -113,16 +113,22 @@ all four, and an article went out describing the set from the wrong half of it.
 **A big story pushes the ordinary posts down, it does not replace them.** On any day with a major
 announcement, scroll further than usual, not less.
 
-### Card reveals come through at least three channels
+### Card reveals come through at least four channels
 
 | Channel | Note |
 |---|---|
 | `@dmps_info` | Roughly one an hour during a reveal run |
 | Corocoro Online | Has its own exclusives — not mirrored on the official account |
 | Japanese guide sites | Also given exclusives; their set roundups list every card known so far |
+| **Official YouTube** | **A whole card was shown here and nowhere else.** Not checked until 15 Sep |
 
-**A guide site's set roundup is the fastest way to find out what you have missed**, because it
-aggregates all three. Check it against your own coverage before writing that a set has *n* cards.
+**X cannot tell you whether you have them all.** Its search returns roughly five posts however you
+query it — timeline, search, date-bounded, it makes no difference. On 15 September the site had ten
+of sixteen revealed cards and I had twice reported "nothing new".
+
+**A guide site's set roundup is the only practical way to count.** It aggregates every channel.
+Check it against your own coverage before saying a set has *n* cards, and before saying there is
+nothing new.
 
 ### Names disagree between sources
 
