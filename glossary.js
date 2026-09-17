@@ -13,6 +13,8 @@
     "Super Search": "\u8d85\u63a2\u7d22 ch\u014dtansaku \u2014 the larger version: five distinct cards rather than three. Still a cap, not a guarantee.",
     "Master G\u30fbG\u30fbG": "\u30de\u30b9\u30bf\u30fcG\u30fbG\u30fbG \u2014 a stricter G\u30fbG\u30fbG: the card must be the only one in your hand, not merely one card or fewer. An empty hand does not qualify, because the card has to be in it.",
     "5.S.D.": "Turns the fourth card from the top of the opponent's deck sideways. It does nothing by itself \u2014 it marks that card for some other effect, which has not been revealed.",
+    "Super Shield Trigger": "\u30b9\u30fc\u30d1\u30fc\u30fbS\u30fb\u30c8\u30ea\u30ac\u30fc \u2014 a Shield Trigger with an extra condition attached and a much larger effect when that condition is met. Cast from hand, or triggered without the condition, you usually just get the small half.",
+    "Madougu": "\u9b54\u5c0e\u5177 mad\u014dgu \u2014 a spell type. Cards that care about them count how many you have cast, or stack them under a permanent; several Darkness and Water decks are built entirely around accumulating them.",
     "Smash Burst": "\u30b9\u30de\u30c3\u30b7\u30e5\u30fb\u30d0\u30fc\u30b9\u30c8 \u2014 on a Twinpact creature: when it attacks, you may cast the card's own spell half without paying for it. The two halves stop being an either-or choice.",
     "Twinpact": "A single card with a creature on one half and a spell on the other. You choose which half to play; it has two costs printed on it.",
     "Blocker": "A keyword, not a default ability \u2014 only creatures with it can block. What it does is tap this creature and redirect the attack onto it.",
