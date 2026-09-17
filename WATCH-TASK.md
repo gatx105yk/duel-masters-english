@@ -164,6 +164,26 @@ card image, or say plainly that they disagree.** Do not pick one silently.
 
 ---
 
+## The calendar page goes stale silently
+
+`2026-08-16-calendar.md` is the one page whose whole value is being current, and **it is the one
+page that gives no sign when it is not.** A wrong card article gets corrected because someone
+notices. A calendar missing three weeks of dates just looks like a calendar.
+
+**Check it whenever a date is announced anywhere**, and at minimum:
+
+- when a set release date is given
+- when an event, stream slot or maintenance window is announced
+- when a sale or product window closes
+- **before writing any article that mentions a date** — if it is not on the calendar, add it there too
+
+### What that page is for
+
+One page an English reader can open to see what is coming for both games. It fails the moment a
+reader checks it and then finds out elsewhere that something happened last week.
+
+---
+
 ## What to record when something turns up
 
 - Date and time of the post, and which account
