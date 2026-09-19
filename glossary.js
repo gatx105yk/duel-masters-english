@@ -15,6 +15,8 @@
     "5.S.D.": "Turns the fourth card from the top of the opponent's deck sideways. It does nothing by itself \u2014 it marks that card for some other effect, which has not been revealed.",
     "Super Shield Trigger": "\u30b9\u30fc\u30d1\u30fc\u30fbS\u30fb\u30c8\u30ea\u30ac\u30fc \u2014 a Shield Trigger with an extra condition attached and a much larger effect when that condition is met. Cast from hand, or triggered without the condition, you usually just get the small half.",
     "Madougu": "\u9b54\u5c0e\u5177 mad\u014dgu \u2014 a spell type. Cards that care about them count how many you have cast, or stack them under a permanent; several Darkness and Water decks are built entirely around accumulating them.",
+    "Master Mach Fighter": "\u30de\u30b9\u30bf\u30fc\u30fb\u30de\u30c3\u30cf\u30d5\u30a1\u30a4\u30bf\u30fc \u2014 attacks creatures the turn it arrives, like Mach Fighter, and goes further: win the battle and it untaps and breaks a shield. One creature, repeatedly.",
+    "J Change": "J\u30c1\u30a7\u30f3\u30b8 \u2014 the Jokers version of Revolution Change: swap this in from hand mid-attack for a Jokers card of a stated cost, and the attack continues.",
     "Smash Burst": "\u30b9\u30de\u30c3\u30b7\u30e5\u30fb\u30d0\u30fc\u30b9\u30c8 \u2014 on a Twinpact creature: when it attacks, you may cast the card's own spell half without paying for it. The two halves stop being an either-or choice.",
     "Twinpact": "A single card with a creature on one half and a spell on the other. You choose which half to play; it has two costs printed on it.",
     "Blocker": "A keyword, not a default ability \u2014 only creatures with it can block. What it does is tap this creature and redirect the attack onto it.",
