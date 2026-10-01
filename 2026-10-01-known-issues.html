@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Twenty-four bugs, and five of them make a card stop existing | Duel Masters English</title>
+  <meta name="description" content="The publisher's known-issues notice, updated 30 September, confirms twenty-four new bugs six days after set 37. Five end with a card in no zone at all, one can lock the new story chapter, and one cancels an attack made with the set's own keyword.">
+  <link rel="canonical" href="https://duelmasters.editioncompass.com/2026-10-01-known-issues.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://duelmasters.editioncompass.com/2026-10-01-known-issues.html">
+  <meta property="og:title" content="Twenty-four bugs, and five of them make a card stop existing | Duel Masters English">
+  <meta property="og:description" content="The publisher's known-issues notice, updated 30 September, confirms twenty-four new bugs six days after set 37. Five end with a card in no zone at all, one can lock the new story chapter, and one cancels an attack made with the set's own keyword.">
+  <meta property="og:site_name" content="Duel Masters English">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Twenty-four bugs, and five of them make a card stop existing | Duel Masters English">
+  <meta name="twitter:description" content="The publisher's known-issues notice, updated 30 September, confirms twenty-four new bugs six days after set 37. Five end with a card in no zone at all, one can lock the new story chapter, and one cancels an attack made with the set's own keyword.">
+  <meta property="article:published_time" content="2026-10-01">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Twenty-four bugs, and five of them make a card stop existing","description":"The publisher's known-issues notice, updated 30 September, confirms twenty-four new bugs six days after set 37. Five end with a card in no zone at all, one can lock the new story chapter, and one cancels an attack made with the set's own keyword.","datePublished":"2026-10-01","dateModified":"2026-10-01","inLanguage":"en","isAccessibleForFree":true,"mainEntityOfPage":{"@type":"WebPage","@id":"https://duelmasters.editioncompass.com/2026-10-01-known-issues.html"},"publisher":{"@type":"Organization","name":"Duel Masters English"}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;600;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .counts{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1rem;margin:0 0 1.7rem;font-size:.95rem}
+    .counts dt{font-family:'DM Mono',monospace;font-size:1.3rem;text-align:right;line-height:1.2}
+    .counts dd{margin:0;padding-top:.25rem}
+    .bug{border-left:3px solid var(--rule);padding:.6rem 0 .6rem 1.2rem;margin:0 0 1.5rem}
+    .bug .who{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);display:block;margin-bottom:.35rem}
+    .bug.gone{border-left-color:var(--fire)}
+    .bug.lock{border-left-color:var(--light)}
+    .pull{border-left:3px solid var(--fire);padding:.3rem 0 .3rem 1.2rem;margin:1.7rem 0;font-family:'Zen Old Mincho',serif;font-size:1.12rem;line-height:1.6}
+    .pull .attr{display:block;font-family:'Zen Kaku Gothic New',sans-serif;font-size:.78rem;color:var(--ink-2);margin-top:.55rem}
+  </style>
+</head>
+<body>
+
+<div class="shields" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+<header><div class="wrap narrow"><a class="back" href="index.html">&larr; Duel Masters English</a></div></header>
+
+<main class="wrap narrow">
+<article>
+
+  <p class="kicker mono">PLAY'S &middot; Rules &middot; 1 Oct 2026</p>
+  <h1>Twenty-four bugs, and five of them make a card stop existing</h1>
+  <p class="standfirst">
+    The publisher keeps one running notice of known issues and edits it in place. <strong>On
+    30 September it was updated with twenty-four newly confirmed bugs</strong> &mdash; six days
+    after <a href="2026-09-27-first-numbers.html">set 37 arrived</a>. One of them can lock the new
+    story chapter. One cancels an attack made with the set's own keyword.
+  </p>
+
+  <h2>What the notice says</h2>
+  <dl class="counts">
+    <dt>24</dt><dd><strong>newly confirmed</strong> &mdash; added in this update, not yet fixed.</dd>
+    <dt>10</dt><dd><strong>already fixed</strong> &mdash; listed as resolved.</dd>
+    <dt>4</dt><dd><strong>still under investigation</strong> &mdash; all display problems rather
+      than rules problems.</dd>
+  </dl>
+  <p>
+    No fix dates are given. The notice says only that issues needing an app update can take time
+    because of store review. <strong>This page describes the ones that connect to what this site
+    has already written about; it does not reproduce the list.</strong>
+  </p>
+
+  <h2>The pattern worth naming</h2>
+  <p>
+    Five of the twenty-four end the same way. The Japanese is
+    <span class="jp">&#12393;&#12398;&#12478;&#12540;&#12531;&#12395;&#12418;&#23384;&#22312;&#12375;&#12394;&#12367;&#12394;&#12427;</span>
+    &mdash; <strong>"ceases to exist in any zone".</strong>
+  </p>
+  <div class="pull">
+    Not destroyed, not removed, not shuffled away. The card is no longer in the battle zone, the
+    graveyard, the hand, the deck, the mana zone or the shields. It is gone from the game.
+    <span class="attr">Five separate bugs, five different routes to the same end</span>
+  </div>
+  <p>
+    They are reached by different routes &mdash; a field card moved while its destination zone is
+    full, a creature put into play by a spell and then destroyed, gods moved after a mass summon, a
+    spell revealed by a creature that then leaves, and the bottom card of a face-up shield stack.
+    <strong>Different cards, different triggers, same result.</strong>
+  </p>
+
+  <h2>The ones that touch this site's coverage</h2>
+
+  <div class="bug lock">
+    <span class="who">Story &middot; can stop the game</span>
+    <strong>EPISODE 37, chapter two.</strong> In that duel, when the CPU opponent casts
+    <span class="jp">&#21329;&#22812;&#12398;&#38477;&#20976;&#31085;</span> using the
+    <span class="jp">&#28961;&#26376;&#12398;&#38272;&#12539;&#32066;</span> ability, the game can
+    reach a state where it cannot proceed.
+    <br><br>
+    <a href="2026-08-16-calendar.html">EPISODE 37 is the story chapter released with the set</a> on
+    24 September. <strong>It is the newest thing in the game and it can soft-lock.</strong>
+  </div>
+
+  <div class="bug">
+    <span class="who">Keyword &middot; J Change</span>
+    <strong>Attack with a creature that has <a href="glossary.html">J Change</a></strong>, swap it
+    for <span class="jp">&#12461;&#12531;&#12464;&#12539;&#12470;&#12539;&#12475;&#12503;&#12488;&#12531;7</span>,
+    then use that creature's on-play effect to stack a Jokers NEO evolution creature on top of it
+    &mdash; <strong>and the attack is cancelled.</strong>
+    <br><br>
+    J Change is one of the keywords this site documented when the set was revealed. This is the
+    first confirmed bug in it.
+  </div>
+
+  <div class="bug gone">
+    <span class="who">Ceases to exist &middot; the Magic Tools field</span>
+    <strong><span class="jp">&#21329; &#26032;&#19990;&#22739; &#21329;</span> with cards stored
+    under it</strong>, turned into a shield or returned to hand while that destination zone is
+    already at its limit, <strong>ends up in no zone at all.</strong>
+    <br><br>
+    This is the field card the Magic Tools decks are built on &mdash; the family that
+    <a href="2026-09-13-grand-prix-result.html">won the Grand Prix</a> and
+    <a href="2026-09-27-first-numbers.html">led the new format for its first three days</a>.
+  </div>
+
+  <div class="bug gone">
+    <span class="who">Ceases to exist &middot; Clanvia</span>
+    <strong>Clanvia appears twice.</strong> If it leaves the battle zone between its on-play
+    ability triggering and that ability resolving, the spell it revealed ends up in no zone. A
+    second, smaller bug leaves the opponent's mana zone display stale until the next turn begins.
+  </div>
+
+  <h2>What this is, and what it is not</h2>
+  <p>
+    <strong>A digital card game publishing a bug list after a set is normal.</strong> Twenty-four
+    confirmed issues in six days is a number without much meaning on its own &mdash; there is no
+    baseline here to compare it against, and the same notice records ten fixes.
+  </p>
+  <p>
+    What is worth reporting is <strong>which</strong> ones they are. The story chapter written for
+    the set can stop. A keyword introduced by the set has a confirmed interaction that cancels your
+    attack. And the engine card of the most-played deck family can be removed from the game by a
+    zone-limit edge case.
+  </p>
+  <div class="note">
+    <b>None of this is a balance change</b>
+    <a href="2026-09-26-card-changes.html">Four cards had their text changed at the release
+    maintenance</a>; that was deliberate and announced separately. <strong>The list described here
+    is the publisher saying things do not work as written</strong>, which is a different kind of
+    notice and carries no compensation.
+  </div>
+
+  <h2>Sources</h2>
+  <ul>
+    <li>All counts and descriptions: the publisher's running known-issues notice, as updated
+      30 September 2026. <strong>The counts are of the bullet points in each of its three sections;
+      the list itself is not reproduced here.</strong></li>
+    <li>That EPISODE 37 is the story chapter released alongside the set on 24 September:
+      <a href="2026-08-16-calendar.html">the calendar</a>.</li>
+    <li>J Change, and what it does: <a href="glossary.html">the glossary</a> and
+      <a href="2026-09-14-set37-first-cards.html">the set coverage</a>.</li>
+    <li>Magic Tools in the current format:
+      <a href="2026-09-27-first-numbers.html">the encounter-rate record</a>.</li>
+    <li><strong>Card names are given in Japanese where this site has not confirmed an English
+      name.</strong> Effects are described in plain English rather than reproduced.</li>
+  </ul>
+
+</article>
+<section class="comments">
+  <h2>Corrections and questions</h2>
+  <p class="comments-lede">
+    If something here is wrong, please say so &mdash; that is the most useful thing you can do with
+    this page. Comments use GitHub, so you will need an account, and everything posted lives in this
+    site's own repository rather than on a third-party service. No tracking, no ads.
+  </p>
+  <div class="giscus"></div>
+</section>
+
+<script src="https://giscus.app/client.js"
+  data-repo="gatx105yk/duel-masters-english"
+  data-repo-id="R_kgDOT52V3Q"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOT52V3c4DDggt"
+  data-mapping="pathname"
+  data-strict="1"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="light"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async>
+</script>
+
+</main>
+
+<footer>
+  <div class="wrap narrow">
+    <p>
+      Translated and summarised from Japanese sources. Official posts are embedded as sources rather
+      than reproduced, so images stay on X's servers. No card artwork is copied to this site and no
+      card text is reproduced.
+    </p>
+    <p class="rights">
+      Duel Masters PLAY'S is operated by Takara Tomy and DeNA. Duel Masters is &copy; Wizards of the
+      Coast / Shogakukan / WHC and &copy; TOMY. This site is unofficial and is not affiliated with,
+      endorsed by, or approved by any of them. It earns no revenue.
+    </p>
+  </div>
+</footer>
+
+<script src="glossary.js" defer></script>
+</body>
+</html>
