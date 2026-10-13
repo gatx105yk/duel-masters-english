@@ -1,0 +1,69 @@
+# Start here
+
+English coverage of **Duel Masters PLAY'S**, translated from Japanese sources.
+Static HTML on GitHub Pages at duelmasters.editioncompass.com. One author.
+
+This file is the door. The detail lives in the files below — read the ones the
+task touches **before** starting, not after something goes wrong.
+
+| File | Read it when |
+|---|---|
+| `EDITORIAL.md` | writing anything. How each kind of article has to be written, and what cannot be claimed |
+| `ARTICLE-QUEUE.md` | deciding whether something is worth covering, and in what order |
+| `WATCH-TASK.md` | checking for news. Which sources, in which order, and what each one cannot tell you |
+| `DATA.md` | touching any number. Points at the two data files |
+| `TODO.md` | picking up work. The author's own list; it can lag behind what has actually shipped |
+
+## Publishing: there is no push access
+
+`git` clone and read work. `gh api` reads work. **Writes are refused at the proxy.**
+Everything is published through the GitHub web editor, driven by JavaScript against
+CodeMirror, and committed in two steps.
+
+Three things that have gone wrong doing this, all of them silently:
+
+- A commit made while the renderer is frozen can write an **empty file**.
+  **Always confirm the byte count with `git fetch` afterwards.** Never assume a commit landed.
+- Anchor strings that look unique often are not. Count occurrences before replacing.
+- Directory paths do not take reliably in the new-file form. Keep new files at the root.
+
+## Before anything is published
+
+Recompute every claim **from the table on the page**, not from the sentence you wrote.
+Superlatives are where the errors are: "first", "longest", "lowest" have to be checked
+against the whole series, not the window the article covers.
+
+Then reconcile the page against `data-nd-daily.json`. Anything that differs on purpose
+belongs in that file's `known_convention_differences`, so the next person does not
+"fix" it.
+
+**Check all four description slots agree**: `meta name=description`, `og:description`,
+`twitter:description`, and the JSON-LD `description`. Checking fewer has shipped stale
+text more than once.
+
+Fact-check again **after** publishing. On this site that pass keeps finding things.
+
+## Corrections are dated and say what was wrong
+
+The publisher edits its own notices in place with no archive, and this site has made a
+point of not doing that. When something here is wrong, add a dated note that says what
+it said before. Do not quietly edit.
+
+## Lines that do not move
+
+- Community reaction is reported as **what was said**. It never becomes fact.
+- **Never write from inference.** "Not stated" is not "does not exist". Two things announced
+  in one broadcast are not one thing.
+- Never reproduce another site's assembled work — tier tables, rankings, decklists,
+  aggregates. A few facts with attribution is fine. This applies to the data files too:
+  they are working notes, not something to publish as a table.
+- Card and deck names come from the community translation patch. Effects are translated here.
+- The survey publishes as images. Every figure was read off a chart by hand, so a day whose
+  slices do not sum to 100.0 was misread. That check does not catch two labels swapped.
+- **Do not touch `googleaf526fe342db2356.html`.** It is the Search Console ownership file.
+- canonical, `og:url` and the JSON-LD url all stay on `https://duelmasters.editioncompass.com/`.
+
+## Not done on the author's behalf
+
+Entering credentials, 2FA codes, payment or tax details; creating accounts; accepting terms;
+posting to communities as the author. Ask instead.
