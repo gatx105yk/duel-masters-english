@@ -91,7 +91,43 @@ One is enough. One inbound link is what moves 35 pages out of "discovered, not c
 This has to be the author. Claude does not post to communities on anyone's behalf, and
 Reddit is not reachable from its tools.
 
-### 2. Week three meta article — due 15 Oct
+### 2. Indexing requests — continue tomorrow
+
+Eleven URLs were put in Google's priority crawl queue on 13 October through URL
+inspection. The twelfth was refused: "1 日の割り当て量を超えたため、リクエストを処理できませんでした".
+**The daily limit is about eleven.**
+
+Submitted 13 Oct, confirmed queued:
+
+`(home page)` · `glossary.html` · `2026-08-20-before-you-start.html` ·
+`2026-08-31-mana-in-plays.html` · `2026-08-31-why-not-attack.html` ·
+`2026-09-14-plays-vs-paper.html` · `2026-08-16-magic-crossover.html` ·
+`2026-08-16-calendar.html` · `2026-09-08-how-the-data-works.html` ·
+`2026-09-16-piloting-heavens-gate.html` · `2026-10-13-dragerion-talk.html`
+
+Refused on quota, retry first: `2026-10-11-dragerion-lead.html`. Then
+`2026-10-10-week-two.html`, then work down the "discovered" list, evergreen pages
+before dated ones — every page that has ever earned an impression is a reference or
+beginner page, and no dated news article has earned one.
+
+**Two diagnostics came out of this, and both matter more than the requests.**
+
+The home page was **last crawled on 19 August 2026**. Crawl allowed: yes. Fetch:
+successful. Indexing allowed: yes. Nothing is technically blocking it. Google fetched
+it and declined. Its only 参照元ページ is `sitemap.xml` — no page anywhere, inside or
+outside the site, is recorded as linking to it.
+
+Live URL inspection disagrees with the index report. The report files 35 pages as
+"検出 - インデックス未登録", but inspecting them one by one returns
+"**URL が Google に認識されていません**" for most of them — not merely uncrawled but
+unknown. `magic-crossover` and `calendar` did come back as "検出", so it is not uniform.
+The report is a periodic snapshot and inspection is live, so inspection is the truer
+read, and it is worse than the report says.
+
+Requesting indexing does not fix any of this. It forces a crawl; whether Google lists
+the page is still Google's decision, and it has already crawled and declined seven.
+
+### 3. Week three meta article — due 15 Oct
 Covers 8–14 October. Eight through twelve are already read and in `data-nd-daily.json`;
 13 and 14 publish the following mornings. The ranked season ends 15 Oct 23:59, so the last
 days of the window may show a rush.
@@ -101,7 +137,7 @@ HADESドラゲリオン, 11 October was a tie between HADESドラゲリオン an
 12 October to コットンゼニス. Four different answers in five days, against one deck leading
 six of seven the week before — do not reuse last week's framing.
 
-### 3. Cloudflare Web Analytics
+### 4. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
 
