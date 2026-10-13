@@ -6,11 +6,15 @@ Updated 13 Oct 2026.
 
 ## The one number that matters
 
+Read from Search Console on 13 October 2026, three-month range, URL-prefix property
+`https://duelmasters.editioncompass.com/`.
+
 | | |
 |---|---|
 | Articles live | 43, all linked from the index |
-| Pages indexed by Google | **1** |
+| Pages indexed by Google | **1** — `rulings.html`, and nothing else |
 | Not indexed | 42 — 35 "discovered, not crawled", 7 "crawled, not indexed" |
+| Not yet in the report | 3 — the 10–13 October articles; sitemap last read 9 October |
 | Clicks, all time | **0** |
 | Impressions | 66 |
 | Average position | 14.4 |
@@ -19,6 +23,54 @@ Forty-three articles, fact-checked to the point of re-reading source charts at
 2000px, and Google has indexed one page. **This is not a sitemap problem and not a
 quality problem.** "Discovered, not crawled" on 35 pages means no other site links
 here, so Google will not spend crawl budget. Nothing written from here changes that.
+
+### The two findings that are worse than the headline
+
+**The home page is "crawled, not indexed".** Google fetches it and declines to list it.
+Every one of the 43 internal links is hung off a page that is not in the index, so the
+internal linking is doing nothing for discovery.
+
+**Three of the four pages that have ever earned an impression are now on the
+not-indexed side.** `2026-08-18-lionel-krone.html` holds average position 3.7, the best
+on the site, and is "crawled, not indexed".
+
+| Page with impressions | Impressions | Avg position | Index state |
+|---|---|---|---|
+| `rulings.html` | 33 | 15.2 | indexed |
+| `2026-09-14-deck-rules.html` | 20 | 21.7 | crawled, not indexed |
+| `2026-08-18-lionel-krone.html` | 15 | **3.7** | crawled, not indexed |
+| `2026-09-14-how-to-play.html` | 13 | 36.4 | crawled, not indexed |
+
+The index report is a snapshot of the current state and the performance report is three
+months of history, so the two are not on the same clock. Read plainly, though, this looks
+like coverage being **lost**, not merely never gained. Not proven — recheck before
+treating it as fact.
+
+Those four rows sum to 81 impressions against a reported total of 66. Google aggregates
+some rows, and the cause was not established. Do not quote the per-page figures as a total.
+
+### Crawled, not indexed — all 7
+
+`(home page)` · `2026-08-10-dmps-nd-meta.html` · `2026-08-10-hall-of-fame.html` ·
+`2026-08-18-lionel-krone.html` · `2026-09-08-the-three-decks.html` ·
+`2026-09-14-deck-rules.html` · `2026-09-14-how-to-play.html`
+
+### Discovered, not crawled — all 35
+
+August: `calendar` · `magic-crossover` · `plays-grand-prix` · `plays-now-running` ·
+`precious-idol-festival` · `heroes-set-summer` · `before-you-start` · `tournament-meta` ·
+`plays-crossover-pack` · `railgun-collab` · `collab-aftermath` · `mana-in-plays` ·
+`why-not-attack`
+
+September: `how-the-data-works` · `japanese-sources` · `kamiart-mtg` ·
+`watching-the-grand-prix` · `b-reishu-raid` · `grand-prix-result` · `all-division-decks` ·
+`izanto` · `meta-shift` · `plays-vs-paper` · `set37-first-cards` · `set37-reaction` ·
+`piloting-heavens-gate` · `set37-day-one` · `card-changes` · `first-numbers`
+
+October: `known-issues` · `nine-days` · `what-players-say` · `same-decks` ·
+`legend-battle-split`
+
+Also: `glossary.html`
 
 ---
 
@@ -33,7 +85,8 @@ thing blocking everything else.
 - **Duel Masters Discord**, ~3,770 members, has a `duema-news` channel
 - **Fandom wiki** — one external link would do it
 
-One is enough. One inbound link is what moves 35 pages out of "discovered, not crawled".
+One is enough. One inbound link is what moves 35 pages out of "discovered, not crawled"
+— and it points at the home page, which is the page Google currently declines to index.
 
 This has to be the author. Claude does not post to communities on anyone's behalf, and
 Reddit is not reachable from its tools.
