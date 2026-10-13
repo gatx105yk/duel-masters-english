@@ -25,7 +25,7 @@ here, so Google will not spend crawl budget. Nothing written from here changes t
 ## Next, in order
 
 ### 1. Tell someone the site exists
-Still not done. It has been the top item since 20 August, and it is now the only
+Still not done. It has been on this list since 20 August, and it is now the only
 thing blocking everything else.
 
 - **r/DuelMastersPlays** — ~13 posts a week, mostly install and rules questions. `how-to-play`
@@ -38,22 +38,17 @@ One is enough. One inbound link is what moves 35 pages out of "discovered, not c
 This has to be the author. Claude does not post to communities on anyone's behalf, and
 Reddit is not reachable from its tools.
 
-### 2. Grant write access to the repo
-Everything is currently published by driving the GitHub web editor with JavaScript,
-because `git push` returns 403. That has produced one empty-file commit and two
-renderer freezes. The fix is one of:
-
-- install the Claude GitHub App for this repo: https://github.com/apps/claude/installations/select_target
-- or reconnect GitHub: https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1
-
-Not urgent. It removes a class of accident and a lot of time.
-
-### 3. Week three meta article — due 15 Oct
+### 2. Week three meta article — due 15 Oct
 Covers 8–14 October. Eight through twelve are already read and in `data-nd-daily.json`;
 13 and 14 publish the following mornings. The ranked season ends 15 Oct 23:59, so the last
 days of the window may show a rush.
 
-### 4. Cloudflare Web Analytics
+The week does not have a single leader: 8 and 9 October went to 赤白レイド, 10 October to
+HADESドラゲリオン, 11 October was a tie between HADESドラゲリオン and バラギアラループ, and
+12 October to コットンゼニス. Four different answers in five days, against one deck leading
+six of seven the week before — do not reuse last week's framing.
+
+### 3. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
 
@@ -87,7 +82,7 @@ shipped stale text twice.
 **Check every official page, not one.** The Heroes Set article was rewritten *incorrectly*
 because a sale-day notice omits its own contents and points back to an advance notice.
 
-**Copy Japanese, never retype it.** 課 for 語 turned a card's name into a different word.
+**Copy Japanese, never retype it.** 課 for 誣 turned a card's name into a different word.
 
 **A hashtag is not membership.**
 

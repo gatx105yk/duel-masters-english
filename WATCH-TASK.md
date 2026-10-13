@@ -188,6 +188,6 @@ reader checks it and then finds out elsewhere that something happened last week.
 
 - Date and time of the post, and which account
 - Whether a news-index page exists or it is X only
-- Card names copied, never retyped — 課 and 誋 are different characters
+- Card names copied, never retyped — 課 and 誣 are different characters (「誣」の頂 ウェディング・イノセンス)
 - Engagement figures if the reaction is the story
 - The URL, for the sources list
