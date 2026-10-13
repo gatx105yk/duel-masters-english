@@ -14,18 +14,23 @@ task touches **before** starting, not after something goes wrong.
 | `DATA.md` | touching any number. Points at the two data files |
 | `TODO.md` | picking up work. The author's own list; it can lag behind what has actually shipped |
 
-## Publishing: there is no push access
+## Publishing
 
-`git` clone and read work. `gh api` reads work. **Writes are refused at the proxy.**
-Everything is published through the GitHub web editor, driven by JavaScript against
-CodeMirror, and committed in two steps.
+**Commit and push normally.** The Claude GitHub App was installed for this repository on
+13 October 2026, so `git push` works. Edit files on disk, commit, push.
 
-Three things that have gone wrong doing this, all of them silently:
+Before replacing text in a file, **count how many times the anchor string occurs.** Strings
+that look unique often are not, and a silent second match corrupts the file.
 
-- A commit made while the renderer is frozen can write an **empty file**.
-  **Always confirm the byte count with `git fetch` afterwards.** Never assume a commit landed.
-- Anchor strings that look unique often are not. Count occurrences before replacing.
-- Directory paths do not take reliably in the new-file form. Keep new files at the root.
+### If push ever returns 403 again
+
+The app installation has lapsed. Reinstall it at
+https://github.com/apps/claude/installations/select_target, or reconnect GitHub from
+claude.ai settings. Until then the fallback is driving the GitHub web editor with
+JavaScript against CodeMirror, committing in two steps — and that route has caused real
+damage twice: a commit made while the renderer was frozen wrote an **empty file**, and a
+frozen tab silently dropped two commits. On that route, never assume a commit landed;
+confirm the byte count with `git fetch` every time.
 
 ## Before anything is published
 
