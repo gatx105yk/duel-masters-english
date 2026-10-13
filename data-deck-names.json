@@ -1,0 +1,203 @@
+{
+ "dataset": "Deck and season names, and who uses which",
+ "why": "Every source names the same decks differently, and this site has twice published a wrong count of one deck’s names. This file is the running record so the next page does not have to guess. See DATA.md.",
+ "sources_key": {
+  "survey": "the daily encounter survey (BEANS)",
+  "column": "the publisher’s official column",
+  "site": "this site’s own deck pages",
+  "players": "player posts seen in keyword searches"
+ },
+ "decks": [
+  {
+   "id": "dragerion",
+   "site_name": "HADES Dragerion",
+   "key_card": "超神星HADES・ドラゲリオン",
+   "warning": "The ranked season running to 15 October is also named after this card, so a keyword search on the name returns posts about the season, not the deck.",
+   "names": [
+    {
+     "name": "HADESドラゲリオン",
+     "used_by": [
+      "survey",
+      "players"
+     ]
+    },
+    {
+     "name": "火水闇ドラゲリオン",
+     "used_by": [
+      "site",
+      "players"
+     ]
+    },
+    {
+     "name": "クローシスHADES",
+     "used_by": [
+      "site"
+     ]
+    },
+    {
+     "name": "火水闇ダピコ",
+     "used_by": [
+      "column"
+     ],
+     "note": "\"Dapico\", glossed by the column as D.A.P.I. — after an idol character, not the finisher."
+    },
+    {
+     "name": "クローシスダピコ",
+     "used_by": [
+      "players"
+     ],
+     "note": "Seen 27 September and 5, 6, 8, 9, 10 and 12 October. This site missed it while publishing two pages that counted the names."
+    },
+    {
+     "name": "クローシスダピコハデス",
+     "used_by": [
+      "players"
+     ],
+     "note": "One Minogami Cup opponent list, 12 October. Welds three of the others together."
+    }
+   ]
+  },
+  {
+   "id": "raid",
+   "site_name": "Raid",
+   "names": [
+    {
+     "name": "赤白レイド",
+     "used_by": [
+      "survey"
+     ]
+    },
+    {
+     "name": "火光レイド",
+     "used_by": [
+      "column"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "magic-tools",
+   "site_name": "Magic Tools",
+   "split_days": [
+    "2026-10-02",
+    "2026-10-06",
+    "2026-10-07",
+    "2026-10-09",
+    "2026-10-11",
+    "2026-10-12"
+   ],
+   "names": [
+    {
+     "name": "青魔導具",
+     "used_by": [
+      "survey"
+     ]
+    },
+    {
+     "name": "水魔導具",
+     "used_by": [
+      "column"
+     ]
+    },
+    {
+     "name": "青黒魔導具",
+     "used_by": [
+      "survey"
+     ],
+     "note": "A second entry the survey splits out on some days; same family, not a different deck."
+    }
+   ]
+  },
+  {
+   "id": "baraghiara",
+   "site_name": "Baraghiara",
+   "split_from": "2026-10-04",
+   "names": [
+    {
+     "name": "バラギアラループ",
+     "used_by": [
+      "survey"
+     ]
+    },
+    {
+     "name": "キャベッジバラギアラ",
+     "used_by": [
+      "survey"
+     ],
+     "note": "A second entry from 4 October. Reading the loop line alone makes that day look like a 6.3-point collapse; the family fell 2.1."
+    },
+    {
+     "name": "青緑バラギアラ",
+     "used_by": [
+      "players"
+     ]
+    },
+    {
+     "name": "4Cバラギアラ",
+     "used_by": [
+      "players"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "jokers",
+   "site_name": "Jokers",
+   "names": [
+    {
+     "name": "ジョラゴンジョーカーズ",
+     "used_by": [
+      "survey"
+     ],
+     "note": "The survey’s own name until 27 September."
+    },
+    {
+     "name": "ジョーカーズ",
+     "used_by": [
+      "survey"
+     ],
+     "note": "Renamed by the survey on 27 September; same line."
+    },
+    {
+     "name": "緑ジョーカーズ",
+     "used_by": [
+      "players"
+     ]
+    },
+    {
+     "name": "自然ジョーカーズ",
+     "used_by": [
+      "survey"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cotton-zenith",
+   "site_name": "Cotton Zenith",
+   "names": [
+    {
+     "name": "コットンゼニス",
+     "used_by": [
+      "survey"
+     ]
+    },
+    {
+     "name": "白黒コットン",
+     "used_by": [
+      "players"
+     ]
+    }
+   ]
+  }
+ ],
+ "seasons": [
+  {
+   "name_official": "HADES・ドラゲリオンカップ",
+   "name_players": "ハデスドラゲリオンCUP",
+   "ends": "2026-10-15T23:59+09:00",
+   "confirmed_by": "the publisher’s X account, 13 October 2026",
+   "note": "Not on the news index. Named after a card that is also a deck name, which contaminates keyword searches on that name."
+  }
+ ]
+}
