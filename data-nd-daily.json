@@ -1,0 +1,378 @@
+{
+ "dataset": "duelmasters.editioncompass.com — New Division daily encounter readings",
+ "what_this_is": "Readings this site took from the daily New Division encounter-survey charts, which are published as images. One row per survey day. See DATA.md for the schema.",
+ "source": {
+  "name": "BEANS",
+  "url": "https://beans-duelplays.com/",
+  "how": "Each day is published the following morning as a single pie-chart image. Values were read from the image; the game count is the survey’s own."
+ },
+ "reproduction_note": "This file is this site’s working record of its own readings, kept so that articles can be computed rather than re-read. It is not a republication of the source’s dataset: site pages quote only the few figures an article argues from, with attribution. Do not publish this file wholesale as a table.",
+ "conventions": {
+  "completeness": "\"full\" = every slice on that day’s chart is recorded. \"tracked\" = only the six columns this site tracked at the time, plus the leader.",
+  "leading_named_deck": "Largest named slice. The survey’s unnamed bucket (その他) is excluded. null when two entries tie.",
+  "families": "Entries are recorded exactly as the chart labels them. Baraghiara and Magic Tools are split across entries on some days; totals are the reader’s job, not this file’s.",
+  "percentages": "As printed on the chart. Every \"full\" day sums to 100.0."
+ },
+ "known_convention_differences": [
+  {
+   "page": "2026-10-04-nine-days.html",
+   "day": "2026-10-02",
+   "column": "Magic Tools",
+   "page_value": 8.9,
+   "dataset_value": 12.1,
+   "why": "That page’s Magic Tools column is the single headline entry; this file records both entries, so the family total is higher. The page says so in its own caveats, and the week-two page names the 8.9/12.1 difference explicitly. This is intentional. Do not \"correct\" either one against the other."
+  }
+ ],
+ "days": {
+  "2026-09-24": {
+   "games": 82,
+   "completeness": "tracked",
+   "leading_named_deck": "青魔導具",
+   "entries": {
+    "ジョーカーズ": 4.9,
+    "コットンゼニス": 4.9,
+    "赤白レイド": 24.4,
+    "青魔導具": 26.8,
+    "バラギアラループ": 3.7,
+    "その他": 8.5
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-09-25": {
+   "games": 308,
+   "completeness": "tracked",
+   "leading_named_deck": "青魔導具",
+   "entries": {
+    "ジョーカーズ": 4.2,
+    "コットンゼニス": 5.5,
+    "赤白レイド": 16.6,
+    "青魔導具": 20.5,
+    "バラギアラループ": 9.7,
+    "その他": 12.7
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-09-26": {
+   "games": 333,
+   "completeness": "tracked",
+   "leading_named_deck": "青魔導具",
+   "entries": {
+    "ジョーカーズ": 5.4,
+    "コットンゼニス": 7.2,
+    "赤白レイド": 16.5,
+    "青魔導具": 19.5,
+    "バラギアラループ": 15,
+    "その他": 15.1
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-09-27": {
+   "games": 386,
+   "completeness": "tracked",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "ジョーカーズ": 7.5,
+    "コットンゼニス": 9.3,
+    "赤白レイド": 15.8,
+    "青魔導具": 13.7,
+    "バラギアラループ": 10.4,
+    "その他": 16.4
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-09-28": {
+   "games": 216,
+   "completeness": "tracked",
+   "leading_named_deck": "コットンゼニス",
+   "entries": {
+    "ジョーカーズ": 11.1,
+    "コットンゼニス": 13.9,
+    "赤白レイド": 11.6,
+    "青魔導具": 13.4,
+    "バラギアラループ": 8.3,
+    "その他": 15.8
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-09-29": {
+   "games": 294,
+   "completeness": "tracked",
+   "leading_named_deck": "ジョーカーズ",
+   "entries": {
+    "ジョーカーズ": 13.3,
+    "コットンゼニス": 9.9,
+    "赤白レイド": 12.6,
+    "青魔導具": 9.2,
+    "バラギアラループ": 9.5,
+    "その他": 13.2
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-09-30": {
+   "games": 132,
+   "completeness": "tracked",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "ジョーカーズ": 9.8,
+    "コットンゼニス": 5.3,
+    "赤白レイド": 15.2,
+    "青魔導具": 7.6,
+    "バラギアラループ": 13.6,
+    "その他": 12.3
+   },
+   "read_on": "2026-10-13",
+   "note": "Six tracked columns only; every value and the leader checked against the source chart on 13 October."
+  },
+  "2026-10-01": {
+   "games": 164,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 22,
+    "その他": 17.7,
+    "ジョーカーズ": 14.6,
+    "青魔導具": 9.1,
+    "バラギアラループ": 9.1,
+    "ゼニス天門": 5.5,
+    "赤単バルガ": 5.5,
+    "HADESドラゲリオン": 4.9,
+    "コットンゼニス": 4.9,
+    "スコーラー": 2.4
+   },
+   "read_on": "2026-10-11",
+   "unread_label_share": 4.3,
+   "note": "One entry label could not be read from the 604px source image; its share is recorded but not its name."
+  },
+  "2026-10-02": {
+   "games": 124,
+   "completeness": "full",
+   "leading_named_deck": "ジョーカーズ",
+   "entries": {
+    "ジョーカーズ": 17.7,
+    "赤白レイド": 16.9,
+    "バラギアラループ": 15.3,
+    "赤単バルガ": 9.7,
+    "青魔導具": 8.9,
+    "コットンゼニス": 5.6,
+    "ゼニス天門": 5.6,
+    "その他": 4.3,
+    "赤黒轟轟轟": 4,
+    "青黒魔導具": 3.2,
+    "スコーラー": 3.2,
+    "HADESドラゲリオン": 2.4
+   },
+   "read_on": "2026-10-11",
+   "unread_label_share": 3.2,
+   "note": "One entry label could not be read from the 604px source image; its share is recorded but not its name."
+  },
+  "2026-10-03": {
+   "games": 325,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 21.5,
+    "バラギアラループ": 17.5,
+    "その他": 15.8,
+    "ジョーカーズ": 15.4,
+    "コットンゼニス": 9.5,
+    "青魔導具": 4.6,
+    "ゼニス天門": 4.3,
+    "HADESドラゲリオン": 4.3,
+    "赤単バルガ": 3.7,
+    "赤黒轟轟轟": 3.4
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-04": {
+   "games": 312,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 17.3,
+    "その他": 15.1,
+    "ジョーカーズ": 13.5,
+    "コットンゼニス": 11.2,
+    "バラギアラループ": 11.2,
+    "HADESドラゲリオン": 7.7,
+    "青魔導具": 6.7,
+    "赤単バルガ": 6.7,
+    "キャベッジバラギアラ": 4.2,
+    "ゼニス天門": 3.8,
+    "赤黒轟轟轟": 2.6
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-05": {
+   "games": 237,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 23.2,
+    "ジョーカーズ": 15.2,
+    "コットンゼニス": 13.1,
+    "バラギアラループ": 11.8,
+    "その他": 11,
+    "HADESドラゲリオン": 5.9,
+    "赤単バルガ": 4.2,
+    "ゼニス天門": 3.8,
+    "青魔導具": 3.8,
+    "赤黒轟轟轟": 3.4,
+    "キャベッジバラギアラ": 2.5,
+    "赤単轟轟轟(レイド無し)": 2.1
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-06": {
+   "games": 234,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 16.2,
+    "その他": 14.2,
+    "ジョーカーズ": 13.2,
+    "バラギアラループ": 12,
+    "青魔導具": 10.7,
+    "HADESドラゲリオン": 9.8,
+    "コットンゼニス": 7.7,
+    "赤黒轟轟轟": 4.3,
+    "ゼニス天門": 3.8,
+    "赤単バルガ": 3.4,
+    "青黒魔導具": 2.6,
+    "キャベッジバラギアラ": 2.1
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-07": {
+   "games": 272,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 17.3,
+    "ジョーカーズ": 14,
+    "その他": 13.7,
+    "バラギアラループ": 13.6,
+    "HADESドラゲリオン": 9.9,
+    "コットンゼニス": 8.1,
+    "ゼニス天門": 5.1,
+    "青魔導具": 4,
+    "赤単バルガ": 3.7,
+    "キャベッジバラギアラ": 3.3,
+    "赤黒轟轟轟": 2.9,
+    "墓地ソース": 2.2,
+    "青黒魔導具": 2.2
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-08": {
+   "games": 227,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 21.6,
+    "バラギアラループ": 14.1,
+    "ジョーカーズ": 13.7,
+    "その他": 12.7,
+    "HADESドラゲリオン": 9.3,
+    "青魔導具": 7.5,
+    "赤単バルガ": 7.5,
+    "コットンゼニス": 4.8,
+    "赤黒轟轟轟": 4.4,
+    "ドロマーハンデス": 2.2,
+    "ゼニス天門": 2.2
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-09": {
+   "games": 238,
+   "completeness": "full",
+   "leading_named_deck": "赤白レイド",
+   "entries": {
+    "赤白レイド": 14.7,
+    "HADESドラゲリオン": 11.3,
+    "青魔導具": 10.5,
+    "バラギアラループ": 10.5,
+    "ジョーカーズ": 10.1,
+    "コットンゼニス": 8.8,
+    "その他": 7.2,
+    "赤単バルガ": 6.3,
+    "ゼニス天門": 3.4,
+    "青黒魔導具": 3.4,
+    "スコーラー": 2.9,
+    "スノーフェアリー": 2.5,
+    "赤白轟轟轟(レイド無し)": 2.1,
+    "ドロマーハンデス": 2.1,
+    "キャベッジバラギアラ": 2.1
+   },
+   "read_on": "2026-10-11",
+   "unread_label_share": 2.1,
+   "note": "One entry label could not be read from the 604px source image; its share is recorded but not its name."
+  },
+  "2026-10-10": {
+   "games": 222,
+   "completeness": "full",
+   "leading_named_deck": "HADESドラゲリオン",
+   "entries": {
+    "HADESドラゲリオン": 18,
+    "赤白レイド": 14.4,
+    "その他": 14.1,
+    "ジョーカーズ": 11.3,
+    "バラギアラループ": 9.5,
+    "赤単バルガ": 8.6,
+    "青魔導具": 6.8,
+    "コットンゼニス": 5.9,
+    "ゼニス天門": 4.5,
+    "キャベッジバラギアラ": 2.3,
+    "赤黒轟轟轟": 2.3,
+    "ドロマーハンデス": 2.3
+   },
+   "read_on": "2026-10-11"
+  },
+  "2026-10-11": {
+   "games": 262,
+   "completeness": "full",
+   "leading_named_deck": null,
+   "entries": {
+    "その他": 18.6,
+    "HADESドラゲリオン": 12.6,
+    "バラギアラループ": 12.6,
+    "コットンゼニス": 11.8,
+    "赤白レイド": 10.7,
+    "ジョーカーズ": 10.3,
+    "青魔導具": 9.2,
+    "赤単バルガ": 7.3,
+    "ゼニス天門": 4.6,
+    "キャベッジバラギアラ": 2.3
+   },
+   "read_on": "2026-10-13",
+   "leader_tied_between": [
+    "HADESドラゲリオン",
+    "バラギアラループ"
+   ]
+  },
+  "2026-10-12": {
+   "games": 169,
+   "completeness": "full",
+   "leading_named_deck": "コットンゼニス",
+   "entries": {
+    "コットンゼニス": 15.4,
+    "その他": 14.7,
+    "HADESドラゲリオン": 13.6,
+    "赤白レイド": 13,
+    "ジョーカーズ": 9.5,
+    "バラギアラループ": 9.5,
+    "青魔導具": 7.1,
+    "ゼニス天門": 6.5,
+    "赤単バルガ": 4.7,
+    "赤単轟轟轟(レイド無し)": 3.6,
+    "青黒魔導具": 2.4
+   },
+   "read_on": "2026-10-13"
+  }
+ }
+}
