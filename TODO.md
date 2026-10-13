@@ -1,91 +1,99 @@
 # Where things stand
 
-Updated 20 Aug 2026.
+Updated 13 Oct 2026.
 
 ---
 
-## Done
+## The one number that matters
 
-**The site**
-- 9 articles live at `duelmasters.editioncompass.com`
-- Own subdomain, HTTPS, old URLs redirect with paths preserved
-- Custom 404, robots.txt, sitemap.xml (9 URLs)
-- Comments via Giscus on every article — discussions live in this repo, no tracking, no ads
-- canonical / OpenGraph / Twitter Card / JSON-LD on every page
-- Search Console verified, sitemap submitted and accepted
+| | |
+|---|---|
+| Articles live | 43, all linked from the index |
+| Pages indexed by Google | **1** |
+| Not indexed | 42 — 35 "discovered, not crawled", 7 "crawled, not indexed" |
+| Clicks, all time | **0** |
+| Impressions | 66 |
+| Average position | 14.4 |
 
-**Search**
-- 2 pages indexed so far
-- Front page crawled successfully 19 Aug
-- Remaining 7 waiting on natural crawl
-
-**Working practice**
-- `EDITORIAL.md` — announcement vs analysis, copy-never-retype, the two-pass fact check
-- `WATCH-TASK.md` — a collection routine that reports and never concludes
-- `ARTICLE-QUEUE.md` — what is worth writing, ranked by how safe it is to write
+Forty-three articles, fact-checked to the point of re-reading source charts at
+2000px, and Google has indexed one page. **This is not a sitemap problem and not a
+quality problem.** "Discovered, not crawled" on 35 pages means no other site links
+here, so Google will not spend crawl budget. Nothing written from here changes that.
 
 ---
 
 ## Next, in order
 
-### 1. Verify the Grand Prix payment terms
-A player reports being charged automatically on winning the lottery, having expected to pay manually.
-**This site currently says "lottery, then purchase".** If the official terms say otherwise, that is a
-correction — and correcting something already published outranks writing anything new.
+### 1. Tell someone the site exists
+Still not done. It has been the top item since 20 August, and it is now the only
+thing blocking everything else.
 
-### 2. Read the tier list
-Players are complaining the format has slowed down. Several independent posts, one saying it is
-putting them off attending the Grand Prix. The two decks named as the format's pillars are both
-control decks, so it is plausible — but **current placements have not been read**. Kamigame's tier
-page would not load.
-
-Without the numbers, this is opinion. With them, it is an article.
-
-### 3. Grand Prix results
-Lottery results landed 19–20 Aug. Winners are posting steadily. Straightforward Tier 1 material once
-item 1 is settled.
-
-### 4. Tell someone the site exists
-Nine articles, nobody notified.
+- **r/DuelMastersPlays** — ~13 posts a week, mostly install and rules questions. `how-to-play`
+  and `before-you-start` were written for exactly those people
 - **Duel Masters Discord**, ~3,770 members, has a `duema-news` channel
-- **@DMP_Eng** (MF_ZORO), 1,685 followers — makes the English patch. Different role, not a competitor
+- **Fandom wiki** — one external link would do it
 
-OpenGraph is in place, so a pasted link now renders with a title and description.
+One is enough. One inbound link is what moves 35 pages out of "discovered, not crawled".
 
-### 5. Decide on the mana theory article
-Written, fact-checked, held back, not linked. Publish or delete — unlinked in the repo is the worst
-of the three.
+This has to be the author. Claude does not post to communities on anyone's behalf, and
+Reddit is not reachable from its tools.
 
-### 6. Start the collection routine
-`WATCH-TASK.md` is written but not running.
+### 2. Grant write access to the repo
+Everything is currently published by driving the GitHub web editor with JavaScript,
+because `git push` returns 403. That has produced one empty-file commit and two
+renderer freezes. The fix is one of:
+
+- install the Claude GitHub App for this repo: https://github.com/apps/claude/installations/select_target
+- or reconnect GitHub: https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1
+
+Not urgent. It removes a class of accident and a lot of time.
+
+### 3. Week three meta article — due 15 Oct
+Covers 8–14 October. Eight through twelve are already read and in `data-nd-daily.json`;
+13 and 14 publish the following mornings. The ranked season ends 15 Oct 23:59, so the last
+days of the window may show a rush.
+
+### 4. Cloudflare Web Analytics
+Needs a token from the author. Worth doing **after** item 1, not before — there is
+currently nothing to measure.
 
 ---
 
-## Not yet written, worth writing
+## Worth writing, not written
 
 | Piece | Why | Lifespan |
 |---|---|---|
-| Glossary | Revolution Change, GR summon, super-dimension, S-Back. **No English explanation exists** | Years |
-| How to start playing | English patch install, ND vs AD, what to build first | Long |
-| PLAY'S balance-change history | Separate from the paper Hall of Fame. Nerfs shipped Jan, Feb, Mar, Apr, Jun | Long |
-| Battle Arena explained | Every card is rented. Free entry. Invisible from outside | Long |
+| Battle Arena explained | Every card is rented, entry is free, and it is invisible from outside Japan | Long |
 | The two English discontinuations | 2006 and 2014, and what happened between | Permanent |
-
-The glossary is the strongest of these. It does not go stale, nothing competes with it, and it is
-the thing a person watching Japanese videos actually needs.
+| PLAY'S balance-change history | Separate from the paper Hall of Fame, which is already written | Long |
 
 ---
 
 ## Standing rules
 
-**Two fact-check passes.** Every article has had errors in both. The second has never come back clean.
+**Fact-check before publishing and again after.** The old rule said two passes. On the
+13 October community article it took four, and **every one of them found something** — a
+misread season name, a head/body count mismatch, a mistranslation of `〜ぶり`, and a deck
+name in common use that this site had missed while publishing two pages that counted
+deck names. Do not skip a pass because the last one was clean.
 
-**Check every official page, not one.** The Heroes Set article was rewritten *incorrectly* because a
-sale-day notice omits its own contents and points back to an advance notice.
+**Recompute from the published table, not from the sentence.** Superlatives are where
+the errors are, and they have to be checked against the whole series rather than the
+window the article covers.
 
-**Copy Japanese, never retype it.** 課 for 誣 turned a card's name into a different word.
+**All four description slots.** `meta`, `og`, `twitter`, JSON-LD. Checking fewer has
+shipped stale text twice.
+
+**Check every official page, not one.** The Heroes Set article was rewritten *incorrectly*
+because a sale-day notice omits its own contents and points back to an advance notice.
+
+**Copy Japanese, never retype it.** 課 for 語 turned a card's name into a different word.
 
 **A hashtag is not membership.**
+
+**X announces, the news index documents — sometimes days later, sometimes never.** As of
+13 October the streamer event, the seventh collaboration and the ranked season name are all
+X-only. Say which it is.
 
 ---
 
@@ -93,10 +101,14 @@ sale-day notice omits its own contents and points back to an advance notice.
 
 | Date | What |
 |---|---|
-| 25 Aug | MV campaign ends |
-| **13 Sep** | **PLAY'S Grand Prix 2026** — Makuhari Messe, 3,500 players, ND |
-| 19 Sep | DM26-RP3 (paper) |
+| **15 Oct** | Ranked season `HADES・ドラゲリオンカップ` ends, 23:59 |
+| 16–17 Oct | Minogami Cup FINAL STAGE |
 | 17 Oct | DM26-EX4 Dueking FOREVER 2026 (paper) |
+| 21 Oct | Legend Battle ends, 23:59 |
+| 26–31 Oct | BATTLE ARENA 2026 AUTUMN, qualifier 1 |
+| 8 Nov | Qualifier 2 |
+| 21 Nov | Finals |
+| TBC | にじさんじ collaboration 7th, and the `電脳対戦 -WAR OF PLAY'S-` pack |
 | Nov–Dec | PLAY'S regular set, then the anniversary set — which resets what is ND legal |
 
-Quiet until mid-September.
+The anniversary set is the next thing that changes the format underneath every meta page.
