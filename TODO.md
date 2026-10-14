@@ -93,9 +93,17 @@ Reddit is not reachable from its tools.
 
 ### 2. Indexing requests — continue tomorrow
 
-Eleven URLs were put in Google's priority crawl queue on 13 October through URL
-inspection. The twelfth was refused: "1 日の割り当て量を超えたため、リクエストを処理できませんでした".
-**The daily limit is about eleven.**
+Thirteen URLs are in Google's priority crawl queue: eleven on 13 October, two more on
+14 October.
+
+**The quota is a rolling window, not a calendar day.** Eleven went through at about
+22:50 on the 13th. At 20:55 on the 14th — 22 hours later — only two more were accepted
+before the third was refused with "1 日の割り当て量を超えたため、リクエストを処理できませんでした".
+The message says to try tomorrow, but midnight is not what clears it. Budget about
+thirteen per 24 hours and run the batch no earlier than the previous one.
+
+Also: the confirmation marker takes 25–40 seconds to appear after the click. Reading it
+too early reports a success as unconfirmed.
 
 Submitted 13 Oct, confirmed queued:
 
@@ -105,10 +113,15 @@ Submitted 13 Oct, confirmed queued:
 `2026-08-16-calendar.html` · `2026-09-08-how-the-data-works.html` ·
 `2026-09-16-piloting-heavens-gate.html` · `2026-10-13-dragerion-talk.html`
 
-Refused on quota, retry first: `2026-10-11-dragerion-lead.html`. Then
-`2026-10-10-week-two.html`, then work down the "discovered" list, evergreen pages
-before dated ones — every page that has ever earned an impression is a reference or
-beginner page, and no dated news article has earned one.
+Submitted 14 Oct, confirmed queued: `2026-10-11-dragerion-lead.html` ·
+`2026-10-10-week-two.html`. Refused on quota, retry first:
+`2026-09-08-japanese-sources.html`.
+
+**Twenty-six of the thirty-five remain.** Work down them evergreen first — every page
+that has ever earned an impression is a reference or beginner page, and no dated news
+article has earned one. The seven "crawled, not indexed" are deliberately last:
+Google has already fetched and declined them, so a second request changes nothing it
+has not already judged.
 
 **Two diagnostics came out of this, and both matter more than the requests.**
 
