@@ -8,10 +8,11 @@
  },
  "reproduction_note": "This file is this site’s working record of its own readings, kept so that articles can be computed rather than re-read. It is not a republication of the source’s dataset: site pages quote only the few figures an article argues from, with attribution. Do not publish this file wholesale as a table.",
  "conventions": {
-  "completeness": "\"full\" = every slice on that day’s chart is recorded. \"tracked\" = only the six columns this site tracked at the time, plus the leader.",
+  "completeness": "\"full\" = every slice on that day’s chart is recorded. \"tracked\" = only the six columns this site tracked at the time, plus the leader. \"full_suspect\" = recorded as a full read but the slices do not sum to 100.0, so a slice was missed.",
   "leading_named_deck": "Largest named slice. The survey’s unnamed bucket (その他) is excluded. null when two entries tie.",
   "families": "Entries are recorded exactly as the chart labels them. Baraghiara and Magic Tools are split across entries on some days; totals are the reader’s job, not this file’s.",
-  "percentages": "As printed on the chart. Every \"full\" day sums to 100.0."
+  "percentages": "As printed on the chart. Every \"full\" day sums to 100.0.",
+  "unresolved_labels": "A slice whose chart label cannot be read at source resolution is recorded under a （判読不能） placeholder and listed in that day's label_unresolved. The percentage is real; the name is not known."
  },
  "known_convention_differences": [
   {
@@ -131,7 +132,7 @@
   },
   "2026-10-01": {
    "games": 164,
-   "completeness": "full",
+   "completeness": "full_suspect",
    "leading_named_deck": "赤白レイド",
    "entries": {
     "赤白レイド": 22,
@@ -147,11 +148,11 @@
    },
    "read_on": "2026-10-11",
    "unread_label_share": 4.3,
-   "note": "One entry label could not be read from the 604px source image; its share is recorded but not its name."
+   "note": "Marked full but the recorded slices sum to 95.7, so at least one slice was missed when this day was read. The figures present are as printed; the day is incomplete. Re-read from the source chart before relying on it. Feeds 2026-10-04-nine-days.html and 2026-10-10-week-two.html."
   },
   "2026-10-02": {
    "games": 124,
-   "completeness": "full",
+   "completeness": "full_suspect",
    "leading_named_deck": "ジョーカーズ",
    "entries": {
     "ジョーカーズ": 17.7,
@@ -169,7 +170,7 @@
    },
    "read_on": "2026-10-11",
    "unread_label_share": 3.2,
-   "note": "One entry label could not be read from the 604px source image; its share is recorded but not its name."
+   "note": "Marked full but the recorded slices sum to 96.8, so at least one slice was missed when this day was read. The figures present are as printed; the day is incomplete. Re-read from the source chart before relying on it. Feeds 2026-10-04-nine-days.html and 2026-10-10-week-two.html."
   },
   "2026-10-03": {
    "games": 325,
@@ -307,11 +308,15 @@
     "スノーフェアリー": 2.5,
     "赤白轟轟轟(レイド無し)": 2.1,
     "ドロマーハンデス": 2.1,
-    "キャベッジバラギアラ": 2.1
+    "キャベッジバラギアラ": 2.1,
+    "（判読不能）の紋章": 2.1
    },
-   "read_on": "2026-10-11",
+   "read_on": "2026-10-16",
    "unread_label_share": 2.1,
-   "note": "One entry label could not be read from the 604px source image; its share is recorded but not its name."
+   "note": "The chart carries sixteen slices. Fifteen were read; the sixteenth is a four-character label ending の紋章 that the 604px source image does not resolve. Its 2.1 is recorded so the day sums to 100.0. Do not guess the name, and do not use this entry in an article until the label is confirmed from a legible source.",
+   "label_unresolved": [
+    "（判読不能）の紋章"
+   ]
   },
   "2026-10-10": {
    "games": 222,

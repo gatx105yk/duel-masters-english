@@ -91,7 +91,23 @@ One is enough. One inbound link is what moves 35 pages out of "discovered, not c
 This has to be the author. Claude does not post to communities on anyone's behalf, and
 Reddit is not reachable from its tools.
 
-### 2. Indexing requests — continue tomorrow
+### 2. Re-read 1 and 2 October from the source charts
+
+Both are recorded as full reads but their slices sum to **95.7** and **96.8**, so a slice was
+missed on each. They are marked `full_suspect` in `data-nd-daily.json` with a note. They feed
+`2026-10-04-nine-days.html` and `2026-10-10-week-two.html`, so those pages may carry an
+incomplete day; neither claims the slices sum to 100, so nothing published is wrong yet.
+
+This was found on 16 October by running the sum check across all twenty-one days rather than
+only the week being written. **Run it across the whole series, not the window.** The same pass
+found 9 October short by one slice.
+
+9 October now carries a sixteenth entry at 2.1 whose label the 604px source image does not
+resolve &mdash; four characters ending `の紋章`. It is recorded under a `（判読不能）` placeholder
+and listed in that day's `label_unresolved`. Do not guess the name and do not put it in an
+article until a legible source confirms it.
+
+### 3. Indexing requests — continue tomorrow
 
 Thirteen URLs are in Google's priority crawl queue: eleven on 13 October, two more on
 14 October.
@@ -140,17 +156,18 @@ read, and it is worse than the report says.
 Requesting indexing does not fix any of this. It forces a crawl; whether Google lists
 the page is still Google's decision, and it has already crawled and declined seven.
 
-### 3. Week three meta article — due 15 Oct
-Covers 8–14 October. Eight through twelve are already read and in `data-nd-daily.json`;
-13 and 14 publish the following mornings. The ranked season ends 15 Oct 23:59, so the last
-days of the window may show a rush.
+### 4. Week four meta article — due 22 Oct
+Covers 15–21 October. Nothing in it is read yet; 15 October publishes on the morning of the 16th.
 
-The week does not have a single leader: 8 and 9 October went to 赤白レイド, 10 October to
-HADESドラゲリオン, 11 October was a tie between HADESドラゲリオン and バラギアラループ, and
-12 October to コットンゼニス. Four different answers in five days, against one deck leading
-six of seven the week before — do not reuse last week's framing.
+Two things make this week different from the three before it. The ranked season
+`HADES・ドラゲリオンカップ` closed at 23:59 on 15 October, so the window opens on a **ladder reset** —
+15 October is the last day of the old season and the 16th onward is the new one, and the survey does
+not separate them. Say which side of the reset a day falls on. Second, the にじさんじ collaboration
+is rolling out across the week on X, so card releases land mid-window.
 
-### 4. Cloudflare Web Analytics
+Week three went to four different leaders and week two to one, so do not assume either shape.
+
+### 5. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
 
@@ -173,6 +190,12 @@ currently nothing to measure.
 misread season name, a head/body count mismatch, a mistranslation of `〜ぶり`, and a deck
 name in common use that this site had missed while publishing two pages that counted
 deck names. Do not skip a pass because the last one was clean.
+
+**Run the sum check across the whole series, not the week being written.** Confining it to the
+current window hid two short days for a fortnight.
+
+**Compare description slots after decoding HTML entities.** `&#39;` in a meta attribute and `'`
+in JSON-LD are the same string; a checker that compares them raw reports false mismatches.
 
 **Recompute from the published table, not from the sentence.** Superlatives are where
 the errors are, and they have to be checked against the whole series rather than the
