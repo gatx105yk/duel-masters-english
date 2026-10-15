@@ -105,7 +105,8 @@ To resolve it, find the name in a text source rather than a chart — a deck gui
 tournament list, or a post that names it. Until then do not guess it and do not put it
 in an article. It is not a column on any published page, so nothing is blocked.
 
-**All twenty-one days now sum to 100.0.** The 1 and 2 October re-read is done; every
+**All fourteen full-read days (1–14 October) now sum to 100.0.** The seven September days are
+partial six-column reads and the check does not apply to them. The 1 and 2 October re-read is done; every
 published cell on the nine-day page (54) and the week two page (49) was re-checked
 against the corrected data with no differences.
 
@@ -192,6 +193,11 @@ currently nothing to measure.
 misread season name, a head/body count mismatch, a mistranslation of `〜ぶり`, and a deck
 name in common use that this site had missed while publishing two pages that counted
 deck names. Do not skip a pass because the last one was clean.
+
+**"All N days" claims: count them.** Twice in two days a sum-check statement was published with
+the wrong N — "all twenty-one days sum to 100.0" when only the fourteen full-read days do, the
+seven tracked days being partial by design. Write the number the checker printed, not the number
+of rows in the file.
 
 **Run the sum check across the whole series, not the week being written.** Confining it to the
 current window hid two short days for a fortnight.
