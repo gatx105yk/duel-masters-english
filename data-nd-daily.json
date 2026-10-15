@@ -132,7 +132,7 @@
   },
   "2026-10-01": {
    "games": 164,
-   "completeness": "full_suspect",
+   "completeness": "full",
    "leading_named_deck": "赤白レイド",
    "entries": {
     "赤白レイド": 22,
@@ -144,15 +144,19 @@
     "赤単バルガ": 5.5,
     "HADESドラゲリオン": 4.9,
     "コットンゼニス": 4.9,
+    "（判読不能）の紋章": 4.3,
     "スコーラー": 2.4
    },
-   "read_on": "2026-10-11",
+   "read_on": "2026-10-16",
    "unread_label_share": 4.3,
-   "note": "Marked full but the recorded slices sum to 95.7, so at least one slice was missed when this day was read. The figures present are as printed; the day is incomplete. Re-read from the source chart before relying on it. Feeds 2026-10-04-nine-days.html and 2026-10-10-week-two.html."
+   "note": "Re-read from the source chart on 16 October. The missed slice is the same four-character label ending の紋章 found on 9 October; the 604px source does not resolve its first character, so the figure is recorded and the name is not guessed. It is not one of the columns published on 2026-10-04-nine-days.html or 2026-10-10-week-two.html, so no cell on either page is affected.",
+   "label_unresolved": [
+    "（判読不能）の紋章"
+   ]
   },
   "2026-10-02": {
    "games": 124,
-   "completeness": "full_suspect",
+   "completeness": "full",
    "leading_named_deck": "ジョーカーズ",
    "entries": {
     "ジョーカーズ": 17.7,
@@ -166,11 +170,15 @@
     "赤黒轟轟轟": 4,
     "青黒魔導具": 3.2,
     "スコーラー": 3.2,
+    "（判読不能）の紋章": 3.2,
     "HADESドラゲリオン": 2.4
    },
-   "read_on": "2026-10-11",
+   "read_on": "2026-10-16",
    "unread_label_share": 3.2,
-   "note": "Marked full but the recorded slices sum to 96.8, so at least one slice was missed when this day was read. The figures present are as printed; the day is incomplete. Re-read from the source chart before relying on it. Feeds 2026-10-04-nine-days.html and 2026-10-10-week-two.html."
+   "note": "Re-read from the source chart on 16 October. The missed slice is the same four-character label ending の紋章 found on 9 October; the 604px source does not resolve its first character, so the figure is recorded and the name is not guessed. It is not one of the columns published on 2026-10-04-nine-days.html or 2026-10-10-week-two.html, so no cell on either page is affected.",
+   "label_unresolved": [
+    "（判読不能）の紋章"
+   ]
   },
   "2026-10-03": {
    "games": 325,

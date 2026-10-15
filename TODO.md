@@ -91,21 +91,23 @@ One is enough. One inbound link is what moves 35 pages out of "discovered, not c
 This has to be the author. Claude does not post to communities on anyone's behalf, and
 Reddit is not reachable from its tools.
 
-### 2. Re-read 1 and 2 October from the source charts
+### 2. The の紋章 deck has no name yet
 
-Both are recorded as full reads but their slices sum to **95.7** and **96.8**, so a slice was
-missed on each. They are marked `full_suspect` in `data-nd-daily.json` with a note. They feed
-`2026-10-04-nine-days.html` and `2026-10-10-week-two.html`, so those pages may carry an
-incomplete day; neither claims the slices sum to 100, so nothing published is wrong yet.
+A deck appears on the ND survey that this site cannot name. Its chart label is four
+characters ending `の紋章`, and the 604px source image renders it about ten pixels tall,
+so the first character does not resolve at any magnification. Confirmed unreadable at
+native 1:1 on 16 October.
 
-This was found on 16 October by running the sum check across all twenty-one days rather than
-only the week being written. **Run it across the whole series, not the window.** The same pass
-found 9 October short by one slice.
+It is recorded as `（判読不能）の紋章` on **1 October (4.3), 2 October (3.2) and
+9 October (2.1)**, and listed in each day's `label_unresolved`.
 
-9 October now carries a sixteenth entry at 2.1 whose label the 604px source image does not
-resolve &mdash; four characters ending `の紋章`. It is recorded under a `（判読不能）` placeholder
-and listed in that day's `label_unresolved`. Do not guess the name and do not put it in an
-article until a legible source confirms it.
+To resolve it, find the name in a text source rather than a chart — a deck guide, a
+tournament list, or a post that names it. Until then do not guess it and do not put it
+in an article. It is not a column on any published page, so nothing is blocked.
+
+**All twenty-one days now sum to 100.0.** The 1 and 2 October re-read is done; every
+published cell on the nine-day page (54) and the week two page (49) was re-checked
+against the corrected data with no differences.
 
 ### 3. Indexing requests — continue tomorrow
 
