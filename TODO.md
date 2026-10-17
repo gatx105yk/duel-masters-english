@@ -160,15 +160,25 @@ Requesting indexing does not fix any of this. It forces a crawl; whether Google 
 the page is still Google's decision, and it has already crawled and declined seven.
 
 ### 4. Week four meta article — due 22 Oct
-Covers 15–21 October. Nothing in it is read yet; 15 October publishes on the morning of the 16th.
+Covers 15–21 October. **15 and 16 October are read and in `data-nd-daily.json`.**
 
-Two things make this week different from the three before it. The ranked season
-`HADES・ドラゲリオンカップ` closed at 23:59 on 15 October, so the window opens on a **ladder reset** —
-15 October is the last day of the old season and the 16th onward is the new one, and the survey does
-not separate them. Say which side of the reset a day falls on. Second, the にじさんじ collaboration
-is rolling out across the week on X, so card releases land mid-window.
+The window straddles a ladder reset, and the first two days show how hard:
 
-Week three went to four different leaders and week two to one, so do not assume either shape.
+| | 15 Oct | 16 Oct |
+|---|---|---|
+| Games | **440** — largest day of the series | **130** — third smallest full day |
+| Leader | ジョーカーズ 13.9 | 赤白レイド 18.5 |
+| HADESドラゲリオン | 13.2 | 7.7 |
+| コットンゼニス | 9.5 | 16.2 |
+
+15 October was the last day of `HADES・ドラゲリオンカップ`; `オラマッハ・ザ・ジョニーカップ`
+opened at 00:00 on the 16th. A 3.4x drop in sample size across one night makes day-to-day
+comparison across the boundary close to meaningless — **say which side of the reset each day
+falls on, and do not read the 16th as a trend.**
+
+The new season is on the news index (news/16308), unlike the last one. It is named after a
+card again, and that card is a collaboration PR from the same week, so keyword searches on
+the name will be contaminated the way they were in October.
 
 ### 5. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
