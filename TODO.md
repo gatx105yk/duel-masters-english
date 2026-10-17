@@ -173,9 +173,13 @@ Covers 15–21 October. **15, 16 and 17 October are read and in `data-nd-daily.j
 opened at 00:00 on the 16th. Sample size fell from 440 to 130 across that night, so **say which
 side of the reset each day falls on** and do not compare across it as if it were one series.
 
-赤白レイド's 24.1 on the 17th is **the second-highest reading any deck has posted in this
-format**, behind its own 24.4 on 24 September, the day the format opened. Check that against
-the whole series before writing it, not against this week.
+赤白レイド's 24.1 on the 17th is **its own second-highest reading**, behind the 24.4 it posted
+on 24 September, the day the format opened. Across all decks it is the **third** highest:
+青魔導具 read 26.8 on that same opening day.
+
+That distinction is not pedantry — "second-highest reading in the format" was written here first
+and was wrong, and only the whole-series check caught it. **Rank a figure against every deck and
+every day, and say which of the two you mean.**
 
 The collaboration opens on 22 October, the day this piece is due, and the week's last two days
 sit right before it.
