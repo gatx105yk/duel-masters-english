@@ -233,24 +233,31 @@ because a sale-day notice omits its own contents and points back to an advance n
 
 **A hashtag is not membership.**
 
-**X announces, the news index documents — sometimes days later, sometimes never.** As of
-13 October the streamer event, the seventh collaboration and the ranked season name are all
-X-only. Say which it is.
+**X announces, the news index documents — sometimes days later, sometimes never.** Say which
+it is, and **measure the lag rather than assuming it**. The Railgun collaboration was revealed
+on 23 August and had its first notice on 25 August, two days later, ending with four notices
+including an overview that gave the deck builder contents. The seventh にじさんじ collaboration
+was revealed on 12 October and **had nothing on the news index six days later**, four days
+before it opens — already well past the precedent, not tracking it. The ranked season that
+started 16 October did get a page; the one before it never did.
+
+Watch the index daily to 22 October: a collaboration notice is where the two unread product
+codes would appear as text instead of on a 680-pixel box.
 
 ---
 
 ## Calendar
 
-| Date | What |
-|---|---|
-| **15 Oct** | Ranked season `HADES・ドラゲリオンカップ` ends, 23:59 |
-| 16–17 Oct | Minogami Cup FINAL STAGE |
-| 17 Oct | DM26-EX4 Dueking FOREVER 2026 (paper) |
-| 21 Oct | Legend Battle ends, 23:59 |
-| 26–31 Oct | BATTLE ARENA 2026 AUTUMN, qualifier 1 |
-| 8 Nov | Qualifier 2 |
-| 21 Nov | Finals |
-| TBC | にじさんじ collaboration 7th, and the `電脳対戦 -WAR OF PLAY'S-` pack |
-| Nov–Dec | PLAY'S regular set, then the anniversary set — which resets what is ND legal |
+**Do not keep a second copy here.** This section used to duplicate
+`2026-08-16-calendar.html` and went stale: on 18 October it still showed the
+にじさんじ collaboration and the `電脳対戦` pack as one `TBC` row, three days after
+both were dated and separated on the real calendar, and it was missing the new
+ranked season, DM26-EX5 and DM26-BD1 entirely.
 
-The anniversary set is the next thing that changes the format underneath every meta page.
+`2026-08-16-calendar.html` is the calendar — 29 entries, no TBC rows. Read it
+there.
+
+The two dates worth carrying in your head: **22 October**, when the collaboration
+opens, and the **November regular set plus the 7th anniversary set**, which is the
+next thing that changes what is legal in New Division underneath every meta page.
+Neither anniversary-set date is announced.
