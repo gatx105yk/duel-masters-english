@@ -160,29 +160,34 @@ Requesting indexing does not fix any of this. It forces a crawl; whether Google 
 the page is still Google's decision, and it has already crawled and declined seven.
 
 ### 4. Week four meta article — due 22 Oct
-Covers 15–21 October. **15, 16 and 17 October are read and in `data-nd-daily.json`.**
+Covers 15–21 October. **15 to 18 October are read and in `data-nd-daily.json`.**
 
-| | 15 Oct | 16 Oct | 17 Oct |
-|---|---|---|---|
-| Games | **440** — largest of the series | 130 | 166 |
-| Leader | ジョーカーズ 13.9 | 赤白レイド 18.5 | 赤白レイド **24.1** |
-| HADESドラゲリオン | 13.2 | 7.7 | 10.2 |
-| コットンゼニス | 9.5 | 16.2 | 10.8 |
+| | 15 Oct | 16 Oct | 17 Oct | 18 Oct |
+|---|---|---|---|---|
+| Games | **440** | 130 | 166 | 147 |
+| Leader | ジョーカーズ 13.9 | 赤白レイド 18.5 | 赤白レイド 24.1 | ジョーカーズ **26.5** |
+| HADESドラゲリオン | 13.2 | 7.7 | 10.2 | 8.2 |
+| コットンゼニス | 9.5 | 16.2 | 10.8 | 8.8 |
+| 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** |
 
-15 October was the last day of `HADES・ドラゲリオンカップ`; `オラマッハ・ザ・ジョニーカップ`
-opened at 00:00 on the 16th. Sample size fell from 440 to 130 across that night, so **say which
-side of the reset each day falls on** and do not compare across it as if it were one series.
+The window straddles a ladder reset: 15 October closed `HADES・ドラゲリオンカップ`,
+`オラマッハ・ザ・ジョニーカップ` opened at 00:00 on the 16th, and the sample fell 440 to 130
+across that night. **Say which side each day falls on.**
 
-赤白レイド's 24.1 on the 17th is **its own second-highest reading**, behind the 24.4 it posted
-on 24 September, the day the format opened. Across all decks it is the **third** highest:
-青魔導具 read 26.8 on that same opening day.
+Two things to write up, both checked against the whole series and both rankings:
 
-That distinction is not pedantry — "second-highest reading in the format" was written here first
-and was wrong, and only the whole-series check caught it. **Rank a figure against every deck and
-every day, and say which of the two you mean.**
+**ジョーカーズ's 26.5 on the 18th is its own highest reading of the format**, by a long way
+— its previous best was 17.7 on 2 October. Across every deck and every day it is the
+**second** highest, behind 青魔導具's 26.8 on 24 September. Say which ranking you mean.
 
-The collaboration opens on 22 October, the day this piece is due, and the week's last two days
-sit right before it.
+**青魔導具 is off the chart entirely on the 18th**, for the first time in the format: present
+on 24 of 25 days, absent on that one. Absence from the chart is not absence from the format
+— it means the deck fell below the survey's cutoff and sits inside the unnamed bucket. Note
+that the same deck holds the format's single highest reading, set on the opening day.
+
+Remember the sample is 147 games, so a 2.7 is four of them. Do not read one day as a trend.
+
+The collaboration opens 22 October, the day this piece is due.
 
 ### 5. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
