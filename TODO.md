@@ -160,34 +160,32 @@ Requesting indexing does not fix any of this. It forces a crawl; whether Google 
 the page is still Google's decision, and it has already crawled and declined seven.
 
 ### 4. Week four meta article — due 22 Oct
-Covers 15–21 October. **15 to 18 October are read and in `data-nd-daily.json`.**
+Covers 15–21 October. **15 to 19 October are read.** 20 and 21 publish on the mornings of
+the 21st and 22nd, so the piece can only be finished on the 22nd itself — which is also the
+day the collaboration opens.
 
-| | 15 Oct | 16 Oct | 17 Oct | 18 Oct |
-|---|---|---|---|---|
-| Games | **440** | 130 | 166 | 147 |
-| Leader | ジョーカーズ 13.9 | 赤白レイド 18.5 | 赤白レイド 24.1 | ジョーカーズ **26.5** |
-| HADESドラゲリオン | 13.2 | 7.7 | 10.2 | 8.2 |
-| コットンゼニス | 9.5 | 16.2 | 10.8 | 8.8 |
-| 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** |
+| | 15 Oct | 16 Oct | 17 Oct | 18 Oct | 19 Oct |
+|---|---|---|---|---|---|
+| Games | **440** | 130 | 166 | 147 | **84** |
+| Leader | ジョーカーズ 13.9 | 赤白レイド 18.5 | 赤白レイド 24.1 | ジョーカーズ 26.5 | バラギアラループ 15.5 |
+| ジョーカーズ | 13.9 | 10.8 | 11.4 | **26.5** | 14.3 |
+| 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** | 7.1 |
 
-The window straddles a ladder reset: 15 October closed `HADES・ドラゲリオンカップ`,
-`オラマッハ・ザ・ジョニーカップ` opened at 00:00 on the 16th, and the sample fell 440 to 130
-across that night. **Say which side each day falls on.**
+**The 18 October spike did not hold, and neither did the disappearance.** ジョーカーズ went
+11.4, 26.5, 14.3; 青魔導具 went 8.4, off the chart, 7.1. Write the 18th as one day that
+did not repeat, not as a move. This is the reason the standalone article was not written.
 
-Two things to write up, both checked against the whole series and both rankings:
+**84 games on the 19th is the smallest full read of the format**, and the second smallest of
+any day behind the 82 of the opening day, which was a partial read. At 84 games a 2.4 is two
+games. Five of the fifteen entries that day sit at 2.4 to 3.6, so the tail of that chart is
+two or three games per slice and carries almost no information.
 
-**ジョーカーズ's 26.5 on the 18th is its own highest reading of the format**, by a long way
-— its previous best was 17.7 on 2 October. Across every deck and every day it is the
-**second** highest, behind 青魔導具's 26.8 on 24 September. Say which ranking you mean.
+Four different leaders in five days, and the week straddles the ladder reset: 15 October
+closed `HADES・ドラゲリオンカップ`, `オラマッハ・ザ・ジョニーカップ` opened at 00:00 on the
+16th, and the sample fell 440 to 130 across that night. **Say which side each day falls on.**
 
-**青魔導具 is off the chart entirely on the 18th**, for the first time in the format: present
-on 24 of 25 days, absent on that one. Absence from the chart is not absence from the format
-— it means the deck fell below the survey's cutoff and sits inside the unnamed bucket. Note
-that the same deck holds the format's single highest reading, set on the opening day.
-
-Remember the sample is 147 games, so a 2.7 is four of them. Do not read one day as a trend.
-
-The collaboration opens 22 October, the day this piece is due.
+`トリガー耐久QQQX` appears on the 19th at 2.4 and is a name this site has never recorded.
+That is two games. Do not introduce a deck to English readers on two games.
 
 ### 5. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
