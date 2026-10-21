@@ -528,6 +528,26 @@
     "トリガー耐久QQQX": 2.4
    },
    "read_on": "2026-10-20"
+  },
+  "2026-10-20": {
+   "games": 110,
+   "completeness": "full",
+   "leading_named_deck": "ジョーカーズ",
+   "entries": {
+    "ジョーカーズ": 22.7,
+    "赤白レイド": 18.2,
+    "その他": 15.6,
+    "バラギアラループ": 10.0,
+    "青魔導具": 9.1,
+    "HADESドラゲリオン": 7.3,
+    "赤白轟轟轟(レイド無し)": 3.6,
+    "コットンゼニス": 3.6,
+    "ゼニス天門": 3.6,
+    "赤単バルガ": 3.6,
+    "青黒魔導具": 2.7
+   },
+   "read_on": "2026-10-21",
+   "note": "The 赤白轟轟轟(レイド無し) label did not resolve at the 604px source; the first two characters are legible and the name is matched to the entry already recorded on 18 and 19 October. Chart published the morning of 21 October, the day before the 22 October maintenance that changes 《“B-零朱”レイド》."
   }
  }
 }
