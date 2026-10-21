@@ -53,6 +53,20 @@ looked. `EDITORIAL.md` has the case that made this a rule.
 
 Fact-check again **after** publishing. On this site that pass keeps finding things.
 
+### Verify a deploy from a fresh fetch, never from the rendered page
+
+The browser is not a witness. It has bitten twice:
+
+- **It auto-translates.** The page renders in Japanese, so the words on screen are Google's, not
+  the file's. A card name once looked corrupted on screen and was correct in the source.
+- **It renders from cache.** On 21 October a corrected caption showed its pre-correction wording
+  in the tab while the live file already had the fix — one more step and that would have been
+  reported as a regression that never happened.
+
+So confirm a deploy with `fetch(url, {cache:'reload'})` and a cache-busting parameter, and read
+the **source string**. Use the rendered page only for what the source cannot show: layout, whether
+a block renders at all, whether an image loads.
+
 ## Corrections are dated and say what was wrong
 
 The publisher edits its own notices in place with no archive, and this site has made a
