@@ -185,9 +185,20 @@ any day behind the 82 of the opening day, which was a partial read. At 84 games 
 games. Five of the fifteen entries that day sit at 2.4 to 3.6, so the tail of that chart is
 two or three games per slice and carries almost no information.
 
-Four different leaders in five days, and the week straddles the ladder reset: 15 October
-closed `HADES・ドラゲリオンカップ`, `オラマッハ・ザ・ジョニーカップ` opened at 00:00 on the
-16th, and the sample fell 440 to 130 across that night. **Say which side each day falls on.**
+**Three different leaders in six days** — ジョーカーズ, 赤白レイド, ジョーカーズ again,
+バラギアラループ, ジョーカーズ, with 赤白レイド taking the 16th and 17th. This list said
+"four different leaders in five days" until 21 October; that was wrong, and came from counting
+changes of hands rather than names.
+
+The week straddles the ladder reset: 15 October closed `HADES・ドラゲリオンカップ`,
+`オラマッハ・ザ・ジョニーカップ` opened at 00:00 on the 16th, and the sample fell 440 to 130
+across that night. **Say which side each day falls on.**
+
+**The piece is drafted.** `DRAFT-week-four.md` holds the locked findings, the day-by-day table,
+the supersession note that `2026-10-15-week-three.html` needs, and the publish-day checklist.
+It is not linked from the index and is not an article. Six of the seven days are in it; the
+21 October chart publishes on the morning of the 22nd and **every superlative in it has to be
+recomputed against that day before it goes out.**
 
 `トリガー耐久QQQX` appears on the 19th at 2.4 and is a name this site has never recorded.
 That is two games. Do not introduce a deck to English readers on two games.
