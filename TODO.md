@@ -172,7 +172,7 @@ day the collaboration opens.
 | 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** | 7.1 |
 
 **The 22 October maintenance changes 《“B-零朱”レイド》, the card 赤白レイド is named after.** The
-week being written is the last full week before that change, and 赤白レイド led two of its five
+week being written is the last full week before that change, and 赤白レイド led two of its six read
 days. Say that the week is pre-change; do not write any sentence that implies the deck's position
 is stable going forward.
 

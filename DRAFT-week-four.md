@@ -101,8 +101,10 @@ week three used for Dragerion.
 ### What ends with this week
 
 The 22 October maintenance changes 《“B-零朱”レイド》. **Week four is the last full week played
-under the old card**, and 赤白レイド led two of its days and posted the format's second-highest
-single reading in it. Say that the week is the last pre-change week. Do not forecast.
+under the old card**, and 赤白レイド led two of its six read days — ジョーカーズ led three — and
+posted **the second-highest reading of any full day** in it, 24.1. Across the whole series,
+including the partial September reads, that 24.1 is fourth, behind 26.8, 26.5 and 24.4.
+**Say which of the two you mean.** Say that the week is the last pre-change week. Do not forecast.
 
 Cross-link to `2026-10-21-card-changes-october.html`. The first clean day under the new text is
 23 October, published on the morning of the 24th — the 22nd is split by the 10:00–15:00
