@@ -171,7 +171,7 @@ day the collaboration opens.
 | ジョーカーズ | 13.9 | 10.8 | 11.4 | **26.5** | 14.3 |
 | 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** | 7.1 |
 
-**The 22 October maintenance changes 《“B-零朱”レイド》, which is the 赤白レイド finisher.** The
+**The 22 October maintenance changes 《“B-零朱”レイド》, the card 赤白レイド is named after.** The
 week being written is the last full week before that change, and 赤白レイド led two of its five
 days. Say that the week is pre-change; do not write any sentence that implies the deck's position
 is stable going forward.
