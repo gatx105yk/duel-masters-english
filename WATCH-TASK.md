@@ -70,6 +70,40 @@ but not the consent one. Described in articles where relevant, never quoted.
 **Stop when nothing is new.** The official accounts post one or two things a day. Checking again
 twenty minutes later returns the same answer.
 
+### The notice slot is 17:00 JST
+
+Every October notice checked carries a timestamp of **5:00 PM**: the four of 20 October
+(16416, 16418, 16420, 16454) and the three of 19 October (16410, 16412, 16414). X carries the same
+announcements at the same minute — the two card-change posts are 08:00 and 08:01 UTC, which is
+17:00 and 17:01 JST.
+
+**A check made before 17:00 is a check on yesterday.** Ask the day's question after 17:00. If
+something is being published, check again after 17:00 however recent the earlier look was — a check
+at 16:56 missed four notices by four minutes and put a false claim on the site.
+
+### X timestamps are UTC
+
+The `datetime` attribute on a post is UTC; add nine hours. `2026-10-20T12:30` went up at 21:30 JST.
+Getting this wrong moves a post across a day boundary.
+
+### The publisher corrects its own images — look for 訂正
+
+Two in one day on 20 October:
+
+- The deck-builder notice opens with an apology for the 「配信者王決定戦」 broadcast of 12 October:
+  the box front shown for DMPC-18 was wrong. The notice carries the corrected art.
+- An X post at 21:30 JST corrected the hat on 鈴原るる's skin in an earlier image.
+
+**Search the account for 【訂正】 before trusting anything read off an image.**
+
+### A product code is a text fact — wait for the text
+
+DMPC-18 was read off box art as 鈴原るる and published in two files. The deck-builder notice gives
+DMPC-18 as 栞葉るり and 鈴原るる as DMPC-16. Two other codes were recorded as illegible when they
+were simply not yet published as text; all five arrived at once in the product notice.
+
+Mark an image-read code **provisional**, and go back to it when the product notice lands.
+
 ---
 
 ## X announces, the product page documents

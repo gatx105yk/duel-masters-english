@@ -1,6 +1,6 @@
 # Where things stand
 
-Updated 13 Oct 2026.
+Updated 21 Oct 2026.
 
 ---
 
@@ -171,6 +171,11 @@ day the collaboration opens.
 | ジョーカーズ | 13.9 | 10.8 | 11.4 | **26.5** | 14.3 |
 | 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** | 7.1 |
 
+**The 22 October maintenance changes 《“B-零朱”レイド》, which is the 赤白レイド finisher.** The
+week being written is the last full week before that change, and 赤白レイド led two of its five
+days. Say that the week is pre-change; do not write any sentence that implies the deck's position
+is stable going forward.
+
 **The 18 October spike did not hold, and neither did the disappearance.** ジョーカーズ went
 11.4, 26.5, 14.3; 青魔導具 went 8.4, off the chart, 7.1. Write the 18th as one day that
 did not repeat, not as a move. This is the reason the standalone article was not written.
@@ -187,7 +192,22 @@ closed `HADES・ドラゲリオンカップ`, `オラマッハ・ザ・ジョニ
 `トリガー耐久QQQX` appears on the 19th at 2.4 and is a name this site has never recorded.
 That is two games. Do not introduce a deck to English readers on two games.
 
-### 5. Cloudflare Web Analytics
+### 5. The balance change is a story, and it is not written
+
+Announced 20 October 17:00 (news/16420), effective at the 22 October maintenance.
+《“B-零朱”レイド》 loses unconditional Speed Attacker and its G・G・G protection narrows to itself;
+《火夜のフラム・アルテ》 trades a mandatory put-into-play for an optional one and gains +2000 power
+for Twinpact creatures. Disassembly compensation runs 22 October to 26 November, 2400 DM points.
+
+Why it matters here: 赤白レイド led the daily readings on 16 and 17 October (18.5, 24.1), and this
+site has an existing `b-reishu-raid` article from September that **had to be corrected** because the
+card's own protection ability was read one line at a time. Read the whole card before writing about
+the change.
+
+Do not write that the change worked, or did not, until there are readings after the 22nd. The
+18 October Jokers spike is the standing example of one day meaning nothing.
+
+### 6. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
 
@@ -240,12 +260,14 @@ because a sale-day notice omits its own contents and points back to an advance n
 it is, and **measure the lag rather than assuming it**. The Railgun collaboration was revealed
 on 23 August and had its first notice on 25 August, two days later, ending with four notices
 including an overview that gave the deck builder contents. The seventh にじさんじ collaboration
-was revealed on 12 October and **had nothing on the news index six days later**, four days
-before it opens — already well past the precedent, not tracking it. The ranked season that
-started 16 October did get a page; the one before it never did.
+was revealed on 12 October, got its first notice on **19 October — seven days** — and the three
+detail notices on **20 October at 17:00**, two days before it opens. The ranked season that started
+16 October did get a page; the one before it never did. The streamer event of 12 October still has
+no page at all.
 
-Watch the index daily to 22 October: a collaboration notice is where the two unread product
-codes would appear as text instead of on a 680-pixel box.
+**Measured, now closed: two days (Railgun), seven (this one), never (the streamer event).** The
+product codes did arrive as text in the deck-builder notice, and reading them off box art had
+produced a wrong one.
 
 ---
 

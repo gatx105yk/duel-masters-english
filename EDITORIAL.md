@@ -215,6 +215,25 @@ Same line as the card names: **short facts travel, assembled work does not.**
 4. **Where each claim came from.** Card shop? They sell cards. Editorial site? Their judgement.
 5. **Anything unverified.** Say so. "Not independently verified" is a complete sentence.
 
+### Re-check the sources in the last minutes, not just the article
+
+**21 October 2026.** The seventh-collaboration article went live at 18:06 saying three promised
+notices "had not appeared by 18:00 on 20 October". All three were published at **17:00 that day**.
+The last check made here was at 16:56. Five fact-check passes ran between 18:25 and 18:59 and none
+of them looked at the news index again, because every one of them was checking the article against
+the sources already gathered.
+
+Two rules out of it:
+
+- **Never assert a negative past the time you last looked.** "Nothing had appeared by 18:00" is a
+  claim about 18:00. If the last check was 16:56, the only sentence available is "nothing had
+  appeared as of 16:56" — and that one is worth writing, because it dates itself.
+- **Re-fetch the news index immediately before pushing.** An article about something that opens in
+  two days sits exactly in the window where the publisher documents it.
+
+Checking the article against the sources you hold cannot catch a source that arrived after you
+gathered them. That is a different pass and it has to be the last one.
+
 ### Fact-check twice
 
 | Article | Pass 1 | Pass 2 |
@@ -225,6 +244,42 @@ Same line as the card names: **short facts travel, assembled work does not.**
 | Heroes Set | 1 (critical) | 2 |
 
 The second pass is not optional. It has never come back clean.
+
+### Vary what each pass reads, or they all find the same nothing
+
+The seventh-collaboration article took seven passes. Each found what the ones before it could not,
+because each read the article a different way:
+
+| Pass | What it reads | Found |
+|---|---|---|
+| 1 | structure and arithmetic | 4 |
+| 2 | prose against the sources | 3 |
+| 3 | internal number consistency | 1 |
+| 4 | every Japanese string against its source | 2 |
+| 5 | terminology against the rest of the site | 2 |
+| 6 | **the article end to end, as prose** | a self-contradiction five passes had missed |
+| 7 | **the sources again, fetched fresh** | the article's central claim was false at publication |
+
+Pass 6 catches what surgical editing creates: every sentence individually correct, the paragraph
+not. Pass 7 is the one above. Neither is possible by re-reading the article against notes.
+
+---
+
+## When the publisher disagrees with itself
+
+The rule for two secondary sources disagreeing — say so, name both, pick neither — applies with more
+force when both sources are official. **A later notice is not automatically right. It is later.**
+
+**21 October 2026**, two cases in one product:
+
+- The X post of 19 October names 《守護水龍 ハイドランジア》 as one of 栞葉るり's two collaboration
+  cards. The product notice of 20 October puts 《涼夏妖精カクラン》 in that slot and does not mention
+  ハイドランジア anywhere, in either notice. For the other four livers, X and the notices agree exactly.
+- The 19 October notice says the playmat and protect are **sold in the shop**. The 20 October notice
+  calls them a **first-purchase bonus** on the deck builders.
+
+Record which source said which and leave the earlier claim visible rather than overwriting it. The
+reader who saw the X post needs to find it addressed, not deleted.
 
 ---
 

@@ -46,6 +46,11 @@ belongs in that file's `known_convention_differences`, so the next person does n
 `twitter:description`, and the JSON-LD `description`. Checking fewer has shipped stale
 text more than once.
 
+**Re-check the sources in the last minutes, not just the article.** Checking the page against what
+you gathered cannot catch a notice that went up while you were writing. The publisher posts at
+**17:00 JST**. Never assert that something has not appeared at a time later than you actually
+looked. `EDITORIAL.md` has the case that made this a rule.
+
 Fact-check again **after** publishing. On this site that pass keeps finding things.
 
 ## Corrections are dated and say what was wrong
