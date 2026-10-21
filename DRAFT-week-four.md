@@ -10,6 +10,9 @@ goes out.**
 ## Publish-day checklist, in order
 
 1. Read the 21 October ND chart. Both halves of the image. It must sum to exactly 100.0.
+   **The 21st is a short day**: an emergency maintenance took the game down at 23:15 that night,
+   so roughly the last three quarters of an hour are missing from it. Say so if the sample is
+   small, and do not treat a low game count on the 21st as a ladder effect.
 2. Add it to `data-nd-daily.json` and run the whole-series sum check.
 3. **Recompute every number in the Locked findings below.** The 21st can take any of these
    extremes off this week — a low Raid reading would move its floor again, a high Jokers one
