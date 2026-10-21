@@ -263,6 +263,22 @@ because each read the article a different way:
 Pass 6 catches what surgical editing creates: every sentence individually correct, the paragraph
 not. Pass 7 is the one above. Neither is possible by re-reading the article against notes.
 
+### Fact-check the supporting files too, not just the article
+
+**Twice on 21 October the article came out clean and a file beside it did not.** The calendar
+carried 栞葉るり spelled with 栾, and later the same day it said the changed card was behind
+"the deck leading this site's daily readings for most of the week before it" — three days to
+ジョーカーズ, two to 赤白レイド, one to バラギアラループ. The article printed the week's leaders in
+its own table and claimed only the whole-format figure, so the passes run on the article could
+not have found either.
+
+The cause is the same both times: the calendar entry, the TODO note and the data record get
+written early, from a partial view, and then the fact-checking all goes to the article.
+
+**So when a session touches several files, list them before the last pass and check each one
+against the finished article.** Anything the article states and a supporting file contradicts is
+an error in one of them, and it is usually the file that was written first.
+
 ---
 
 ## When the publisher disagrees with itself
