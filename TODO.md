@@ -159,49 +159,22 @@ read, and it is worse than the report says.
 Requesting indexing does not fix any of this. It forces a crawl; whether Google lists
 the page is still Google's decision, and it has already crawled and declined seven.
 
-### 4. Week four meta article — due 22 Oct
-Covers 15–21 October. **15 to 19 October are read.** 20 and 21 publish on the mornings of
-the 21st and 22nd, so the piece can only be finished on the 22nd itself — which is also the
-day the collaboration opens.
+### 4. Week five meta article &mdash; due 29 Oct
 
-| | 15 Oct | 16 Oct | 17 Oct | 18 Oct | 19 Oct |
-|---|---|---|---|---|---|
-| Games | **440** | 130 | 166 | 147 | **84** |
-| Leader | ジョーカーズ 13.9 | 赤白レイド 18.5 | 赤白レイド 24.1 | ジョーカーズ 26.5 | バラギアラループ 15.5 |
-| ジョーカーズ | 13.9 | 10.8 | 11.4 | **26.5** | 14.3 |
-| 青魔導具 | 7.7 | 7.7 | 8.4 | **absent** | 7.1 |
+Week four shipped on 24 October as `2026-10-24-week-four.html`, two days late. `DRAFT-week-four.md`
+is gone with it; the reusable publish-day order is now in `EDITORIAL.md`.
 
-**The 22 October maintenance changes 《“B-零朱”レイド》, the card 赤白レイド is named after.** The
-week being written is the last full week before that change, and 赤白レイド led two of its six read
-days. Say that the week is pre-change; do not write any sentence that implies the deck's position
-is stable going forward.
+**Week five is 22&ndash;28 October, and it is the first week under the changed card.** Two things
+make it awkward and both have to be said on the page:
 
-**The 18 October spike did not hold, and neither did the disappearance.** ジョーカーズ went
-11.4, 26.5, 14.3; 青魔導具 went 8.4, off the chart, 7.1. Write the 18th as one day that
-did not repeat, not as a move. This is the reason the standalone article was not written.
+- **22 October is not a whole day.** The game was down from 23:15 on the 21st until 16:00 on the
+  22nd, so that day is about eight hours of play. Its chart is published.
+- **23 October is the first full day under the new text.** Its chart publishes on the morning of
+  the 24th.
 
-**84 games on the 19th is the smallest full read of the format**, and the second smallest of
-any day behind the 82 of the opening day, which was a partial read. At 84 games a 2.4 is two
-games. Five of the fifteen entries that day sit at 2.4 to 3.6, so the tail of that chart is
-two or three games per slice and carries almost no information.
-
-**Three different leaders in six days** — ジョーカーズ, 赤白レイド, ジョーカーズ again,
-バラギアラループ, ジョーカーズ, with 赤白レイド taking the 16th and 17th. This list said
-"four different leaders in five days" until 21 October; that was wrong, and came from counting
-changes of hands rather than names.
-
-The week straddles the ladder reset: 15 October closed `HADES・ドラゲリオンカップ`,
-`オラマッハ・ザ・ジョニーカップ` opened at 00:00 on the 16th, and the sample fell 440 to 130
-across that night. **Say which side each day falls on.**
-
-**The piece is drafted.** `DRAFT-week-four.md` holds the locked findings, the day-by-day table,
-the supersession note that `2026-10-15-week-three.html` needs, and the publish-day checklist.
-It is not linked from the index and is not an article. Six of the seven days are in it; the
-21 October chart publishes on the morning of the 22nd and **every superlative in it has to be
-recomputed against that day before it goes out.**
-
-`トリガー耐久QQQX` appears on the 19th at 2.4 and is a name this site has never recorded.
-That is two games. Do not introduce a deck to English readers on two games.
+Do not read the first days after the change as the change working or not working. The standing
+example is in the week four piece: Jokers went 26.5, 14.3, 22.7, 20.8 across four days with nothing
+altered in the game.
 
 ### 5. The balance change is a story, and it is not written
 

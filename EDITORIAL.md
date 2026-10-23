@@ -263,6 +263,23 @@ because each read the article a different way:
 Pass 6 catches what surgical editing creates: every sentence individually correct, the paragraph
 not. Pass 7 is the one above. Neither is possible by re-reading the article against notes.
 
+### The weekly meta article has a publish-day order
+
+Worked out for week four and worth repeating. Do these in order:
+
+1. **Read the last day's chart.** Both halves of the image. It must sum to exactly 100.0.
+2. **Add it and run the whole-series sum check**, not just the new day.
+3. **Recompute every superlative in the piece against the finished week.** The last day can take an
+   extreme off the week or add one — on 21 October it moved Cotton Zenith's floor from 3.6 to 2.0
+   and turned the week's ending into a tie.
+4. **Check the previous week's superlatives.** Any that this week passed get a dated forward note
+   on that page and a section here. Never rewrite the older page: it was true of its own week.
+5. **Re-fetch the news index before pushing.**
+6. **Check all four description slots agree.**
+
+**Do not publish a short week.** Week four could have run on six days two days earlier; the seventh
+day changed two of its findings and its headline.
+
 ### Fact-check the supporting files too, not just the article
 
 **Twice on 21 October the article came out clean and a file beside it did not.** The calendar
