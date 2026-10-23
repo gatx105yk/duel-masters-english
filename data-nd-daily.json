@@ -548,6 +548,30 @@
    },
    "read_on": "2026-10-21",
    "note": "The 赤白轟轟轟(レイド無し) label did not resolve at the 604px source; the first two characters are legible and the name is matched to the entry already recorded on 18 and 19 October. Chart published the morning of 21 October, the day before the 22 October maintenance that changes 《“B-零朱”レイド》. Re-read independently later on 21 October: header 全110試合 and all eleven slices confirmed, both halves of the image checked, no twelfth slice. ジョーカーズ 22.7 and 赤白レイド 18.2 magnified and confirmed, as the 21 October card-change article cites both."
+  },
+  "2026-10-21": {
+   "games": 149,
+   "completeness": "full",
+   "leading_named_deck": null,
+   "entries": {
+    "赤白レイド": 20.8,
+    "ジョーカーズ": 20.8,
+    "HADESドラゲリオン": 11.4,
+    "バラギアラループ": 11.4,
+    "その他": 10.1,
+    "青魔導具": 7.4,
+    "赤単バルガ": 7.4,
+    "ゼニス天門": 4.7,
+    "赤青レイド": 2.0,
+    "赤白轟轟轟(レイド無し)": 2.0,
+    "コットンゼニス": 2.0
+   },
+   "read_on": "2026-10-24",
+   "leader_tied_between": [
+    "赤白レイド",
+    "ジョーカーズ"
+   ],
+   "note": "Last day before the 22 October card change to 《“B-零朱”レイド》, and a short day: an emergency maintenance took the game down at 23:15 and it stayed down until 16:00 on the 22nd. 149 games even so. 赤青レイド at 2.0 is a name this site has not recorded before and is about three games — do not introduce it on that. The 赤白轟轟轟(レイド無し) label did not resolve at the 604px source; matched to the entry already in the series."
   }
  }
 }
