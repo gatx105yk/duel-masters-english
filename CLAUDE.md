@@ -83,7 +83,11 @@ it said before. Do not quietly edit.
   they are working notes, not something to publish as a table.
 - Card and deck names come from the community translation patch. Effects are translated here.
 - The survey publishes as images. Every figure was read off a chart by hand, so a day whose
-  slices do not sum to 100.0 was misread. That check does not catch two labels swapped.
+  slices do not sum to 100.0 was **probably** misread &mdash; but check the sample size first.
+  Where each slice is a whole number of games, rounding can leave the total short: 22 October
+  sums to 99.6 at 46 games and is right. Reconstruct the counts before changing anything, and
+  read `known_convention_differences` in `data-nd-daily.json`. Neither check catches two labels
+  swapped.
 - **Do not touch `googleaf526fe342db2356.html`.** It is the Search Console ownership file.
 - canonical, `og:url` and the JSON-LD url all stay on `https://duelmasters.editioncompass.com/`.
 

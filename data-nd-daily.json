@@ -11,7 +11,7 @@
   "completeness": "\"full\" = every slice on that day’s chart is recorded. \"tracked\" = only the six columns this site tracked at the time, plus the leader. \"full_suspect\" = recorded as a full read but the slices do not sum to 100.0, so a slice was missed.",
   "leading_named_deck": "Largest named slice. The survey’s unnamed bucket (その他) is excluded. null when two entries tie.",
   "families": "Entries are recorded exactly as the chart labels them. Baraghiara and Magic Tools are split across entries on some days; totals are the reader’s job, not this file’s.",
-  "percentages": "As printed on the chart. Every \"full\" day sums to 100.0.",
+  "percentages": "As printed on the chart. A \"full\" day sums to 100.0, except where rounding makes that impossible: on a small enough sample every slice is a whole number of games and rounding each to one decimal can leave the total short. 22 October 2026 sums to 99.6 for that reason and is correct as recorded. For such a day the check is reconstructing the game counts and matching the stated sample size, not the sum.",
   "unresolved_labels": "A slice whose chart label cannot be read at source resolution is recorded under a （判読不能） placeholder and listed in that day's label_unresolved. The percentage is real; the name is not known."
  },
  "known_convention_differences": [
@@ -22,6 +22,13 @@
    "page_value": 8.9,
    "dataset_value": 12.1,
    "why": "That page’s Magic Tools column is the single headline entry; this file records both entries, so the family total is higher. The page says so in its own caveats, and the week-two page names the 8.9/12.1 difference explicitly. This is intentional. Do not \"correct\" either one against the other."
+  },
+  {
+   "day": "2026-10-22",
+   "column": "(all)",
+   "page_value": 99.6,
+   "dataset_value": 100.0,
+   "why": "This day's printed slices sum to 99.6. It is not a misread. At 46 games each slice is a whole number of games and the nineteen rounded percentages lose 0.4 between them; the counts reconstruct to exactly 46. Do not \"correct\" any figure on this day to make it total 100.0."
   }
  ],
  "days": {
@@ -572,6 +579,34 @@
     "ジョーカーズ"
    ],
    "note": "Last day before the 22 October card change to 《“B-零朱”レイド》, and a short day: an emergency maintenance took the game down at 23:15 and it stayed down until 16:00 on the 22nd. 149 games even so. 赤青レイド at 2.0 is a name this site has not recorded before and is about three games — do not introduce it on that. The 赤白轟轟轟(レイド無し) label did not resolve at the 604px source; matched to the entry already in the series. Re-read independently on 24 October after the week four article was published: header 全149試合 and all eleven slices confirmed at magnification, both halves of the image checked, no twelfth slice. The 20.8 tie and the 11.4 tie below it were each magnified separately. The three 2.0 slices have identical angles, so neither the sum nor the geometry would show a swap among them; their leader lines run in the same order as the slices, which is as far as the image can be pushed."
+  },
+  "2026-10-22": {
+   "games": 46,
+   "completeness": "full",
+   "leading_named_deck": "バラギアラループ",
+   "entries": {
+    "バラギアラループ": 17.4,
+    "ジョーカーズ": 13.0,
+    "赤白レイド": 6.5,
+    "HADESドラゲリオン": 6.5,
+    "コットンゼニス": 6.5,
+    "キャベッジバラギアラ": 4.3,
+    "赤単バルガ": 4.3,
+    "青黒魔導具": 4.3,
+    "ゼニス天門": 4.3,
+    "スノーフェアリー": 4.3,
+    "ボルシャックNEX": 4.3,
+    "デンジャデオン": 4.3,
+    "赤白轟轟轟(レイド無し)": 4.3,
+    "赤単轟轟轟(レイド無し)": 4.3,
+    "赤黒轟轟轟": 2.2,
+    "青魔導具": 2.2,
+    "トリガー耐久QQQX": 2.2,
+    "ヘブンズキリコ": 2.2,
+    "墓地ソース": 2.2
+   },
+   "read_on": "2026-10-24",
+   "note": "Smallest day in the series by a wide margin, and only about eight hours of play: the game was down from 23:15 on the 21st until 16:00 on the 22nd. First day under the changed 《“B-零朱”レイド》 and the first day of the seventh にじさんじ collaboration, so it is a part-day on both counts and proves nothing about either. 19 slices and NO その他 entry — the first day in the series without one; at 46 games the survey names everything. The printed percentages sum to 99.6, not 100.0: every slice is a whole number of games out of 46 (8, 6, 3×3, 2×9, 1×5 = 46 exactly), and rounding each to one decimal loses 0.4 in total. The game-count reconstruction is the check that applies to this day, not the sum rule. ヘブンズキリコ is new to the series at 2.2, which is one game; the chart writes it without the middle dot the card 《神歌の天后 ヘブンズ・キリコ》 has. Do not read anything into a one-game entry."
   }
  }
 }

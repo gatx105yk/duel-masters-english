@@ -267,7 +267,9 @@ not. Pass 7 is the one above. Neither is possible by re-reading the article agai
 
 Worked out for week four and worth repeating. Do these in order:
 
-1. **Read the last day's chart.** Both halves of the image. It must sum to exactly 100.0.
+1. **Read the last day's chart.** Both halves of the image. It should sum to 100.0 &mdash; and
+   if it does not, reconstruct the game counts before assuming a misread, because rounding on a
+   small sample can leave it short (22 October: 99.6 at 46 games, and correct).
 2. **Add it and run the whole-series sum check**, not just the new day.
 3. **Recompute every superlative in the piece against the finished week.** The last day can take an
    extreme off the week or add one — on 21 October it moved Cotton Zenith's floor from 3.6 to 2.0

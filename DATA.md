@@ -27,9 +27,15 @@ One record per survey day, 24 September to 12 October 2026.
 | `read_on` | the date this site read that chart |
 | `unread_label_share` | a slice whose share was legible but whose label was not, in the 604px source image |
 
-Every `full` day sums to 100.0. That check catches a misread digit. **It does not
-catch a label swapped between two slices**, so the days an argument rests on were
-re-read at higher magnification before publishing.
+Every `full` day sums to 100.0 **except where rounding makes that impossible**. On a
+small enough sample each slice is a whole number of games, and rounding nineteen of them
+to one decimal can lose a few tenths: 22 October 2026 sums to **99.6** at 46 games and is
+correct as recorded. For a day like that the check is **reconstructing the game counts and
+matching the stated sample size** — the 22nd's slices come to 8, 6, 3×3, 2×9 and 1×5, which
+is exactly 46. It is listed in `known_convention_differences`; do not "fix" it.
+
+Neither check catches **a label swapped between two slices**, so the days an argument rests
+on were re-read at higher magnification before publishing.
 
 ## `data-deck-names.json`
 
