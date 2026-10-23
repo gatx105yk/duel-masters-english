@@ -159,12 +159,12 @@ read, and it is worse than the report says.
 Requesting indexing does not fix any of this. It forces a crawl; whether Google lists
 the page is still Google's decision, and it has already crawled and declined seven.
 
-### 4. Week five meta article &mdash; due 29 Oct
+### 4. Week five meta article — due 29 Oct
 
 Week four shipped on 24 October as `2026-10-24-week-four.html`, two days late. `DRAFT-week-four.md`
 is gone with it; the reusable publish-day order is now in `EDITORIAL.md`.
 
-**Week five is 22&ndash;28 October, and it is the first week under the changed card.** Two things
+**Week five is 22–28 October, and it is the first week under the changed card.** Two things
 make it awkward and both have to be said on the page:
 
 - **22 October is not a whole day.** The game was down from 23:15 on the 21st until 16:00 on the
