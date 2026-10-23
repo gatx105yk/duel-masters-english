@@ -83,7 +83,7 @@ it said before. Do not quietly edit.
   they are working notes, not something to publish as a table.
 - Card and deck names come from the community translation patch. Effects are translated here.
 - The survey publishes as images. Every figure was read off a chart by hand, so a day whose
-  slices do not sum to 100.0 was **probably** misread &mdash; but check the sample size first.
+  slices do not sum to 100.0 was **probably** misread — but check the sample size first.
   Where each slice is a whole number of games, rounding can leave the total short: 22 October
   sums to 99.6 at 46 games and is right. Reconstruct the counts before changing anything, and
   read `known_convention_differences` in `data-nd-daily.json`. Neither check catches two labels
