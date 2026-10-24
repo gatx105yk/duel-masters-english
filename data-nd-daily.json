@@ -607,6 +607,26 @@
    },
    "read_on": "2026-10-24",
    "note": "Smallest day in the series by a wide margin, and only about eight hours of play: the game was down from 23:15 on the 21st until 16:00 on the 22nd. First day under the changed 《“B-零朱”レイド》 and the first day of the seventh にじさんじ collaboration, so it is a part-day on both counts and proves nothing about either. 19 slices and NO その他 entry — the first day in the series without one; at 46 games the survey names everything. The printed percentages sum to 99.6, not 100.0: every slice is a whole number of games out of 46 (8, 6, 3×3, 2×9, 1×5 = 46 exactly), and rounding each to one decimal loses 0.4 in total. The game-count reconstruction is the check that applies to this day, not the sum rule. ヘブンズキリコ is new to the series at 2.2, which is one game; the chart writes it without the middle dot the card 《神歌の天后 ヘブンズ・キリコ》 has. Do not read anything into a one-game entry."
+  },
+  "2026-10-23": {
+   "games": 227,
+   "completeness": "full",
+   "leading_named_deck": "ジョーカーズ",
+   "entries": {
+    "ジョーカーズ": 21.1,
+    "赤白轟轟轟(レイド無し)": 11.9,
+    "その他": 13.4,
+    "HADESドラゲリオン": 10.1,
+    "バラギアラループ": 10.1,
+    "赤単バルガ": 8.8,
+    "青魔導具": 7.5,
+    "コットンゼニス": 6.6,
+    "ゼニス天門": 5.3,
+    "赤単轟轟轟(レイド無し)": 2.6,
+    "ドンジャングル": 2.6
+   },
+   "read_on": "2026-10-24",
+   "note": "First full day under the changed 《“B-零朱”レイド》; the maintenance ended at 16:00 on the 22nd. 赤白レイド is NOT a named slice on this chart — the first day of the series it is missing. Below the survey's cutoff a deck sits in the unnamed bucket (13.4 here), so this is not absence from the format. 赤白轟轟轟(レイド無し), the build the chart names without that card, is second at 11.9 against a previous series high of 3.6. One day proves nothing on its own — see the Jokers run of 11.4, 26.5, 14.3, 22.7, 20.8 with nothing changed in the game — but the streak ending is a fact: see below."
   }
  }
 }

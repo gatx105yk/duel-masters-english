@@ -176,7 +176,26 @@ Do not read the first days after the change as the change working or not working
 example is in the week four piece: Jokers went 26.5, 14.3, 22.7, 20.8 across four days with nothing
 altered in the game.
 
-### 5. The balance change is a story, and it is not written
+### 5. The balance change: one reading in, trigger set
+
+**23 October, 227 games, the first full day under the changed card.** 赤白レイド is **not a named
+slice** — the first day of 30 it has been missing, having appeared every day from 24 September to
+22 October. 赤白轟轟轟(レイド無し), the build the chart names without that card, is **second at 11.9**
+against a previous best of 4.3 over nine days.
+
+Recorded in a dated note on `2026-10-21-card-changes-october.html`. **Not written up as a result,
+and the standalone article is still not written.**
+
+**The trigger, set 24 October:** 赤白レイド still unnamed on both the 24th and the 25th, and
+赤白轟轟轟(レイド無し) still above 8 on both. The 24th's chart publishes the morning of the 25th.
+
+If it holds, this is worth a piece: a named deck leaving the chart the day its card changed, with
+the card-less build of the same colours taking its place, is as clean a before-and-after as this
+survey has produced. **If it fails, write nothing and leave the dated note standing as the record
+that it failed** — which is what happened to the 18 October Jokers spike, and the reason that
+article was correctly never written.
+
+### 6. The balance change is a story, and it is not written
 
 Announced 20 October 17:00 (news/16420), effective at the 22 October maintenance.
 《“B-零朱”レイド》 loses unconditional Speed Attacker and its G・G・G protection narrows to itself;
@@ -191,7 +210,7 @@ the change.
 Do not write that the change worked, or did not, until there are readings after the 22nd. The
 18 October Jokers spike is the standing example of one day meaning nothing.
 
-### 6. Cloudflare Web Analytics
+### 7. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
 
