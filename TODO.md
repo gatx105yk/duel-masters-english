@@ -195,22 +195,13 @@ survey has produced. **If it fails, write nothing and leave the dated note stand
 that it failed** — which is what happened to the 18 October Jokers spike, and the reason that
 article was correctly never written.
 
-### 6. The balance change is a story, and it is not written
+**Before writing anything about the card, read the whole card.** The September
+`2026-09-12-b-reishu-raid.html` had to be corrected because its abilities were read one line at a
+time and the protection was missed. The 21 October change page makes the same point about the new
+wording: the protection clause lost its subject, and that reading is this site's, not the
+publisher's.
 
-Announced 20 October 17:00 (news/16420), effective at the 22 October maintenance.
-《“B-零朱”レイド》 loses unconditional Speed Attacker and its G・G・G protection narrows to itself;
-《火夜のフラム・アルテ》 trades a mandatory put-into-play for an optional one and gains +2000 power
-for Twinpact creatures. Disassembly compensation runs 22 October to 26 November, 2400 DM points.
-
-Why it matters here: 赤白レイド led the daily readings on 16 and 17 October (18.5, 24.1), and this
-site has an existing `b-reishu-raid` article from September that **had to be corrected** because the
-card's own protection ability was read one line at a time. Read the whole card before writing about
-the change.
-
-Do not write that the change worked, or did not, until there are readings after the 22nd. The
-18 October Jokers spike is the standing example of one day meaning nothing.
-
-### 7. Cloudflare Web Analytics
+### 6. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
 

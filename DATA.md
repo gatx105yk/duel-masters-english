@@ -54,8 +54,14 @@ eleven labels, but only the second version could prove it.
 Then:
 
 1. **Count the labels and count the slices, and make the two numbers match.** Eleven labels and
-   eleven wedges is the check; the colours run in descending order with `その他` last, so a gap in
-   that order is a sign of something missed.
+   eleven wedges is the check, and it is the only one of these that actually proves completeness.
+
+   The charts read in October draw their wedges in descending order with `その他` last — 23 October
+   runs 21.1, 11.9, 10.1, 10.1, 8.8, 7.5, 6.6, 5.3, 2.6, 2.6 and then `その他` at 13.4 — but **do
+   not lean on that.** It has only been observed on a few charts, 22 October has no `その他` at all,
+   and the draw order is a property of the image that this file does not record, so it cannot be
+   checked against the series. A missed slice also leaves the remaining order descending, so it
+   would not show up anyway. Treat it as a thing you will probably see, not as a test.
 2. **Re-render larger for any label an argument rests on** — 1600px wide, shifted to bring the
    label into view — and zoom on it. `赤単` and `赤白` are one stroke apart and were 2.6 and 11.9 on
    the same chart.
