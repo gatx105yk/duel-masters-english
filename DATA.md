@@ -42,8 +42,10 @@ on were re-read at higher magnification before publishing.
 The source image is **604×501** and the page around it is not quiet, so read it like this.
 
 Clone the chart into a fixed-position `div` and give that div **the whole viewport and a solid
-white background**. Then size the image so the entire chart fits in one screen — about 860px wide
-gives 713px tall, which fits. One screenshot, whole chart, nothing behind it.
+white background**. Then size the image so the entire chart fits in one screen. The source is
+604×501, so width × 501/604 gives the height: **860px wide comes out 713px tall**, which fits a
+viewport of 744 or more. Measure the viewport rather than assuming — pick a width that fits the one
+you have. One screenshot, whole chart, nothing behind it.
 
 **Do not read it in two halves through a transparent probe.** That was the old method and it has
 two faults: the page bleeds through, and a sidebar image can sit over a label on the right-hand
