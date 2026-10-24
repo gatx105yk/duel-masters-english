@@ -37,6 +37,36 @@ is exactly 46. It is listed in `known_convention_differences`; do not "fix" it.
 Neither check catches **a label swapped between two slices**, so the days an argument rests
 on were re-read at higher magnification before publishing.
 
+## How to read one of those charts
+
+The source image is **604×501** and the page around it is not quiet, so read it like this.
+
+Clone the chart into a fixed-position `div` and give that div **the whole viewport and a solid
+white background**. Then size the image so the entire chart fits in one screen — about 860px wide
+gives 713px tall, which fits. One screenshot, whole chart, nothing behind it.
+
+**Do not read it in two halves through a transparent probe.** That was the old method and it has
+two faults: the page bleeds through, and a sidebar image can sit over a label on the right-hand
+side without it being obvious that anything is missing. On 23 October a dark strip from the page
+covered part of the right edge in exactly that way; the full-viewport white version showed the same
+eleven labels, but only the second version could prove it.
+
+Then:
+
+1. **Count the labels and count the slices, and make the two numbers match.** Eleven labels and
+   eleven wedges is the check; the colours run in descending order with `その他` last, so a gap in
+   that order is a sign of something missed.
+2. **Re-render larger for any label an argument rests on** — 1600px wide, shifted to bring the
+   label into view — and zoom on it. `赤単` and `赤白` are one stroke apart and were 2.6 and 11.9 on
+   the same chart.
+3. **A negative claim needs the whole-chart view.** "This deck is not on the chart" is a statement
+   about every label, so it cannot be made from a half view at all.
+
+**What will not resolve:** at 604px a small label renders about eight to eleven pixels tall and no
+magnification recovers it — upscaling adds no information. The three `轟` of a `轟轟轟` deck name
+never resolve; read the civilisation prefix and the `(レイド無し)` suffix, which do, and match the
+name against one already in the series.
+
 ## `data-deck-names.json`
 
 Which source calls which deck what. This site has twice published a wrong count
