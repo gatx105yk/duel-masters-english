@@ -298,6 +298,35 @@ written early, from a partial view, and then the fact-checking all goes to the a
 against the finished article.** Anything the article states and a supporting file contradicts is
 an error in one of them, and it is usually the file that was written first.
 
+### These files count as touched, and nothing checks them
+
+**24 October made the point the other way round.** The published article was clean through every
+pass; the two errors were in `DATA.md` and `TODO.md`, written hours earlier in the same session.
+
+- `DATA.md` gained a chart-reading check — "the colours run in descending order with `その他` last"
+  — that was **written from inference**, which `CLAUDE.md` lists among the lines that do not move. It
+  came from glancing at a few October charts. It cannot be verified against the series at all,
+  because draw order is a property of the image and the data file records reading order; one day
+  has no `その他`; and a missed slice leaves the rest descending, so it would not catch what it
+  claimed to catch.
+- `TODO.md` ended up with two sections on the same subject, because a new one was inserted above
+  the old instead of replacing it. The survivor still said the story was unwritten and to wait for
+  a reading that had arrived hours before.
+
+**An article is wrong until someone corrects it. A rule is wrong until someone notices, and in the
+meantime it is followed.** That is the longer-lived mistake of the two.
+
+So the list of files to check before the last pass **includes the instruction files**, and a rule
+added to one of them gets the same treatment as a sentence in an article:
+
+1. **Say what it is built on.** A rule from three observations says so in the rule.
+2. **Try to break it before writing it.** Run it against the whole series, not the case that
+   suggested it. If it cannot be run against anything, that is itself the finding, and it belongs
+   in the text.
+3. **Ask what it would catch.** A check that stays true when the error happens is not a check.
+4. **Replacing a section means deleting the old one.** Grep the file for the subject afterwards and
+   count what comes back.
+
 ---
 
 ## When the publisher disagrees with itself
