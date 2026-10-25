@@ -44,7 +44,7 @@ was advertised but never documented.
 
 | Source | Limit |
 |---|---|
-| X search for `デュエプレ` | **Returns 6–11 posts and stops.** Not fixable. Use it for individual large posts, never for proportions |
+| X search for `デュエプレ` | **Returns 6–11 posts and stops.** Not fixable. Use it for individual large posts, never for proportions. **Top ordering mixes years** — see below |
 | `r/DuelMastersPlays` | ~13 posts a week, mostly install and rules questions. Good signal for what confuses new English speakers |
 | Official comprehensive rules PDF | Authority for anything mechanical. **Check the version number** — 1.50 as of April 2026 |
 
@@ -80,6 +80,20 @@ announcements at the same minute — the two card-change posts are 08:00 and 08:
 **A check made before 17:00 is a check on yesterday.** Ask the day's question after 17:00. If
 something is being published, check again after 17:00 however recent the earlier look was — a check
 at 16:56 missed four notices by four minutes and put a false claim on the site.
+
+### Top ordering returns posts from previous years
+
+**25 October 2026.** A search for `デュエプレ (弱体 OR ナーフ)` in **top** ordering returned nine
+posts. Three were not from this year: one from **2021**, one from **2025** and one from July. X
+shows a bare `10月26日` for an old post and the full date only sometimes, so a quick read makes a
+five-year-old complaint look like today's.
+
+**Read the year off the `datetime` attribute, every time.** Latest ordering is safe — everything in
+it is recent — but top ordering is ranked by engagement over all time, which is exactly why the
+large posts worth citing turn up there.
+
+Reporting a 2021 post as current reaction would be the worst version of the mistake this section
+already warns about, because the engagement figure would be real and the context gone.
 
 ### X timestamps are UTC
 
