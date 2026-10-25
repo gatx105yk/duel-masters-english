@@ -186,6 +186,12 @@ against a previous best of 4.3 over nine days.
 Recorded in a dated note on `2026-10-21-card-changes-october.html`. **Not written up as a result,
 and the standalone article is still not written.**
 
+**Published 25 October: `2026-10-25-raid-talk.html`**, the player-side half. Twenty-one posts,
+reported as talk — five describe the deck as gone, three name the Raid-less build as the
+replacement, two are from people still playing it, and the largest post argues the complaints are
+overblown. **It deliberately does not reach the verdict the trigger is for**, and says so. If the
+trigger holds, the standalone piece is the data side and should link to it rather than repeat it.
+
 **The trigger, set 24 October:** 赤白レイド still unnamed on both the 24th and the 25th, and
 赤白轟轟轟(レイド無し) still above 8 on both. The 24th's chart publishes the morning of the 25th.
 
