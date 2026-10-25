@@ -627,6 +627,28 @@
    },
    "read_on": "2026-10-24",
    "note": "First full day under the changed 《“B-零朱”レイド》; the maintenance ended at 16:00 on the 22nd. 赤白レイド is NOT a named slice on this chart — the first day of the series it is missing. Below the survey's cutoff a deck sits in the unnamed bucket (13.4 here), so this is not absence from the format. 赤白轟轟轟(レイド無し), the build the chart names without that card, is second at 11.9 against a previous series high of 3.6. One day proves nothing on its own — see the Jokers run of 11.4, 26.5, 14.3, 22.7, 20.8 with nothing changed in the game — but the streak ending is a fact: see below. Re-read independently on 24 October, after the card-change page cited it: the chart was rendered on a full white viewport at a size that fits whole, and shows ELEVEN labels and eleven wedges — seven on the left, four on the right — with 赤白レイド among none of them. The first reading used a transparent probe with a page sidebar overlapping the right edge, which could have hidden a label; it did not, but only the whole-chart view proves that. 赤単轟轟轟(レイド無し) at 2.6 and 赤白轟轟轟(レイド無し) at 11.9 were each magnified at a 1600px render to separate 単 from 白."
+  },
+  "2026-10-24": {
+   "games": 146,
+   "completeness": "full",
+   "leading_named_deck": "ジョーカーズ",
+   "entries": {
+    "ジョーカーズ": 21.9,
+    "バラギアラループ": 15.8,
+    "赤白轟轟轟(レイド無し)": 11.6,
+    "HADESドラゲリオン": 9.6,
+    "その他": 8.2,
+    "青魔導具": 7.5,
+    "ヘブンズキリコ": 5.5,
+    "赤単バルガ": 5.5,
+    "キャベッジバラギアラ": 4.8,
+    "ゼニス天門": 2.7,
+    "スコーラー": 2.7,
+    "コットンゼニス": 2.1,
+    "赤単轟轟轟(レイド無し)": 2.1
+   },
+   "read_on": "2026-10-25",
+   "note": "Second full day under the changed 《“B-零朱”レイド》 and the second running with 赤白レイド not a named slice. Read with the whole-chart method: thirteen labels, thirteen wedges, sums to 100.0. 赤白轟轟轟(レイド無し) at 11.6 magnified to confirm 白 rather than 単. Trigger day one of two set on 24 October — 赤白レイド unnamed and the Raid-less build above 8 — and both hold. ヘブンズキリコ at 5.5, about eight games, after one game on the 22nd and none on the 23rd."
   }
  }
 }
