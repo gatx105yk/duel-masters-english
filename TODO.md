@@ -192,8 +192,15 @@ replacement, two are from people still playing it, and the largest post argues t
 overblown. **It deliberately does not reach the verdict the trigger is for**, and says so. If the
 trigger holds, the standalone piece is the data side and should link to it rather than repeat it.
 
-**The trigger, set 24 October:** 赤白レイド still unnamed on both the 24th and the 25th, and
-赤白轟轟轟(レイド無し) still above 8 on both. The 24th's chart publishes the morning of the 25th.
+**The trigger set on 24 October HELD.** 赤白レイド was unnamed on the 23rd, 24th and 25th, and
+赤白轟轟轟(レイド無し) read 11.9, 11.6 and 16.6 — above 8 on all three, and **tied for first on the
+25th** at 290 games, the largest sample since the change. The deck was a named slice on 29 of the
+32 days recorded, every one from 24 September to 22 October.
+
+**So the standalone piece is now owed.** The data side. It should link to
+`2026-10-25-raid-talk.html` for the player side rather than repeat it, and it must not claim the
+change was right or wrong — the publisher's notice says balance adjustment and names no deck, so
+there is no stated intent to measure against.
 
 If it holds, this is worth a piece: a named deck leaving the chart the day its card changed, with
 the card-less build of the same colours taking its place, is as clean a before-and-after as this

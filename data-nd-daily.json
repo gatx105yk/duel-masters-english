@@ -649,6 +649,33 @@
    },
    "read_on": "2026-10-25",
    "note": "Second full day under the changed 《“B-零朱”レイド》 and the second running with 赤白レイド not a named slice. Read with the whole-chart method: thirteen labels, thirteen wedges, sums to 100.0. 赤白轟轟轟(レイド無し) at 11.6 magnified to confirm 白 rather than 単. Trigger day one of two set on 24 October — 赤白レイド unnamed and the Raid-less build above 8 — and both hold. ヘブンズキリコ at 5.5, about eight games, after one game on the 22nd and none on the 23rd."
+  },
+  "2026-10-25": {
+   "games": 290,
+   "completeness": "full",
+   "leading_named_deck": null,
+   "entries": {
+    "赤白轟轟轟(レイド無し)": 16.6,
+    "ジョーカーズ": 16.6,
+    "その他": 11.9,
+    "HADESドラゲリオン": 9.3,
+    "バラギアラループ": 7.9,
+    "青魔導具": 6.6,
+    "コットンゼニス": 6.6,
+    "赤単バルガ": 6.2,
+    "ゼニス天門": 4.1,
+    "ドンジャングル": 4.1,
+    "スコーラー": 2.8,
+    "赤単轟轟轟(レイド無し)": 2.8,
+    "ヘブンズキリコ": 2.4,
+    "ドロマーハンデス": 2.1
+   },
+   "read_on": "2026-10-26",
+   "leader_tied_between": [
+    "赤白轟轟轟(レイド無し)",
+    "ジョーカーズ"
+   ],
+   "note": "Third full day under the changed 《“B-零朱”レイド》 and the third running with 赤白レイド not a named slice. Largest sample since the change at 290 games. Whole-chart method: fourteen labels, fourteen wedges, sums to 100.0; the 16.6 label magnified to confirm 白 rather than 単. 赤白轟轟轟(レイド無し) is now TIED FOR FIRST with ジョーカーズ, having gone 11.9, 11.6, 16.6 across the three days against a best of 4.3 on the nine days it appeared before the change. This closes the trigger set on 24 October: 赤白レイド unnamed on both the 24th and 25th and the Raid-less build above 8 on both. ドロマーハンデス at 2.1 is about six games; it has appeared on 3 earlier days (10-08, 10-09, 10-10), so it is not new to the series."
   }
  }
 }
