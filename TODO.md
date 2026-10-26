@@ -245,6 +245,24 @@ currently nothing to measure.
 
 ---
 
+## Two deck-name questions `check.py` raised, 26 October
+
+Both are in `data-deck-names.json` marked as the **survey's** own names, and neither is on any
+chart in `data-nd-daily.json`. Annotated there rather than changed, because changing either
+would be a guess about which source said it.
+
+- **`ジョラゴンジョーカーズ`** — its note says it was the survey's name until 27 September. The
+  record starts 24 September and carries `ジョーカーズ` from that day, so **the 24-26 September
+  rows should carry the old name if the note is right.** Those three days are partial
+  six-column reads. Resolve by re-reading those three charts, not by editing either file.
+- **`自然ジョーカーズ`** — no note saying when the survey used it, and it is on no chart. It may
+  be a players' name recorded as the survey's.
+
+Neither blocks anything: no published page uses either name. This site has twice published a
+wrong count of one deck's names, which is why the file exists, so leave them visible.
+
+---
+
 ## Uncovered, found on the news index
 
 **`news/16522`, 23 October: 「11月度公認大会開催！」** — November's official tournaments. Found during

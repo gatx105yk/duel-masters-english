@@ -1,0 +1,20 @@
+{
+ "dataset": "check.py baseline",
+ "why": "Japanese already left outside a <span class=\"jp\"> on pages as published. check.py reports only characters NOT in here, so a forgotten jp span on a new page shows up while the existing pages stay quiet. Every entry below was looked at once and accepted: most are deck or character names in running prose on the August and September pages, written before the convention settled.",
+ "limit": "This hides an omission on an existing page when the new name happens to use only characters already listed for that page. It is a noise filter, not a proof.",
+ "how_to_update": "Add the page and its characters here, in the same commit, only after deciding the unwrapped text is correct. Never regenerate the whole file to make a run clean.",
+ "loose_japanese": {
+  "2026-08-10-dmps-nd-meta.html": "ウカグコシタットナビマョルロワンー攻速",
+  "2026-08-10-hall-of-fame.html": "りアコビプミムレン元入堂次殿解超除",
+  "2026-08-16-calendar.html": "アイトバプヤリルロ信外定戦決王者課配金",
+  "2026-08-16-plays-grand-prix.html": "ごのをイエスズタデプマュルレー中予介付公加参受品商売定式当日紹販",
+  "2026-08-16-plays-now-running.html": "のィイカクグシジズセッテトバヒピプベボャラルロンー催刻回売夏学復校海真第臨販開",
+  "2026-08-16-precious-idol-festival.html": "アイエカスズタデドプマミムュルレー公報式情",
+  "2026-08-19-heroes-set-summer.html": "のみ亜伊佐依出地大恵指李杏樹橋毬波美聡藤誣課高",
+  "2026-09-11-kamiart-mtg.html": "絆",
+  "2026-09-14-plays-vs-paper.html": "エデプマュレ",
+  "glossary.html": "ウカグコシタットナビマョルロワンー攻水火然自速闇零",
+  "index.html": "イドレ光単火",
+  "rulings.html": "たる出時"
+ }
+}

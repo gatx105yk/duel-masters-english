@@ -149,7 +149,8 @@
      "used_by": [
       "survey"
      ],
-     "note": "The survey’s own name until 27 September."
+     "note": "The survey’s own name until 27 September.",
+     "absent_from_daily": "Not on any chart in data-nd-daily.json, whose record starts 24 September and carries ジョーカーズ from that day. If the survey used this name until the 27th, the 24-26 September rows should carry it. Those three days are partial six-column reads and the label has not been re-read, so NOTHING is changed here on the strength of the note alone."
     },
     {
      "name": "ジョーカーズ",
@@ -168,7 +169,8 @@
      "name": "自然ジョーカーズ",
      "used_by": [
       "survey"
-     ]
+     ],
+     "absent_from_daily": "Not on any chart in data-nd-daily.json and it has no note saying when the survey used it. It may be a players' name recorded as the survey's. Left as written rather than reassigned, because reassigning it would be a guess about which source said it."
     }
    ]
   },

@@ -13,6 +13,7 @@ task touches **before** starting, not after something goes wrong.
 | `WATCH-TASK.md` | checking for news. Which sources, in which order, and what each one cannot tell you |
 | `DATA.md` | touching any number. Points at the two data files |
 | `TODO.md` | picking up work. The author's own list; it can lag behind what has actually shipped |
+| `check.py` | **before every publish.** `python3 check.py`. Its docstring lists what it cannot catch |
 
 ## Publishing
 
@@ -38,6 +39,16 @@ frozen tab silently dropped two commits. On that route, never assume a commit la
 confirm the byte count with `git fetch` every time.
 
 ## Before anything is published
+
+**Run `python3 check.py` first.** It takes a quarter of a second and does the mechanical
+half: every dated table cell against `data-nd-daily.json`, the four description slots, the
+canonical/`og:url`/JSON-LD trio, tag balance, entities, the middle dot, local links, and the
+sitemap both ways. Exit 0 means that half is clean and nothing more. `python3 check.py --list`
+says what it does **and what it cannot do**; read that list before trusting a clean run.
+`python3 check.py --selftest` breaks the repository sixteen ways and checks each break is
+caught — run it after editing `check.py`.
+
+Then do the half it cannot.
 
 Recompute every claim **from the table on the page**, not from the sentence you wrote.
 Superlatives are where the errors are: "first", "longest", "lowest" have to be checked

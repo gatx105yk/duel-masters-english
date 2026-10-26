@@ -234,6 +234,31 @@ Two rules out of it:
 Checking the article against the sources you hold cannot catch a source that arrived after you
 gathered them. That is a different pass and it has to be the last one.
 
+### Pass zero is a script, and it is not one of the passes
+
+`python3 check.py` does the mechanical half: table cells against `data-nd-daily.json`,
+description slots, canonical trio, tag balance, entities, the middle dot, links, sitemap.
+**It runs in a quarter of a second, so it runs before every publish and again after every
+edit.** It found two things on its first run that six fact-check passes on the 25 and
+26 October pages had not: a duplicated `</article>` on four October pages, and `&middot;`
+standing in for U+30FB inside `G・G・G` on a page published the day before.
+
+**It does not replace a pass and it does not count as one.** Its docstring lists the errors
+from this site's history it would have caught and the ones it would not, and the second list
+is the expensive one: every superlative, every figure on the wrong side of a boundary, every
+fact about the world. A clean run means the human passes get spent on reading and on the
+sources instead of on arithmetic.
+
+Two rules for the script itself, both from the four tests above:
+
+- **Every check earns its place by failing on a real mutation.** `--selftest` breaks the
+  repository sixteen ways and requires each break to be caught. One check was written,
+  fired on 24 of 52 pages, and every firing was house style — it was deleted, and the
+  deletion is recorded in the code where it used to be.
+- **A noise filter is not a fix.** `check-baseline.json` holds the unwrapped Japanese already
+  accepted on the older pages, so a forgotten `jp` span on a new page is visible. It is not
+  regenerated to make a run clean; an entry is added only after deciding the text is right.
+
 ### Fact-check twice
 
 | Article | Pass 1 | Pass 2 |
