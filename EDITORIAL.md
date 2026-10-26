@@ -239,9 +239,19 @@ gathered them. That is a different pass and it has to be the last one.
 `python3 check.py` does the mechanical half: table cells against `data-nd-daily.json`,
 description slots, canonical trio, tag balance, entities, the middle dot, links, sitemap.
 **It runs in a quarter of a second, so it runs before every publish and again after every
-edit.** It found two things on its first run that six fact-check passes on the 25 and
-26 October pages had not: a duplicated `</article>` on four October pages, and `&middot;`
-standing in for U+30FB inside `G・G・G` on a page published the day before.
+edit.** On its first run it found a duplicated `</article>` on four October pages, which
+six fact-check passes across the 25 and 26 October work had not.
+
+**And on that same run it missed one, which is the more useful half of the story.** A
+separate hand-written grep for the site's middle-dot convention found `&middot;` standing in
+for U+30FB inside `G・G・G` on a page published the day before. The script has a check for
+exactly that and it passed the page clean, because it read the raw file and the bug was
+spelled as an entity. It now tests the decoded text, and `--selftest` carries both
+spellings as separate mutations.
+
+The lesson is not about entities. **A check you have not seen fail is a guess**, and this one
+was written, shipped inside the same commit as the rule telling people to trust it, and was
+blind to the exact error that had prompted it. Hence the first rule below.
 
 **It does not replace a pass and it does not count as one.** Its docstring lists the errors
 from this site's history it would have caught and the ones it would not, and the second list
@@ -252,9 +262,11 @@ sources instead of on arithmetic.
 Two rules for the script itself, both from the four tests above:
 
 - **Every check earns its place by failing on a real mutation.** `--selftest` breaks the
-  repository sixteen ways and requires each break to be caught. One check was written,
-  fired on 24 of 52 pages, and every firing was house style — it was deleted, and the
-  deletion is recorded in the code where it used to be.
+  repository seventeen ways and requires each break to be caught. Two checks have already
+  failed that standard. One fired on 24 of 52 pages and every firing was house style, so it
+  was deleted and the deletion is recorded in the code where it used to be. The other —
+  the middle dot — passed when the error was present, and was fixed. **Add the mutation in
+  the same commit as the check**, or the check is untested.
 - **A noise filter is not a fix.** `check-baseline.json` holds the unwrapped Japanese already
   accepted on the older pages, so a forgotten `jp` span on a new page is visible. It is not
   regenerated to make a run clean; an entry is added only after deciding the text is right.

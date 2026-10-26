@@ -22,8 +22,13 @@ Measured against this site's own history, it would have caught:
 
   * a deck percentage edited on a page and not in the data file, or the
     reverse, anywhere it appears in a dated table;
-  * the duplicated `</article>` on four October pages, and `&middot;` standing
-    in for U+30FB in `G・G・G`, both of which it found on its first run;
+  * the duplicated `</article>` on four October pages, which it found on its
+    first run;
+  * `&middot;` standing in for U+30FB in `G・G・G` — but only since 26 October.
+    On the first run this check read the raw file, so it passed that page
+    clean while the bug was in it; a hand grep found it. It now tests the
+    decoded text and --selftest carries both spellings. A check nobody has
+    watched fail is a guess.
   * a description slot left stale;
   * the five pages missing from `sitemap.xml`, including the one with the best
     average position on the site.
@@ -407,10 +412,14 @@ def check_page(r: Report, path: str, daily: dict, labels: dict[str, str],
                        masked)
     r.ok(not stray, f"no malformed entities ({stray[:4]})")
 
-    # --- the middot. B・A・D and G・G・G use U+30FB; &middot; is a different
-    #     character and shipped once as one.
+    # --- the middot. B・A・D and G・G・G use U+30FB; U+00B7 is a different
+    #     character and has shipped twice as one. It has to be tested on the
+    #     DECODED text: the first version of this check read the raw file and
+    #     so missed `G&middot;G&middot;G`, the same bug spelled as an entity,
+    #     on a page published the day before. The kicker separators are
+    #     `&middot;` with a space either side, which does not match.
     wrong = re.findall(r"[A-Za-z　-鿿゠-ヿ]·"
-                       r"[A-Za-z　-鿿゠-ヿ]", s)
+                       r"[A-Za-z　-鿿゠-ヿ]", html.unescape(s))
     r.ok(not wrong, f"no U+00B7 used as a Japanese middle dot ({wrong})")
 
     # --- Japanese outside a jp span. Warn only: card names in 《》 and quoted
@@ -651,6 +660,10 @@ SELFTEST = [
      'href="2026-10-25-raid-chatter.html"'),
     ("U+00B7 used as a Japanese middle dot",
      "2026-10-26-raid-chart.html", "<h1>", "<h1>キ·キ "),
+    # The same bug spelled as an entity. The first version of the middot check
+    # read the raw file and passed this clean, which is how it shipped.
+    ("U+00B7 as an entity, which the first version of the check missed",
+     "2026-10-26-raid-chart.html", "<h1>", "<h1>G&middot;G&middot;G "),
     ("a malformed entity",
      "2026-10-26-raid-chart.html", "<h1>", "<h1>&nope; "),
     ("Japanese newly left outside a jp span",

@@ -81,6 +81,25 @@ announcements at the same minute — the two card-change posts are 08:00 and 08:
 something is being published, check again after 17:00 however recent the earlier look was — a check
 at 16:56 missed four notices by four minutes and put a false claim on the site.
 
+### The news index front page holds ten items, and that is all it holds
+
+**Found on 26 October.** The ranked season notice for the season that started 16 October
+(`news/16308`, 「【ランクマッチ】オラマッハ・ザ・ジョニーカップ開催！」) is **not on
+`dmps.takaratomy.co.jp/news/` at all.** The front page listed ten items, oldest of them
+`news/16285`, and `?pg=2`, `?page=2` and `/page/2/` all return the same ten.
+
+So the index is a window, not an archive, and a notice ten items old is invisible from it.
+Two consequences:
+
+- **"It is not on the news index" is a claim about the front page, nothing more.** Say which
+  you mean. The calendar carried "Documented on the news index" for that season with no
+  notice number, which is how the gap stayed open.
+- **A notice page stays reachable by number after it leaves the index.** `news/16308` loads
+  fine. Probing a range of numbers found it: of 171 IDs tried between 16290 and 16460, only
+  17 returned 200, and two of those were the season notices. **That is the way to recover a
+  notice the index no longer shows** — but it is a search, not a lookup, so record the number
+  in the calendar the first time rather than finding it twice.
+
 ### Top ordering returns posts from previous years
 
 **25 October 2026.** A search for `デュエプレ (弱体 OR ナーフ)` in **top** ordering returned nine
