@@ -212,6 +212,13 @@
    "ends": "2026-10-15T23:59+09:00",
    "confirmed_by": "the publisher’s X account, 13 October 2026",
    "note": "Not on the news index. Named after a card that is also a deck name, which contaminates keyword searches on that name."
+  },
+  {
+   "name_official": "オラマッハ・ザ・ジョニーカップ",
+   "starts": "2026-10-16T00:00+09:00",
+   "ends": "2026-11-15T23:59+09:00",
+   "confirmed_by": "the publisher’s news index; unlike the season before it, this one has a page",
+   "note": "Covers every reading from 16 October on, so the whole window of the 22 October card change sits inside one season. Days on or before 15 October are on the previous ladder (HADES・ドラゲリオンカップ) and are not comparable to it on that count alone."
   }
  ]
 }

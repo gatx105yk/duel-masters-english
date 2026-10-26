@@ -22,6 +22,11 @@ task touches **before** starting, not after something goes wrong.
 Before replacing text in a file, **count how many times the anchor string occurs.** Strings
 that look unique often are not, and a silent second match corrupts the file.
 
+**A new article means a `sitemap.xml` entry in the same commit.** The sitemap is the home page's only
+recorded referrer, and on 26 October it was five pages short — including the page with the best
+average position on the site. Diff published pages against the sitemap both ways; reading the file does
+not catch an absence.
+
 ### If push ever returns 403 again
 
 The app installation has lapsed. Reinstall it at
@@ -37,6 +42,11 @@ confirm the byte count with `git fetch` every time.
 Recompute every claim **from the table on the page**, not from the sentence you wrote.
 Superlatives are where the errors are: "first", "longest", "lowest" have to be checked
 against the whole series, not the window the article covers.
+
+**And ask which side of a boundary each figure is on.** A season change or a card change splits a
+window, and a figure from the wrong side of it reads as evidence. "Earlier" and "previous" are free;
+**"before the change" is a dated claim and costs a check.** `EDITORIAL.md` has the case, which happened
+in a dated note added to an older page rather than in an article.
 
 Then reconcile the page against `data-nd-daily.json`. Anything that differs on purpose
 belongs in that file's `known_convention_differences`, so the next person does not

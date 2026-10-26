@@ -159,6 +159,17 @@ read, and it is worse than the report says.
 Requesting indexing does not fix any of this. It forces a crawl; whether Google lists
 the page is still Google's decision, and it has already crawled and declined seven.
 
+**The sitemap was five pages short, found on 26 October.** It had 47 URLs against 52 published
+pages. Missing: `2026-10-21-card-changes-october.html`, `2026-10-24-week-four.html`,
+`2026-10-25-raid-talk.html`, `2026-10-26-raid-chart.html` — and **`2026-08-18-lionel-krone.html`,
+which holds the best average position on the site at 3.7** and had never been in it at all.
+All five added the same day.
+
+The sitemap is the home page's only recorded 参照元ページ, so it is the one discovery route this
+site controls, and nothing was checking it. **Add the entry in the same commit as the article**, and
+run a published-pages-against-sitemap diff when touching it: the check is a set difference, not
+reading the file.
+
 ### 4. Week five meta article — due 29 Oct
 
 Week four shipped on 24 October as `2026-10-24-week-four.html`, two days late. `DRAFT-week-four.md`
@@ -176,47 +187,73 @@ Do not read the first days after the change as the change working or not working
 example is in the week four piece: Jokers went 26.5, 14.3, 22.7, 20.8 across four days with nothing
 altered in the game.
 
-### 5. The balance change: one reading in, trigger set
+**Three of its seven days are already written up** on `2026-10-26-raid-chart.html`, so week five
+should not re-argue them. What that page established and the week page can lean on: the red/white
+pair's floor ran 10.7–27.7 over the twenty-one full days before the change and reads 11.9, 11.6,
+16.6 since; the 12.3-point rise is smaller than two swings in the series that happened with nothing
+altered; and `赤白レイド` is the only one of the eight long-run decks missing from the last three
+charts. **Recompute all of it against the finished week** — the 26th, 27th and 28th are not in any
+of those figures, and the publish-day order in `EDITORIAL.md` exists because the last day has twice
+changed a finding.
 
-**23 October, 227 games, the first full day under the changed card.** 赤白レイド is **not a named
-slice** — the first day of 30 it has been missing, having appeared every day from 24 September to
-22 October. 赤白轟轟轟(レイド無し), the build the chart names without that card, is **second at 11.9**
-against a previous best of 4.3 over nine days.
+### 5. The balance change: written, and the trigger closed
 
-Recorded in a dated note on `2026-10-21-card-changes-october.html`. **Not written up as a result,
-and the standalone article is still not written.**
+**Published 26 October: `2026-10-26-raid-chart.html`** — the data side, which was owed from the 24th.
+The trigger set on the 24th held on all three days: `赤白レイド` unnamed on the 23rd, 24th and 25th, and
+`赤白轟轟轟(レイド無し)` at 11.9, 11.6 and 16.6, tied for first on the 25th at 290 games. It links to
+`2026-10-25-raid-talk.html` for the player side rather than repeating it, and it reaches **no verdict on
+the change** — the notice says balance adjustment and names no deck, so there is no stated intent to
+measure against.
 
-**Published 25 October: `2026-10-25-raid-talk.html`**, the player-side half. Twenty-one posts,
-reported as talk — five describe the deck as gone, three name the Raid-less build as the
-replacement, two are from people still playing it, and the largest post argues the complaints are
-overblown. **It deliberately does not reach the verdict the trigger is for**, and says so. If the
-trigger holds, the standalone piece is the data side and should link to it rather than repeat it.
+**Three findings in it that were not in the dated notes**, and they are the reason it was worth a page:
 
-**The trigger set on 24 October HELD.** 赤白レイド was unnamed on the 23rd, 24th and 25th, and
-赤白轟轟轟(レイド無し) read 11.9, 11.6 and 16.6 — above 8 on all three, and **tied for first on the
-25th** at 290 games, the largest sample since the change. The deck was a named slice on 29 of the
-32 days recorded, every one from 24 September to 22 October.
+- **The colours did not leave; one of their two builds replaced the other.** Adding the two red/white
+  columns, the pair's floor ran 10.7–27.7 across the twenty-one full days before the change, averaging
+  about 18. Since the change: 11.9, 11.6, 16.6 — all three inside the old range, in its lower half.
+- **The size of the move is ordinary for this survey.** 4.3 → 16.6 is 12.3 points. The two widest
+  three-day swings in the series are larger and both happened with nothing altered: Raid itself
+  24.1 → 8.3 (15.8) on 17–19 October, and Jokers 10.8 → 26.5 (15.7) on 16–18 October. **The timing is
+  the finding, not the magnitude.**
+- **No superlative about the length of the run survives.** Six decks are named on all twenty-five
+  full-read days and are still going; `青魔導具` has missed one. Raid is on 22 of 25 and is **the only
+  one of the eight long-run decks absent from the last three charts** — that is the defensible sentence,
+  and "the longest run in the series" would have been false.
 
-**So the standalone piece is now owed.** The data side. It should link to
-`2026-10-25-raid-talk.html` for the player side rather than repeat it, and it must not claim the
-change was right or wrong — the publisher's notice says balance adjustment and names no deck, so
-there is no stated intent to measure against.
+**One error was corrected the same morning it was published.** The 26 October note on the card-change
+page said `赤白轟轟轟(レイド無し)` had a best of "4.3 on the nine days it appeared **before the change**".
+The 4.3 is 22 October, which is **after** it — play resumed at 16:00 that day under the new text, as the
+same page says two paragraphs lower. Eight of the nine are before the change and their ceiling is 3.6.
+The 4.3 is also two games on a 46-game day against 3.6 being six games out of 166. Corrected with a dated
+note on the card-change page, in `data-nd-daily.json`, and in a correction box on the new page.
+`2026-10-25-raid-talk.html` and this file said "previous best", which was true, and were left alone.
 
-If it holds, this is worth a piece: a named deck leaving the chart the day its card changed, with
-the card-less build of the same colours taking its place, is as clean a before-and-after as this
-survey has produced. **If it fails, write nothing and leave the dated note standing as the record
-that it failed** — which is what happened to the 18 October Jokers spike, and the reason that
-article was correctly never written.
+**Still not claimable, and the page says each one:** that the change caused this (the collaboration set,
+the deck builders and the Legend Battle all opened the same afternoon, and the deck-builder pool changed
+at the same maintenance); that "not a named slice" means zero (the ceiling is read off each chart's own
+smallest label — 2.6, 2.1, 2.1 — and the survey's labelling rule is not published); that the survey
+follows players rather than counting decks met.
 
-**Before writing anything about the card, read the whole card.** The September
-`2026-09-12-b-reishu-raid.html` had to be corrected because its abilities were read one line at a
-time and the protection was missed. The 21 October change page makes the same point about the new
-wording: the protection clause lost its subject, and that reading is this site's, not the
-publisher's.
+**Before writing anything further about the card, read the whole card.** The September
+`2026-09-12-b-reishu-raid.html` had to be corrected because its abilities were read one line at a time and
+the protection was missed. The 21 October change page makes the same point about the new wording: the
+protection clause lost its subject, and that reading is this site's, not the publisher's. **It has still
+not been checked in the running game.**
 
 ### 6. Cloudflare Web Analytics
 Needs a token from the author. Worth doing **after** item 1, not before — there is
 currently nothing to measure.
+
+---
+
+## Uncovered, found on the news index
+
+**`news/16522`, 23 October: 「11月度公認大会開催！」** — November's official tournaments. Found during
+the pre-push source check on 26 October and **it is nowhere on this site**: not the calendar, not this
+file. It is the newest item on the news index, so nothing has been published since it.
+
+Probably a calendar entry rather than an article, and the monthly series before it was never covered
+either, which is its own gap. **Read the notice before deciding** — the September equivalent is not on
+the calendar, so there is no precedent here to copy.
 
 ---
 

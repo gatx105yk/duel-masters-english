@@ -327,6 +327,47 @@ added to one of them gets the same treatment as a sentence in an article:
 4. **Replacing a section means deleting the old one.** Grep the file for the subject afterwards and
    count what comes back.
 
+### A figure either side of a boundary belongs to one side of it
+
+**26 October 2026.** A dated note added to the card-change page that morning said the Raid-less
+build had a best of "4.3 on the nine days it appeared **before the change**". The 4.3 is from
+22 October, which is *after* it — play resumed at 16:00 that day under the new card text, and
+**the same page says so two paragraphs lower down**. Eight of the nine days are before the change
+and their ceiling is 3.6. The 4.3 was also the weaker figure: two games on a 46-game day, against
+3.6 being six games out of 166.
+
+Built on one case, so here is the test run against the rest of the series rather than the case that
+suggested it. **The week pages pass.** Week four spans the ranked-season boundary of 15/16 October and
+says in its own note box that the 15th is the only day on the old ladder, naming both seasons. Week
+three dates the old season's close against the day before it. The series' two boundaries — the season
+change and the card change — are handled correctly everywhere they appear in an article.
+
+**They failed only in a dated note bolted onto an older page.** That is the pattern, and it has a
+cause: a note like that is written in minutes, from the two or three figures in front of you, outside
+the publish-day order that forces a recount. The note stack on the card-change page took one such
+figure three times and only the third phrasing was false, because the first two said "earlier" and
+"before that" — both true — and the third said "before the change", which is a claim about a date.
+
+So: **when a window has a boundary in it, every figure in the sentence gets asked which side it is on,
+and the answer goes in the sentence or the figure comes out.** What this catches that nothing else did:
+the arithmetic was right, the data file was right, the article passes were all run on the article. The
+one thing that would have caught it is reading the note against the page it was added to.
+
+A corollary worth keeping: "earlier", "previous" and "before that" are cheap and true. **"Before the
+change" is a dated claim and costs a check.** Prefer the vague word unless the precise one has been
+verified.
+
+### The sitemap is a supporting file, and it was five pages short
+
+Same day, found while adding the new article. The sitemap had 47 URLs against 52 published pages:
+three October articles, the new one, and **`2026-08-18-lionel-krone.html`, which holds the best average
+position on the site and had never been in it**. Nothing was checking it, because nothing reads a
+sitemap after writing it.
+
+**Add the entry in the same commit as the article**, and when touching the file, run the diff both
+ways — published pages not in the sitemap, and sitemap URLs with no page. It is a set difference and
+takes a second; reading the file does not catch an absence.
+
 ---
 
 ## When the publisher disagrees with itself
