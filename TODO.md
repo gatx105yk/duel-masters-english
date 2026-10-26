@@ -245,6 +245,34 @@ currently nothing to measure.
 
 ---
 
+## `check.py`: what it still cannot compare, and one hole it found in the data
+
+Audited on 26 October by an agent that had not written it. The audit's findings are fixed;
+these are the ones left standing on purpose, and `python3 check.py` names each of them as a
+warning on every run. **15 warnings is the expected count.** If it changes, read why.
+
+**The hole in the record.** `2026-09-27-first-numbers.html` publishes `赤単バルガ` figures for
+24–29 September — **8.5, 11.7, 10.5, 7.0, 11.6, 6.5** — and `data-nd-daily.json` does not hold
+them, because those seven days are six-column `tracked` reads. The page is not wrong; the record
+is short. Folding them in would make those days seven-column reads, which breaks the stated
+`tracked` convention and the check that enforces it, so **this is a decision, not a chore**:
+either widen the convention and say so in the file, or leave the gap and leave the warning.
+The same applies to `青黒魔導具`, which that page also carries for two of those days.
+
+**Dates outside the record.** `2026-09-13-grand-prix-result.html` (21 Sep) and
+`2026-09-14-meta-shift.html` (5, 13, 23 Sep) carry survey figures from before 24 September,
+which is where the record starts. Nothing to fix unless the record is ever extended backwards.
+
+**One prose cell.** `2026-10-13-dragerion-talk.html` writes a leader cell as "see below". Correct
+for a reader, not comparable by a script.
+
+**Untested assertion sites.** `--selftest` covers 34 cases and the file has about 50 assertion
+sites, so roughly a third are unmutated — they work, and were verified by hand once, but a future
+edit could break one without the selftest noticing. **Add the mutation in the same commit as the
+check** is the rule in `EDITORIAL.md`; this backlog is what ignoring it looks like.
+
+---
+
 ## Two deck-name questions `check.py` raised, 26 October
 
 Both are in `data-deck-names.json` marked as the **survey's** own names, and neither is on any

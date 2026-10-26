@@ -261,12 +261,26 @@ sources instead of on arithmetic.
 
 Two rules for the script itself, both from the four tests above:
 
-- **Every check earns its place by failing on a real mutation.** `--selftest` breaks the
-  repository seventeen ways and requires each break to be caught. Two checks have already
-  failed that standard. One fired on 24 of 52 pages and every firing was house style, so it
-  was deleted and the deletion is recorded in the code where it used to be. The other —
-  the middle dot — passed when the error was present, and was fixed. **Add the mutation in
-  the same commit as the check**, or the check is untested.
+- **Every check earns its place by failing on a real mutation, and the mutation has to name
+  the message it expects.** `--selftest` breaks the repository 34 ways. Its first version
+  asked only whether the run exited non-zero *or printed the word WARN anywhere*, which any
+  unrelated warning satisfies: **four checks could be deleted outright and it still reported
+  all 17 caught.** Verified, not theorised. Each case now declares its own message and is
+  counted only when that message appears; with the same four checks deleted it reports seven
+  failures and exits 1.
+- **Three checks have failed the standard so far.** One fired on 24 of 52 pages and every
+  firing was house style, so it was deleted and the deletion is recorded where it used to be.
+  The middle-dot check passed while the error was present, because it read the raw file and
+  the bug was an entity. The selftest itself was the third. **Add the mutation in the same
+  commit as the check**, or the check is untested — about a third of the assertion sites
+  still are, and that backlog is in `TODO.md`.
+- **A skip is not a pass, and it must not look like one.** The first version silently dropped
+  a cell it could not parse, a header it could not map, a row whose date was outside the
+  record, a table with no `<thead>`, a transposed table and a `colspan` row. An audit counted
+  **117 of 293 comparable cells, plus a whole transposed table of 54, going unchecked with
+  nothing printed.** Everything it cannot compare is now a warning that says which cell and
+  why, and the run prints the number of cells it did compare so a collapse in coverage is a
+  number that moves rather than a silence. That change alone took the count from 242 to 464.
 - **A noise filter is not a fix.** `check-baseline.json` holds the unwrapped Japanese already
   accepted on the older pages, so a forgotten `jp` span on a new page is visible. It is not
   regenerated to make a run clean; an entry is added only after deciding the text is right.

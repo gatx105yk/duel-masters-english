@@ -55,7 +55,11 @@
      ],
      "note": "One Minogami Cup opponent list, 12 October. Welds three of the others together."
     }
-   ]
+   ],
+   "page_headers": [
+    "Dragerion"
+   ],
+   "page_headers_note": "The 11 and 13 October pages head this deck's column \"Dragerion\" rather than the full site name. Verified: all fourteen dated cells equal HADESドラゲリオン exactly."
   },
   {
    "id": "raid",
@@ -73,7 +77,11 @@
       "column"
      ]
     }
-   ]
+   ],
+   "page_headers": [
+    "Fire/Light Raid"
+   ],
+   "page_headers_note": "The 27 September page heads this column \"Fire/Light Raid\", by civilisation. Verified: all six of its dated cells equal 赤白レイド exactly."
   },
   {
    "id": "magic-tools",
@@ -106,7 +114,15 @@
      ],
      "note": "A second entry the survey splits out on some days; same family, not a different deck."
     }
-   ]
+   ],
+   "page_headers": [
+    "Magic Tools"
+   ],
+   "page_headers_note": "\"Magic Tools\" is the family total, and the week pages print it as the sum of whichever of the two labels the survey named that day. The 27 September page instead splits the family by civilisation into two columns, so each of those headings means ONE label, recorded in page_header_labels. 青黒魔導具 is not held for the 24-29 September partial reads, so those cells report as not comparable.",
+   "page_header_labels": {
+    "Water Magic Tools": "青魔導具",
+    "Water/Darkness Magic Tools": "青黒魔導具"
+   }
   },
   {
    "id": "baraghiara",
@@ -138,7 +154,12 @@
       "players"
      ]
     }
-   ]
+   ],
+   "page_headers": [
+    "Loop",
+    "Baraghiara Loop"
+   ],
+   "page_headers_note": "The nine-day page heads this deck \"Loop\" and the 27 September page \"Baraghiara Loop\". Verified against the record: all cells under both equal バラギアラループ exactly."
   },
   {
    "id": "jokers",
@@ -205,6 +226,22 @@
      ]
     }
    ]
+  },
+  {
+   "id": "balga",
+   "site_name": "Red Balga",
+   "page_headers": [
+    "mono-Fire Balga"
+   ],
+   "page_headers_note": "The 27 September page heads this deck by civilisation. Its six dated cells cannot be compared: 24-29 September are partial six-column reads and the record does not hold 赤単バルガ for them, so check.py reports them as not comparable rather than passing or failing. That is a gap in the record, not an error on the page.",
+   "names": [
+    {
+     "name": "赤単バルガ",
+     "used_by": [
+      "survey"
+     ]
+    }
+   ]
   }
  ],
  "seasons": [
@@ -222,5 +259,6 @@
    "confirmed_by": "news/16308, 「【ランクマッチ】オラマッハ・ザ・ジョニーカップ開催！」, which gives 開催期間 2026年10月16日（金）00:00 ～ 2026年11月15日（日）23:59. Located on 26 October by probing notice numbers: it is no longer on the news index front page, which shows only ten items.",
    "note": "Covers every reading from 16 October on, so the whole window of the 22 October card change sits inside one season. Days on or before 15 October are on the previous ladder (HADES・ドラゲリオンカップ) and are not comparable to it on that count alone."
   }
- ]
+ ],
+ "page_headers_why": "site_name is the heading this site usually gives a deck's column, and check.py maps a table header to this deck's survey labels through it. page_headers lists the other headings pages have actually used, so those columns are checked instead of silently skipped. A column headed for a deck the survey splits across two labels is compared against the SUM of the labels present that day, which is what those pages print; known_convention_differences records the one page that deliberately prints a single entry instead. A header that means one specific label of a multi-label deck goes in page_header_labels instead, because mapping it to the family would compare a single-civilisation column against a family total."
 }
