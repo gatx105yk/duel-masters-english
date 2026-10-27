@@ -45,8 +45,10 @@ half: every dated table cell against `data-nd-daily.json`, the four description 
 canonical/`og:url`/JSON-LD trio, tag balance, entities, the middle dot, local links, and the
 sitemap both ways. Exit 0 means that half is clean and nothing more. `python3 check.py --list`
 says what it does **and what it cannot do**; read that list before trusting a clean run.
-`python3 check.py --selftest` breaks the repository sixteen ways and checks each break is
-caught — run it after editing `check.py`.
+`python3 check.py --selftest` breaks the repository **34 ways** and requires each break to
+produce its own message — run it after editing `check.py`. **Keep that number right here:** it
+said sixteen until 27 October, two rewrites after it was true, and a stale number in this file
+is the kind of thing `EDITORIAL.md` warns outlives a wrong article.
 
 Then do the half it cannot.
 
