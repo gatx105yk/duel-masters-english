@@ -187,6 +187,28 @@ Do not read the first days after the change as the change working or not working
 example is in the week four piece: Jokers went 26.5, 14.3, 22.7, 20.8 across four days with nothing
 altered in the game.
 
+**State on 27 October, 23:00: five of the seven days are read.** The 27th's chart publishes on the
+morning of the 28th and the 28th's on the morning of the 29th, so **this cannot be written before
+the 29th** — and `EDITORIAL.md` says in as many words not to publish a short week, because week
+four's seventh day changed two of its findings and its headline.
+
+What the five read days look like, as a starting point and not as findings:
+
+| | 22 Oct | 23 Oct | 24 Oct | 25 Oct | 26 Oct |
+|---|---|---|---|---|---|
+| Games | 46 | 227 | 146 | 290 | 309 |
+| Slices | 19 | 11 | 13 | 14 | 12 |
+| Leader | `バラギアラループ` | `ジョーカーズ` | `ジョーカーズ` | tie | `ジョーカーズ` |
+
+**A third caveat for the page, on top of the two above.** The 22nd has **nineteen named slices and
+no unnamed bucket at all**, against eleven to fourteen on every other day of the week. At 46 games
+the survey labelled everything, so that day's figures are not comparable to the rest on slice count
+or on bucket size, and **a week-wide statement about the bucket has to say so**. The sum check
+already treats it as the documented rounding exception at 99.6.
+
+`ジョーカーズ` has led or tied every day since the change. That is four days and it is not a finding
+yet; write it from the finished week.
+
 **Three of its seven days are already written up** on `2026-10-26-raid-chart.html`, so week five
 should not re-argue them. What that page established and the week page can lean on: the red/white
 pair's floor ran 10.7–27.7 over the twenty-one full days before the change and reads 11.9, 11.6,
