@@ -88,6 +88,27 @@ So confirm a deploy with `fetch(url, {cache:'reload'})` and a cache-busting para
 the **source string**. Use the rendered page only for what the source cannot show: layout, whether
 a block renders at all, whether an image loads.
 
+### Compare a size against the same kind of size, or do not compare it
+
+**27 October.** A deploy was reported here as not landing. It had landed. The check was
+`wc -c` on disk against the length of the fetched text, and those are **different
+measurements**: `wc -c` counts bytes, a fetched string's `.length` counts characters. Every
+page on this site is mostly Japanese, which is **three bytes per character in UTF-8**, so the
+two never agree — the calendar is 45,805 bytes and 43,539 characters. The poll condition was
+`len > 44000`, which that page can never satisfy, so it would have reported failure forever.
+
+Two rules out of it:
+
+- **Verify by source string, not by size.** The string test was already right and already in
+  this file; it is what correctly said "not yet" at 23:00 and would have said "yes" at 23:05.
+  A size is a weaker test even when the units match, because it cannot say *which* change
+  landed. If a size is used anyway, compare characters with characters: in Python,
+  `len(open(p, encoding='utf-8').read())`, never `wc -c`.
+- **A Pages build can take longer than a few minutes.** This one finished about five minutes
+  after the push, which was after the polling gave up. Before reporting a deploy as failed,
+  read the `last-modified` header — it dates the build — and say what time the check was made.
+  "Not deployed as of 23:03" is a claim that stays true; "not deployed" is not.
+
 ## Corrections are dated and say what was wrong
 
 The publisher edits its own notices in place with no archive, and this site has made a
