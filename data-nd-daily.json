@@ -716,6 +716,26 @@
    },
    "read_on": "2026-10-28",
    "note": "Fifth full day under the changed 《“B-零朱”レイド》 and the fifth running with 赤白レイド not a named slice. Whole-chart method on a full white viewport: ten labels, ten wedges, sums to exactly 100.0. Both 轟轟轟 labels magnified at a 1700px render: 赤白轟轟轟(レイド無し) 22.7 and 赤単轟轟轟(レイド無し) 3.6. 赤白轟轟轟(レイド無し) LEADS OUTRIGHT for the first time and sets a series high at 22.7, against a previous high of 16.6 on the 25th; it tied for the lead on the 25th but had not led alone. CAUTION: 110 games is a small sample. Only 46 (22 October) and 84 (19 October) are smaller among the full reads, and 110 ties 20 October exactly, so this is the joint third-smallest. 22.7 is about 25 games and the smallest named slice, 2.7, is about 3. Nine decks are named plus the bucket. That is the series minimum, but it is a FIVE-WAY tie: 3, 11, 17 and 18 October also name nine, so the right phrasing is 'as few as the chart has ever named', not 'the fewest since' any date. コットンゼニス and ヘブンズキリコ are both absent after appearing on the 26th. Both superlatives in the first version of this note were wrong and were caught by recomputing against the whole series before publishing: it said second-smallest sample (it is joint third) and fewest named decks since 11 October (18 October also named nine)."
+  },
+  "2026-10-28": {
+   "games": 132,
+   "completeness": "full",
+   "leading_named_deck": "ジョーカーズ",
+   "entries": {
+    "ジョーカーズ": 18.9,
+    "赤白轟轟轟(レイド無し)": 17.4,
+    "その他": 11.6,
+    "青魔導具": 9.8,
+    "バラギアラループ": 9.1,
+    "HADESドラゲリオン": 9.1,
+    "スコーラー": 6.8,
+    "ゼニス天門": 5.3,
+    "赤単バルガ": 4.5,
+    "コットンゼニス": 4.5,
+    "ボルシャックNEX": 3.0
+   },
+   "read_on": "2026-10-29",
+   "note": "Sixth full day under the changed 《“B-零朱”レイド》 and the sixth running with 赤白レイド not a named slice. Whole-chart method on a full white viewport: eleven labels, eleven wedges, sums to exactly 100.0 at 132 games. 赤白轟轟轟(レイド無し) magnified at a 1700px render to confirm 赤白 rather than 赤単 — it matters more than usual today because 赤単轟轟轟(レイド無し) is NOT on this chart, so there was no second label to compare against. ジョーカーズ retakes the lead at 18.9 and 赤白轟轟轟(レイド無し) falls back to 17.4 from 22.7. ボルシャックNEX returns at 3.0; it has appeared on 13, 19 and 22 October as well, which a first draft of this note got wrong by listing only two of the three. This completes week five, 22-28 October: all seven days read. Six of them sum to 100.0 and the 22nd is the documented 99.6 rounding exception, so a week-wide sum statement has to say six and one, not seven."
   }
  }
 }
