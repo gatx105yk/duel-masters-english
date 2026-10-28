@@ -697,6 +697,25 @@
    },
    "read_on": "2026-10-27",
    "note": "Fourth full day under the changed 《“B-零朱”レイド》 and the fourth running with 赤白レイド not a named slice. Whole-chart method on a full white viewport: twelve labels, twelve wedges, sums to exactly 100.0 at 309 games. Both 轟轟轟 labels were magnified at a 1700px render to separate 赤白 from 赤単: 赤白轟轟轟(レイド無し) reads 14.6 and 赤単轟轟轟(レイド無し) reads 3.9. The Raid-less red/white build has now gone 11.9, 11.6, 16.6, 14.6 across the four full days since the change. ジョーカーズ leads the named slices at 16.5; the unnamed bucket is larger at 16.7 and is excluded from the leader field by convention. Smallest named slice is 2.3, about seven games in 309, so an unnamed deck sits below that."
+  },
+  "2026-10-27": {
+   "games": 110,
+   "completeness": "full",
+   "leading_named_deck": "赤白轟轟轟(レイド無し)",
+   "entries": {
+    "赤白轟轟轟(レイド無し)": 22.7,
+    "ジョーカーズ": 16.4,
+    "バラギアラループ": 14.5,
+    "その他": 10.1,
+    "HADESドラゲリオン": 10.0,
+    "赤単バルガ": 10.0,
+    "青魔導具": 5.5,
+    "ゼニス天門": 4.5,
+    "赤単轟轟轟(レイド無し)": 3.6,
+    "スコーラー": 2.7
+   },
+   "read_on": "2026-10-28",
+   "note": "Fifth full day under the changed 《“B-零朱”レイド》 and the fifth running with 赤白レイド not a named slice. Whole-chart method on a full white viewport: ten labels, ten wedges, sums to exactly 100.0. Both 轟轟轟 labels magnified at a 1700px render: 赤白轟轟轟(レイド無し) 22.7 and 赤単轟轟轟(レイド無し) 3.6. 赤白轟轟轟(レイド無し) LEADS OUTRIGHT for the first time and sets a series high at 22.7, against a previous high of 16.6 on the 25th; it tied for the lead on the 25th but had not led alone. CAUTION: 110 games is a small sample. Only 46 (22 October) and 84 (19 October) are smaller among the full reads, and 110 ties 20 October exactly, so this is the joint third-smallest. 22.7 is about 25 games and the smallest named slice, 2.7, is about 3. Nine decks are named plus the bucket. That is the series minimum, but it is a FIVE-WAY tie: 3, 11, 17 and 18 October also name nine, so the right phrasing is 'as few as the chart has ever named', not 'the fewest since' any date. コットンゼニス and ヘブンズキリコ are both absent after appearing on the 26th. Both superlatives in the first version of this note were wrong and were caught by recomputing against the whole series before publishing: it said second-smallest sample (it is joint third) and fewest named decks since 11 October (18 October also named nine)."
   }
  }
 }

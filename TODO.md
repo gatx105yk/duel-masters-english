@@ -187,7 +187,15 @@ Do not read the first days after the change as the change working or not working
 example is in the week four piece: Jokers went 26.5, 14.3, 22.7, 20.8 across four days with nothing
 altered in the game.
 
-**State on 27 October, 23:00: five of the seven days are read.** The 27th's chart publishes on the
+**State on 28 October, 16:30: six of the seven days are read.** Only the 28th is missing and its
+chart publishes on the morning of the 29th, which is the due date. **The 27th changes the shape of
+the week**: `赤白轟轟轟(レイド無し)` reads **22.7 and leads outright for the first time**, a series
+high against 16.6 on the 25th — but on **110 games**, where only 46 and 84 are smaller among the
+full reads and 110 ties 20 October exactly. Nine decks are named plus the bucket, which is the
+series minimum and a five-way tie, so write "as few as the chart has ever named", never "the
+fewest since". Do not let the 22.7 carry the piece on its own.
+
+**Earlier state, 27 October, 23:00: five of the seven days were read.** The 27th's chart publishes on the
 morning of the 28th and the 28th's on the morning of the 29th, so **this cannot be written before
 the 29th** — and `EDITORIAL.md` says in as many words not to publish a short week, because week
 four's seventh day changed two of its findings and its headline.
@@ -200,14 +208,17 @@ What the five read days look like, as a starting point and not as findings:
 | Slices | 19 | 11 | 13 | 14 | 12 |
 | Leader | `バラギアラループ` | `ジョーカーズ` | `ジョーカーズ` | tie | `ジョーカーズ` |
 
+and the 27th, read on the 28th: **110 games, 10 slices, leader `赤白轟轟轟(レイド無し)` at 22.7**.
+
 **A third caveat for the page, on top of the two above.** The 22nd has **nineteen named slices and
 no unnamed bucket at all**, against eleven to fourteen on every other day of the week. At 46 games
 the survey labelled everything, so that day's figures are not comparable to the rest on slice count
 or on bucket size, and **a week-wide statement about the bucket has to say so**. The sum check
 already treats it as the documented rounding exception at 99.6.
 
-`ジョーカーズ` has led or tied every day since the change. That is four days and it is not a finding
-yet; write it from the finished week.
+`ジョーカーズ` led or tied the first four days since the change and then did not: on the 27th it is
+second at 16.4. **That run is over before the week is, which is the reason not to write a week from
+five days of it.** Write the leader column from the finished week.
 
 **Three of its seven days are already written up** on `2026-10-26-raid-chart.html`, so week five
 should not re-argue them. What that page established and the week page can lean on: the red/white
