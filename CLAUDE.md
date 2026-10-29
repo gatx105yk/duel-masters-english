@@ -45,10 +45,11 @@ half: every dated table cell against `data-nd-daily.json`, the four description 
 canonical/`og:url`/JSON-LD trio, tag balance, entities, the middle dot, local links, and the
 sitemap both ways. Exit 0 means that half is clean and nothing more. `python3 check.py --list`
 says what it does **and what it cannot do**; read that list before trusting a clean run.
-`python3 check.py --selftest` breaks the repository **34 ways** and requires each break to
-produce its own message — run it after editing `check.py`. **Keep that number right here:** it
-said sixteen until 27 October, two rewrites after it was true, and a stale number in this file
-is the kind of thing `EDITORIAL.md` warns outlives a wrong article.
+`python3 check.py --selftest` breaks the repository **36 ways** and requires each break to
+produce its own message — run it after editing `check.py`. **Keep that number right here:** it said
+sixteen until 27 October, two rewrites after it was true; the line telling you to keep it right was
+written that day and was itself stale by the 29th, one check later. If you add a check, the number
+above moves in the same commit.
 
 Then do the half it cannot.
 
@@ -64,6 +65,12 @@ in a dated note added to an older page rather than in an article.
 Then reconcile the page against `data-nd-daily.json`. Anything that differs on purpose
 belongs in that file's `known_convention_differences`, so the next person does not
 "fix" it.
+
+**A sentence about another page needs that page open**, and **every file this session edited gets
+the prose read, not only the one being written.** On 29 October three errors survived every pass run
+on the new page and none of them were about the new page: two were claims about what older pages say,
+and one was a note that had landed inside an older page's opening paragraph the day before.
+`EDITORIAL.md` has the three rules out of it.
 
 **Check all four description slots agree**: `meta name=description`, `og:description`,
 `twitter:description`, and the JSON-LD `description`. Checking fewer has shipped stale

@@ -603,6 +603,20 @@ def check_page(r: Report, path: str, daily: dict, labels: dict[str, list[str]],
     if loose and not new:
         r.note(f"{len(loose)} unwrapped Japanese characters, all in the baseline")
 
+    # --- a dated correction belongs in a note box, not in the opening
+    #     paragraph. Counted across the site on 29 October: 53 correction
+    #     markers, 47 of them inside a .note box, the rest in a kicker
+    #     dateline or a .cap follow-up, and NONE in a standfirst. The one
+    #     that was is the edit this check was written for: a forward note
+    #     added to week four landed inside its standfirst and split the
+    #     paragraph in half.
+    for sf in re.findall(r'<p class="standfirst">(.*?)</p>', s, re.S):
+        hit = re.search(r"Corrected[ ,]|Correction,|Note added|Updated \d|"
+                        r"Resolved,|Forward note", sf)
+        r.ok(not hit, f"no dated correction inside the standfirst "
+                      f"({hit.group(0) if hit else ''}) — it goes in a "
+                      f"note box so the opening paragraph reads as written")
+
     # --- local links resolve
     # Strip the fragment and query rather than skipping hrefs that have one:
     # `no-such-page.html#x` used to be exempt from existing.
@@ -917,6 +931,27 @@ def check_markdown(r: Report) -> None:
         r.ok("\t" not in s, f"{f}: no tab characters", warn_only=True)
 
 
+def check_selftest_count(r: Report) -> None:
+    """The instruction files state how many ways --selftest breaks the repo.
+    That number has gone stale three times: it said sixteen for two rewrites,
+    and the line added on 27 October telling a reader to keep it right was
+    itself wrong by the 29th, one check later. A number a person has to
+    remember to update is a number that will be wrong, so it is checked."""
+    r.group("the instruction files' claims about this script")
+    n = len(SELFTEST)
+    r.note(f"--selftest has {n} cases")
+    for f in ("CLAUDE.md", "EDITORIAL.md"):
+        text = read(f)
+        if text.startswith(UNREADABLE):
+            r.ok(False, f"{f}: could not be read")
+            continue
+        claims = re.findall(r"(\d+|sixteen|seventeen|eighteen) ways", text)
+        r.ok(bool(claims), f"{f} states how many ways --selftest breaks things")
+        for c in claims:
+            r.ok(c == str(n),
+                 f"{f} says {c!r} ways and there are {n}")
+
+
 def check_repo(r: Report) -> None:
     r.group("repository invariants")
     r.ok(os.path.exists(OWNERSHIP),
@@ -973,6 +1008,7 @@ def main(argv: list[str]) -> int:
 
     check_sitemap(r)
     check_markdown(r)
+    check_selftest_count(r)
     check_repo(r)
 
     # A site-wide figure, so a coverage collapse is a number that moves. The
@@ -1095,6 +1131,11 @@ SELFTEST = [
     ("U+00B7 as an entity, which the first version of the check missed",
      "2026-10-26-raid-chart.html", "<h1>", "<h1>G&middot;G&middot;G ",
      "no U+00B7 used as a Japanese middle dot"),
+    # A dated note dropped into the opening paragraph instead of a box.
+    ("a dated correction buried in the standfirst",
+     "2026-10-29-week-five.html", '<p class="standfirst">Week five',
+     '<p class="standfirst">Corrected 29 October. Week five',
+     "no dated correction inside the standfirst"),
     ("a malformed entity",
      "2026-10-26-raid-chart.html", "<h1>", "<h1>&nope; ",
      "no malformed entities"),
@@ -1141,6 +1182,11 @@ SELFTEST = [
      "read_on"),
     ("a data file that is not there at all",
      DAILY, DELETE_FILE, "", "could not be read"),
+    # The count in the instruction files has gone stale three times.
+    ("the stated selftest count going stale",
+     "CLAUDE.md", "breaks the repository **36 ways**",
+     "breaks the repository **34 ways**",
+     "says '34' ways and there are 36"),
     ("an HTML entity in a markdown file",
      "CLAUDE.md", "# Start here", "# Start here &mdash;",
      "no HTML entities outside code spans"),

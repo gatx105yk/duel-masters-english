@@ -262,7 +262,7 @@ sources instead of on arithmetic.
 Two rules for the script itself, both from the four tests above:
 
 - **Every check earns its place by failing on a real mutation, and the mutation has to name
-  the message it expects.** `--selftest` breaks the repository 34 ways. Its first version
+  the message it expects.** `--selftest` breaks the repository 36 ways (`check.py` checks this number against the file, because it has gone stale three times). Its first version
   asked only whether the run exited non-zero *or printed the word WARN anywhere*, which any
   unrelated warning satisfies: **four checks could be deleted outright and it still reported
   all 17 caught.** Verified, not theorised. Each case now declares its own message and is
@@ -332,6 +332,42 @@ Worked out for week four and worth repeating. Do these in order:
 
 **Do not publish a short week.** Week four could have run on six days two days earlier; the seventh
 day changed two of its findings and its headline.
+
+### A claim about another page is a claim, and it needs that page open
+
+**29 October.** The week five page shipped clean through every pass run on itself and then lost
+three sentences to a pass that opened the pages it talked about. The existing rule above says to
+check the supporting files **against the article**. That is not the same as checking what the
+article says **about** them, and these were the second thing.
+
+What went wrong, and what each one teaches:
+
+- **"This site has written that sentence in every one of these pages."** It had not. None of the
+  four earlier weekly pages contains it. A universal claim about a set of files is a `grep`, and
+  it was never run.
+- **"That article made the flatness of the biggest day its spine."** Week four's headline is about
+  two decks ending level; the flatness is one of three points in its standfirst and one section.
+  **Summarising another page's emphasis is not checkable.** "Its h1 says X" is. So is "it has a
+  section headed X". Prefer those: the point survives and it can be verified.
+- **The forward note added to week four the day before landed inside its `standfirst`**, splitting
+  that paragraph around five lines of correction. Nobody read week four after editing it —
+  the prose pass went to the new page only.
+
+So, three rules, in order of how much they pay:
+
+1. **Every file the session edited gets the prose read, not only the one being written.** This is
+   the cheapest of the three and it would have caught the worst of them.
+2. **Before writing a sentence that characterises another page, open that page.** If the sentence
+   says "every", "never", "only" or "first" about a set of pages, run it as a search and write the
+   number the search printed.
+3. **Characterise another page by quoting it, not by summarising it.** This converts the claim
+   from judgement into something the next pass can check.
+
+`check.py` now fails a dated correction found inside a `<p class="standfirst">`. That is the
+mechanical half of the third case and nothing more: counted across the site the day the rule was
+written, there are **53 correction markers, 47 inside a `.note` box**, the rest in a kicker
+dateline or a `.cap` follow-up, and **none in a standfirst** — so the check has no false
+positive to find, and exactly one real one, which is why it exists.
 
 ### Fact-check the supporting files too, not just the article
 
