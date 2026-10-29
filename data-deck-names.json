@@ -191,7 +191,8 @@
      "used_by": [
       "survey"
      ],
-     "absent_from_daily": "Not on any chart in data-nd-daily.json and it has no note saying when the survey used it. It may be a players' name recorded as the survey's. Left as written rather than reassigned, because reassigning it would be a guess about which source said it."
+     "absent_from_daily": "Not on any chart in data-nd-daily.json and it has no note saying when the survey used it. It may be a players' name recorded as the survey's. Left as written rather than reassigned, because reassigning it would be a guess about which source said it.",
+     "publisher_use": "Settled on 29 October 2026 that the NAME is the publisher's, not a coinage: news/16477 and news/16479 both give \u300e\u81ea\u7136\u30b8\u30e7\u30fc\u30ab\u30fc\u30ba\u300f as the title of the SP Rule Match collaboration deck built on \u821e\u5143\u5553\u4ecb, and the rental-deck image of that event names the same five decks. That does NOT answer what this entry asks, which is whether the SURVEY ever used the label. used_by is unchanged for that reason."
     }
    ]
   },

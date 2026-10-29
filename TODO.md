@@ -294,6 +294,37 @@ they were not writing. Two of them are gone, replaced by things that run:
 **and its own docstring** — the docstring was left out of the first version of that check and was
 already stale when it was written. The count is **39**, and nothing about it is a person's job.
 
+## One September re-read settles two open items at once
+
+Found on 29 October while working through both separately. **They are the same job.**
+
+- The six `赤単バルガ` warnings and the two `青黒魔導具` warnings on
+  `2026-09-27-first-numbers.html` are all cells for **24-29 September**, days the record holds as
+  `tracked` -- the six columns this site followed at the time, plus the leader. The page published
+  figures that were read off those charts and never written into the record, so `check.py` has
+  nothing to compare them against and says so eight times.
+- `ジョラゴンジョーカーズ` needs the **24-26 September** labels re-read to find out whether the
+  survey used that name on those days, as `data-deck-names.json` says it did until the 27th.
+
+So: **re-read 24-29 September in full and promote those six days from `tracked` to `full`.** That
+answers both -- the eight cells become comparable, and the Jokers label either is or is not on the
+24th to 26th. It is chart work, which is the expensive and error-prone kind, which is why it sits
+here as a decision rather than being done quietly.
+
+**What it costs, honestly.** Six charts read by hand at 1700px or better, every slice, each day
+reconciled to 100.0 or reconstructed by game count. That is the work that has produced this site's
+worst errors. **And it may not settle the Jokers name**: a label too small to resolve stays
+unresolved, which is already the case for `（判読不能）の紋章` on three October days.
+
+**The alternative is to close both as deliberate.** Record the eight cells in
+`known_convention_differences` as "page read the full chart, the record tracked six columns", and
+mark the `ジョラゴンジョーカーズ` note as unverifiable without a re-read. That costs nothing, keeps
+the record honest, and leaves the warnings count at 15 forever. **Neither option is wrong; they
+cost different things.** Nothing is blocked either way: no published page uses the Jokers name, and
+the 赤単バルガ figures are already published and were read from the charts.
+
+---
+
 ## `check.py`: what it still cannot compare, and one hole it found in the data
 
 Audited on 26 October by an agent that had not written it. The audit's findings are fixed;
