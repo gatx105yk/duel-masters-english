@@ -189,3 +189,10 @@ section{padding:3.5rem 0; border-bottom:1px solid var(--rule)}
 @media(prefers-reduced-motion:reduce){
   .gl::after,.gl::before{transition:none}
 }
+
+/* A quotation of what another page on this site currently says is written
+   <q cite="FILE.html">…</q>. The quote marks come from here so the markup
+   carries nothing but the quoted words, and check.py verifies that those
+   words appear verbatim in FILE.html. See EDITORIAL.md. */
+q { quotes: "\201C" "\201D"; }
+q[cite] { font-style: inherit; }

@@ -262,7 +262,7 @@ sources instead of on arithmetic.
 Two rules for the script itself, both from the four tests above:
 
 - **Every check earns its place by failing on a real mutation, and the mutation has to name
-  the message it expects.** `--selftest` breaks the repository 36 ways (`check.py` checks this number against the file, because it has gone stale three times). Its first version
+  the message it expects.** `--selftest` breaks the repository 39 ways (`check.py` checks that number against this file, `CLAUDE.md` and its own docstring, because it went stale three times while a person was keeping it). Its first version
   asked only whether the run exited non-zero *or printed the word WARN anywhere*, which any
   unrelated warning satisfies: **four checks could be deleted outright and it still reported
   all 17 caught.** Verified, not theorised. Each case now declares its own message and is
@@ -333,7 +333,7 @@ Worked out for week four and worth repeating. Do these in order:
 **Do not publish a short week.** Week four could have run on six days two days earlier; the seventh
 day changed two of its findings and its headline.
 
-### A claim about another page is a claim, and it needs that page open
+### A claim about another page is quoted, and the quote is checked
 
 **29 October.** The week five page shipped clean through every pass run on itself and then lost
 three sentences to a pass that opened the pages it talked about. The existing rule above says to
@@ -353,21 +353,57 @@ What went wrong, and what each one teaches:
   that paragraph around five lines of correction. Nobody read week four after editing it —
   the prose pass went to the new page only.
 
-So, three rules, in order of how much they pay:
+So: **two mechanisms, and no third rule.** The three rules first written here were "read every
+edited file's prose", "open a page before characterising it" and "quote rather than summarise".
+The first two asked a person to remember to look at files they were not thinking about, which is
+exactly what they had just demonstrated they would not do. Both were replaced the same day.
 
-1. **Every file the session edited gets the prose read, not only the one being written.** This is
-   the cheapest of the three and it would have caught the worst of them.
-2. **Before writing a sentence that characterises another page, open that page.** If the sentence
-   says "every", "never", "only" or "first" about a set of pages, run it as a search and write the
-   number the search printed.
-3. **Characterise another page by quoting it, not by summarising it.** This converts the claim
-   from judgement into something the next pass can check.
+1. **`python3 check.py --prose`** prints the prose that changed in every `.html` and `.md` file
+   the session edited — tags gone, entities decoded, one sentence per line — and names the edited
+   files that have no prose to diff. The file list comes from `git`, not from memory. The prose
+   pass now has a checklist, and the worst of the three errors, a correction box split across
+   another page's standfirst, appears in it as changed sentences in a file nobody was writing.
+2. **Characterise another page by quoting it, as `<q cite="FILE.html">the exact words</q>`.**
+   `check.py` strips the tags, decodes the entities and requires the quoted words to appear
+   verbatim in the named file. This absorbs the rule it replaces: the quote cannot be written
+   without that page open, because the words have to match. A sentence that cannot be written
+   this way is a judgement about another page rather than a report of it — reach for phrasing a
+   search can settle, "its h1 says X", "it has a section headed X", and write what the search
+   printed.
 
-`check.py` now fails a dated correction found inside a `<p class="standfirst">`. That is the
-mechanical half of the third case and nothing more: counted across the site the day the rule was
-written, there are **53 correction markers, 47 inside a `.note` box**, the rest in a kicker
-dateline or a `.cap` follow-up, and **none in a standfirst** — so the check has no false
-positive to find, and exactly one real one, which is why it exists.
+**The check earned its place inside a minute.** Run for the first time on 29 October against the
+very page that prompted all of this, it failed on **both** of the two quotations already published
+there:
+
+- Published as "440 games, then 84 — both ends of everything this site has recorded." Week four
+  says `The fourth week of the format ran 440 games, then 84, then 149 — both ends of everything
+  this site has recorded, inside seven days.` The quote began seven words into that sentence, with
+  no ellipsis to say so; it dropped `then 149` out of the middle and `inside seven days` off the
+  end. Counting the dropped words is itself easy to get wrong — the first draft of this bullet
+  said three and four — so name them instead.
+- Published as "Week four is the widest of the four by sample." Week four says `Week four is the
+  widest of the four by sample and the second widest by leader share.` It was cut at a
+  comfortable place, dropping `and the second widest by leader share`, and the clause cut off
+  **was still true** — week one's leading share moved
+  13.5 points against week four's 12.6, and week five's 6.2 is the narrowest band of the five — so
+  the article presented a whole sentence as passed when only half of it was.
+
+Both carried a full stop inside the closing quote mark, so both read as whole sentences from that
+page. Neither contained a wrong figure, so every numeric check passed, and both survived four
+fact-check passes by the same reader who had written the sentences and never re-opened
+the page they came from. **That is the entire argument for the convention:** this error class is invisible
+to a numeric check and invisible to its own author, and matching the words catches it for free.
+
+**Why the check is keyed on `cite` and not on quote marks.** Counted the same day: eighteen
+quotations of six words or more across the site, and those two were the only ones presenting
+another page's *current* wording. The other sixteen quote wording that has since been withdrawn,
+or a publisher notice, and can never resolve to a file here. A check on quote marks would raise
+sixteen false alarms, and a check that cries wolf sixteen times is a check that gets switched off.
+
+`check.py` also fails a dated correction found inside a `<p class="standfirst">`. Counted across
+the site the day that rule was written: **53 correction markers, 47 of them inside a `.note`
+box**, the rest in a kicker dateline or a `.cap` follow-up, and **none in a standfirst** — so the
+check has no false positive to find and exactly one real one, which is why it exists.
 
 ### Fact-check the supporting files too, not just the article
 
@@ -381,8 +417,9 @@ not have found either.
 The cause is the same both times: the calendar entry, the TODO note and the data record get
 written early, from a partial view, and then the fact-checking all goes to the article.
 
-**So when a session touches several files, list them before the last pass and check each one
-against the finished article.** Anything the article states and a supporting file contradicts is
+**So when a session touches several files, check each one against the finished article before
+the last pass.** `python3 check.py --prose` does the listing: the file list comes from `git`, and
+the prose it prints is what a reader sees change. Anything the article states and a supporting file contradicts is
 an error in one of them, and it is usually the file that was written first.
 
 ### These files count as touched, and nothing checks them
@@ -402,6 +439,11 @@ pass; the two errors were in `DATA.md` and `TODO.md`, written hours earlier in t
 
 **An article is wrong until someone corrects it. A rule is wrong until someone notices, and in the
 meantime it is followed.** That is the longer-lived mistake of the two.
+
+`python3 check.py --prose` now puts both of these files in front of you, because the list of
+edited files comes from `git` and `.md` files are in it. **A diff is not a check**: nothing
+verifies what a rule in `DATA.md` claims, and the inference above would still have gone in. What
+the diff removes is the excuse of not having looked.
 
 So the list of files to check before the last pass **includes the instruction files**, and a rule
 added to one of them gets the same treatment as a sentence in an article:

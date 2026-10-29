@@ -42,14 +42,25 @@ confirm the byte count with `git fetch` every time.
 
 **Run `python3 check.py` first.** It takes a quarter of a second and does the mechanical
 half: every dated table cell against `data-nd-daily.json`, the four description slots, the
-canonical/`og:url`/JSON-LD trio, tag balance, entities, the middle dot, local links, and the
-sitemap both ways. Exit 0 means that half is clean and nothing more. `python3 check.py --list`
-says what it does **and what it cannot do**; read that list before trusting a clean run.
-`python3 check.py --selftest` breaks the repository **36 ways** and requires each break to
-produce its own message — run it after editing `check.py`. **Keep that number right here:** it said
-sixteen until 27 October, two rewrites after it was true; the line telling you to keep it right was
-written that day and was itself stale by the 29th, one check later. If you add a check, the number
-above moves in the same commit.
+canonical/`og:url`/JSON-LD trio, tag balance, entities, the middle dot, local links, the
+sitemap both ways, every `<q cite>` quotation against the page it names, and a dated correction
+left sitting in an opening paragraph. Exit 0 means that half is clean and nothing more.
+`python3 check.py --list` says what it does **and what it cannot do**; read that list before
+trusting a clean run.
+
+`python3 check.py --selftest` breaks the repository **39 ways** and requires each break to
+produce its own message — run it after editing `check.py`. **That number is not yours to keep
+right.** `check.py` reads it back out of this file, out of `EDITORIAL.md` and out of its own
+docstring, and fails the run if any of the three has drifted. It was yours until 29 October and
+it was wrong three times running: it said sixteen for two rewrites; the line added on 27 October
+telling you to keep it right was itself stale by the 29th; and the check written that day to end
+the problem left the script's own docstring out of its scan, so it sat one screen above a stale
+number of its own. Add a check and the three numbers move themselves, or the run fails.
+
+`python3 check.py --prose` prints what changed **as a reader sees it** — tags gone, one sentence
+per line — in every `.html` and `.md` file this session edited, and names the edited files that
+have no prose to diff. The file list comes from `git`, not from memory. Run it before the prose
+pass, so the pass reaches the files you were **not** thinking about.
 
 Then do the half it cannot.
 
@@ -66,11 +77,19 @@ Then reconcile the page against `data-nd-daily.json`. Anything that differs on p
 belongs in that file's `known_convention_differences`, so the next person does not
 "fix" it.
 
-**A sentence about another page needs that page open**, and **every file this session edited gets
-the prose read, not only the one being written.** On 29 October three errors survived every pass run
-on the new page and none of them were about the new page: two were claims about what older pages say,
-and one was a note that had landed inside an older page's opening paragraph the day before.
-`EDITORIAL.md` has the three rules out of it.
+**Quote another page; do not characterise it.** Write it as
+`<q cite="FILE.html">the exact words</q>` and `check.py` verifies those words against that file
+on every run. This is not a style preference: it is the only form of a cross-page claim that
+carries its own evidence, and a sentence you cannot write this way is a sentence you have not
+checked. The quote marks come from `style.css`, so the markup holds nothing but the quoted words.
+
+On 29 October three errors survived every pass run on a new page and none of them were about the
+new page: two were claims about what older pages say, and one was a note that had landed inside an
+older page's opening paragraph the day before. The rules written that day asked a person to
+remember to open other files; **`--prose` and `<q cite>` replaced both of them the same day**,
+after the quotation check found that the two quotations already on the new page were **both**
+misquotations — words dropped from the middle of one and the end of the other, quote marks and
+full stop intact, every numeric check passing. `EDITORIAL.md` has the case.
 
 **Check all four description slots agree**: `meta name=description`, `og:description`,
 `twitter:description`, and the JSON-LD `description`. Checking fewer has shipped stale

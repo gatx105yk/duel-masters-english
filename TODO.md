@@ -1,6 +1,6 @@
 # Where things stand
 
-Updated 21 Oct 2026.
+Updated 29 Oct 2026.
 
 ---
 
@@ -277,6 +277,22 @@ Needs a token from the author. Worth doing **after** item 1, not before — ther
 currently nothing to measure.
 
 ---
+
+## 29 October: two rules replaced by two mechanisms
+
+The three cross-file rules written earlier the same day asked a person to remember to open files
+they were not writing. Two of them are gone, replaced by things that run:
+
+- **`python3 check.py --prose`** prints the prose that changed in every edited `.html` and `.md`
+  file, tags gone and one sentence per line, with the file list from `git`, and names the edited
+  files that have no prose. Use it before the prose pass.
+- **`<q cite="FILE.html">...</q>`** is now how this site quotes another of its pages, and
+  `check.py` requires the quoted words to appear verbatim in that file. Its first run failed on
+  **both** quotations already published on the week five page. `EDITORIAL.md` has the case.
+
+`check.py` also now reads the stated `--selftest` count back out of `CLAUDE.md`, `EDITORIAL.md`
+**and its own docstring** — the docstring was left out of the first version of that check and was
+already stale when it was written. The count is **39**, and nothing about it is a person's job.
 
 ## `check.py`: what it still cannot compare, and one hole it found in the data
 

@@ -6,7 +6,8 @@ Run from the repository root:
     python3 check.py              # everything
     python3 check.py FILE...      # only these pages, plus the file checks
     python3 check.py --list       # the list of checks, and nothing else
-    python3 check.py --selftest   # break the repo 34 ways; each must be caught
+    python3 check.py --prose [REF] # the prose that changed in every edited file
+    python3 check.py --selftest   # break the repo 39 ways; each must be caught
 
 Exit status is 0 only when no FAIL is reported. WARN never fails the run; it
 marks something a person should read. In particular **every dated table cell
@@ -99,6 +100,7 @@ six wrong sentences were the same page.
 from __future__ import annotations
 
 import datetime as dt
+import difflib
 import html
 import json
 import os
@@ -936,12 +938,24 @@ def check_selftest_count(r: Report) -> None:
     That number has gone stale three times: it said sixteen for two rewrites,
     and the line added on 27 October telling a reader to keep it right was
     itself wrong by the 29th, one check later. A number a person has to
-    remember to update is a number that will be wrong, so it is checked."""
+    remember to update is a number that will be wrong, so it is checked.
+
+    This script's own docstring is checked with them, because it was left out
+    of the first version of this check and still said thirty-four when there
+    were thirty-six cases -- the stale number was sitting inside the file
+    whose job is to catch stale numbers."""
     r.group("the instruction files' claims about this script")
     n = len(SELFTEST)
     r.note(f"--selftest has {n} cases")
-    for f in ("CLAUDE.md", "EDITORIAL.md"):
-        text = read(f)
+    for f in ("CLAUDE.md", "EDITORIAL.md", "check.py"):
+        if f == "check.py":
+            # Its docstring only. Scanning the whole file would read the
+            # SELFTEST case for this very check -- which has to contain both
+            # a right and a wrong number as literal strings -- and report
+            # them as the file's own claims.
+            text = __doc__ or ""
+        else:
+            text = read(f)
         if text.startswith(UNREADABLE):
             r.ok(False, f"{f}: could not be read")
             continue
@@ -950,6 +964,65 @@ def check_selftest_count(r: Report) -> None:
         for c in claims:
             r.ok(c == str(n),
                  f"{f} says {c!r} ways and there are {n}")
+
+
+def check_quotations(r: Report) -> None:
+    """A quotation of what another page on this site currently says is written
+    <q cite="FILE.html">...</q>, and the quoted words have to appear in that
+    file. Nothing else on the site may use <q>.
+
+    Why this is a check and not a rule to remember. On 29 October week five
+    quoted two sentences from week four, each inside quote marks with a full
+    stop before the closing one, and NEITHER was that page's sentence: the
+    first dropped three words out of the middle, the second ended early and
+    cut off a clause that was still true. No figure was wrong, so every
+    numeric check here passed and both survived four fact-check passes. The
+    only thing that catches this class is having the other page open, which
+    is the step a written rule cannot enforce.
+
+    Keyed on the cite attribute, not on quote marks, and that is deliberate.
+    Counted across the site the same day: eighteen quotations of six words or
+    more, and these two were the ONLY ones presenting another page's current
+    wording. The other sixteen quote wording that has since been withdrawn,
+    or a publisher notice, and can never resolve to a file here -- so a check
+    on quote marks would be sixteen false alarms and would be switched off.
+    """
+    r.group("quotations of other pages (<q cite>)")
+    pages = sorted(f for f in os.listdir(".") if f.endswith(".html"))
+    flat: dict[str, str] = {}
+    for f in pages:
+        t = read(f)
+        flat[f] = (t if t.startswith(UNREADABLE)
+                   else re.sub(r"\s+", " ", html.unescape(strip_tags(t))))
+    total = 0
+    for f in pages:
+        s = read(f)
+        if s.startswith(UNREADABLE):
+            continue
+        for m in re.finditer(r"<q(\s[^>]*)?>(.*?)</q>", s, re.S):
+            attrs, body = m.group(1) or "", m.group(2)
+            cite = re.search(r'cite="([^"]*)"', attrs)
+            if not cite or not cite.group(1).strip():
+                r.ok(False, f"{f}: a <q> without a cite attribute -- <q> is "
+                            f"reserved for quoting another page on this site, "
+                            f"so it names the page: {body[:60]!r}")
+                continue
+            target = cite.group(1).strip()
+            total += 1
+            quoted = re.sub(r"\s+", " ", html.unescape(strip_tags(body))).strip()
+            if not quoted:
+                r.ok(False, f"{f}: an empty <q cite=\"{target}\">")
+                continue
+            if target not in flat:
+                r.ok(False, f"{f}: quotes {target}, which is not a page here")
+                continue
+            if flat[target].startswith(UNREADABLE):
+                r.ok(False, f"{f}: quotes {target}, which could not be read")
+                continue
+            r.ok(quoted in flat[target],
+                 f"{f}: the {len(quoted.split())} words quoted from {target} "
+                 f"appear there verbatim ({quoted[:58]}...)")
+    r.note(f"{total} quotation(s) of another page checked word for word")
 
 
 def check_repo(r: Report) -> None:
@@ -963,12 +1036,108 @@ def check_repo(r: Report) -> None:
 
 # -------------------------------------------------------------------- main
 
+def prose(argv: list[str]) -> int:
+    """Print the rendered prose that changed in every file this session edited.
+
+    This exists because of a rule that could not be kept. "Every file the
+    session edited gets its prose read, not only the one being written" was
+    written on 29 October after three errors survived every pass run on a new
+    page and none of them were about that page: two were claims about what
+    older pages say, and one was a note that had landed inside an older
+    page's opening paragraph the day before. The rule asks a person to
+    remember to re-read files they are not thinking about, which is the thing
+    they have just demonstrated they will not do.
+
+    So the rule is not repeated here; the reading is made cheap instead. This
+    prints the prose as a reader sees it -- tags gone, entities decoded, one
+    sentence per line -- for every file changed against a git ref, so the
+    diff that has to be read is a handful of sentences and the list of files
+    comes from git rather than from memory.
+
+    It is an aid and never a gate: no exit status, nothing to pass.
+    """
+    import subprocess
+
+    ref = next((a for a in argv[1:] if not a.startswith("-")), "HEAD")
+
+    def git(*args: str) -> str | None:
+        try:
+            out = subprocess.run(("git",) + args, capture_output=True,
+                                 text=True, cwd=".")
+        except OSError:
+            return None
+        return out.stdout if out.returncode == 0 else None
+
+    every = git("diff", "--name-only", ref)
+    changed = git("diff", "--name-only", ref, "--", "*.html", "*.md")
+    if changed is None:
+        print(f"No git answer for {ref!r}. This mode needs a git repository "
+              f"and a ref that exists; nothing was checked.")
+        return 0
+    untracked = git("ls-files", "--others", "--exclude-standard") or ""
+    files = sorted({f for f in changed.split() if f}
+                   | {f for f in untracked.split()
+                      if f.endswith((".html", ".md"))})
+    if not files:
+        print(f"No .html or .md file differs from {ref}.")
+        return 0
+
+    def sentences(text: str, is_html: bool) -> list[str]:
+        if is_html:
+            text = html.unescape(strip_tags(text))
+        text = re.sub(r"\s+", " ", text)
+        parts = re.split(r"(?<=[.!?\u3002])\s+", text)
+        return [x.strip() for x in parts if x.strip()]
+
+    print(f"Prose changed against {ref}, in {len(files)} file(s). "
+          f"Read all of it, including the files you were not writing.\n")
+    for f in files:
+        is_html = f.endswith(".html")
+        now = read(f)
+        if now.startswith(UNREADABLE):
+            print(f"=== {f}: {now.replace(UNREADABLE, '').strip()}\n")
+            continue
+        was = git("show", f"{ref}:{f}")
+        new_file = was is None
+        before = [] if new_file else sentences(was, is_html)
+        after = sentences(now, is_html)
+        diff = [l for l in difflib.unified_diff(before, after, lineterm="", n=0)
+                if l[:1] in "+-" and l[:3] not in ("+++", "---")]
+        label = "NEW FILE" if new_file else f"{len(diff)} line(s) of prose"
+        print(f"=== {f}  ({label})")
+        if new_file:
+            print(f"    {len(after)} sentences; read the page itself.\n")
+            continue
+        if not diff:
+            print("    Markup changed, prose did not.\n")
+            continue
+        for l in diff:
+            sign, body = l[0], l[1:].strip()
+            print(f"  {sign} {body}")
+        print()
+    others = sorted(f for f in (every or "").split()
+                    if f and not f.endswith((".html", ".md")))
+    if others:
+        print("Also changed, with no prose to diff -- check these by hand:")
+        for f in others:
+            print(f"  {f}")
+        print()
+    print("The sentences above are what a reader will see change. A claim "
+          "about another page\nstill needs that page open -- write it as "
+          "<q cite=\"FILE.html\">...</q> and check.py will\nverify the words "
+          "against that file.")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     if "--list" in argv:
         print(__doc__)
         return 0
     if "--selftest" in argv:
         return selftest()
+    if "--prose" in argv:
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        return prose([a for a in argv if a != "--prose"])
 
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     r = Report()
@@ -1008,6 +1177,7 @@ def main(argv: list[str]) -> int:
 
     check_sitemap(r)
     check_markdown(r)
+    check_quotations(r)
     check_selftest_count(r)
     check_repo(r)
 
@@ -1184,15 +1354,33 @@ SELFTEST = [
      DAILY, DELETE_FILE, "", "could not be read"),
     # The count in the instruction files has gone stale three times.
     ("the stated selftest count going stale",
-     "CLAUDE.md", "breaks the repository **36 ways**",
+     "CLAUDE.md", "breaks the repository **39 ways**",
      "breaks the repository **34 ways**",
-     "says '34' ways and there are 36"),
+     "says '34' ways and there are 39"),
     ("an HTML entity in a markdown file",
      "CLAUDE.md", "# Start here", "# Start here &mdash;",
      "no HTML entities outside code spans"),
     ("an HTML entity hidden behind a backticked one",
      "TODO.md", "# Where things stand", "# Where things stand &mdash;",
      "no HTML entities outside code spans"),
+    # A quotation of another page that is not that page's sentence. This is
+    # the 29 October error: three words dropped out of the middle, quote
+    # marks and full stop intact, every numeric check still passing.
+    ("a quotation of another page with words dropped out of the middle",
+     "2026-10-29-week-five.html",
+     "ran 440 games, then 84, then 149 &mdash; both ends",
+     "ran 440 games, then 84 &mdash; both ends",
+     "appear there verbatim"),
+    ("a quotation pointing at a page that is not here",
+     "2026-10-29-week-five.html",
+     '<q cite="2026-10-24-week-four.html">Week four is the widest',
+     '<q cite="2026-10-24-week-forty.html">Week four is the widest',
+     "which is not a page here"),
+    ("a <q> with no cite, so nothing says which page it quotes",
+     "2026-10-29-week-five.html",
+     '<q cite="2026-10-24-week-four.html">Week four is the widest',
+     '<q>Week four is the widest',
+     "without a cite attribute"),
 ]
 
 
