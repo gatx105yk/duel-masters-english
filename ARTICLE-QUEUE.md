@@ -40,6 +40,25 @@ paper", not "this is coming to PLAY'S".
 Sources: `dm.takaratomy.co.jp`, `@t2duema`, and `/rule/regulation/` every time regardless of what
 the front page says.
 
+### The Japan-only line, and the two times it has been crossed
+
+**"Anything requiring a Japanese address to act on" sits in the Skip column**, and the
+`神アート` premium art sets are exactly that: Takara Tomy Mall only, made to order, no supply
+after the window shuts. Two have been written up anyway, and the reason has to be stated or the
+rule means nothing.
+
+- **The Magic sets, 11 September.** Covered under *anything Magic-adjacent*, which is in the Cover
+  column, and the article says in its own words that it is listed because a Magic player would want
+  to know it exists, not because it is actionable.
+- **The PLAY'S sets, 31 October.** Covered because **the subject is PLAY'S** — the characters on the
+  cards are from the game this site is about, and one set is built on a promotion this site already
+  has a page on.
+
+**So the test is the subject, not the shelf.** A Mall exclusive about PLAY'S or about Magic is
+covered and carries a plain statement that it cannot be bought from outside Japan. A Mall exclusive
+about neither — sleeves, a storage box, a paper-only product line — is still skipped. If that line
+has to be crossed a third time for a reason not on this list, write the reason here first.
+
 ---
 
 ## 3. Tournament results
