@@ -81,6 +81,27 @@ announcements at the same minute — the two card-change posts are 08:00 and 08:
 something is being published, check again after 17:00 however recent the earlier look was — a check
 at 16:56 missed four notices by four minutes and put a false claim on the site.
 
+### 17:00 is the usual slot, not the only one
+
+**30 October 2026.** `news/16475`, the signed-card exchange, is timestamped **11:00 PM**. The
+collaboration stream began at 21:00; the X posts announcing what came out of it run **22:16 to
+22:42**, and the notice followed at 23:00, eighteen minutes after the last of them. **When the
+stream ended is not stated anywhere**, so the notice is placed against the posts, not against the
+broadcast.
+
+So the rule above holds for the daily slot and **does not** hold for anything tied to an event:
+
+- **A notice attached to a broadcast goes up after the broadcast, not at 17:00.** Both streams on
+  record work this way: 12 October announced a collaboration mid-broadcast, and 30 October produced
+  five posts and a notice between 22:16 and 23:00.
+- **The X run and the notice can be hours apart, in either direction.** On 29 October the SP Rule
+  Match notice carries 5:00 PM and the X posts for it did not start until **19:00**. On 30 October
+  the posts came first and the notice followed at 23:00.
+- So: **when a stream or a timed event is scheduled, check again after it ends**, not at 17:00 and
+  not the next morning. A check at 20:00 on the 30th would have been honest and useless: it would
+  have missed the notice and all five of the posts that followed the stream. **"Nothing new as of
+  20:00" is a claim that stays true; "nothing new on the 30th" would have been false.**
+
 ### The news index front page holds ten items, and that is all it holds
 
 **Found on 26 October.** The ranked season notice for the season that started 16 October
