@@ -87,18 +87,25 @@ does not hold is treating 17:00 as the last check of the day.**
 
 ### 17:00 is the usual slot, not the only one
 
-**The slot was never universal, and this file said it was.** Twelve October notices have had their
-timestamps read here. **Ten carry 5:00 PM.** Two do not:
+**The slot was never universal, and this file said it was.** Twenty-two October notices have now had
+their timestamps read. **Ten carry 5:00 PM. Twelve do not.**
 
-| Notice | Date | Time |
+| Time | Count | Notices |
 |---|---|---|
-| `news/16522` 「11月度公認大会開催！」 | 23 October | **6:00 PM** |
-| `news/16475` 「【ショップ】サイン付きカードが…」 | 30 October | **11:00 PM** |
+| **4:00 PM** | 9 | `16285` `16422` `16424` `16426` `16430` `16433` `16435` `16439` `16481`, all 22 October |
+| 5:00 PM | 10 | the seven of 19–20 October, plus `16437` `16477` (26th) and `16479` (29th) |
+| **6:00 PM** | 1 | `16522`, 23 October |
+| **11:00 PM** | 1 | `16475`, 30 October |
+| **12:00 AM** | 1 | `16308`, 16 October |
 
-`16522` had been sitting on the news index since the 23rd, listed in `TODO.md` as uncovered, and its
-timestamp was never read until 31 October. **The counterexample was there the whole time and the
-rule above was written without checking it.** Read the timestamp on every notice, and keep the
-count here honest rather than restating the pattern.
+**Nine of the twelve exceptions are a single day**: 22 October, the day the seventh collaboration
+opened, where everything went up at 16:00 together. That is the shape to expect — **a day with a
+launch on it runs on the launch's clock, not the daily slot.**
+
+The earlier rule was written from seven notices of two adjacent days and then stated as a law. The
+counterexamples were all reachable the whole time, several of them on the second page of the index
+this file also said did not exist. **Read the timestamp on every notice and keep this table honest;
+do not restate the pattern from memory.**
 
 **30 October 2026.** `news/16475`, the signed-card exchange, is timestamped **11:00 PM**. The
 collaboration stream began at 21:00; the X posts announcing what came out of it run **22:16 to
@@ -119,7 +126,45 @@ So the rule above holds for the daily slot and **does not** hold for anything ti
   have missed the notice and all five of the posts that followed the stream. **"Nothing new as of
   20:00" is a claim that stays true; "nothing new on the 30th" would have been false.**
 
-### The news index front page holds ten items, and that is all it holds
+### The news index paginates, and this file said it did not
+
+**Corrected 31 October 2026. The section below was wrong, and the site has been working around a
+limit that does not exist.**
+
+`https://dmps.takaratomy.co.jp/news/page/2` returns **a different ten items**, and the pagination
+runs to **page 169**; `page/170` is a 404. So the index is a **full archive**, not a window. What
+fails is the query-string forms: `?pg=2` and `?page=2` both return page one, which is what was
+tested on 26 October, and the conclusion was drawn from that.
+
+| Form | Result |
+|---|---|
+| `/news/page/2` | **works** — different ten |
+| `/news/page/2/` | **works** — same as above |
+| `/news/?page=2` | returns page one |
+| `/news/?pg=2` | returns page one |
+
+**Use `/news/page/N`.** The ID-probing described below is not needed and never was: `news/16308`
+was always two clicks away. Anything this site has recorded as "not on the news index" on the
+strength of the front page should be re-checked against the paginated index before it is repeated —
+**that phrasing appears on published pages.**
+
+**That re-check was done on 31 October**, across pages 1–6 of the index, sixty notices, back past
+the Railgun collaboration. Every published "X only / no news-index page" claim on this site survived
+it except one:
+
+| Claim | Verdict |
+|---|---|
+| 配信者王決定戦バトルロイヤル2026, 12 October | no notice — **holds** |
+| The Legend Battle ending unlocked, 27 October | no notice — **holds** |
+| The collaboration stream, 30 October | no notice — **holds** |
+| 神アート絆-03 / -04 on the PLAY'S index | no notice — **holds** |
+| The collaboration playmat | no notice — **holds** |
+| **The returning scenarios** | **WRONG — `news/16426`, 22 October** |
+
+So the front-page habit cost exactly one error, which is luck rather than method. Check the
+paginated index before writing that something is not documented.
+
+### What the front page shows, and the claim that was built on it
 
 **Found on 26 October.** The ranked season notice for the season that started 16 October
 (`news/16308`, 「【ランクマッチ】オラマッハ・ザ・ジョニーカップ開催！」) is **not on
@@ -132,11 +177,10 @@ Two consequences:
 - **"It is not on the news index" is a claim about the front page, nothing more.** Say which
   you mean. The calendar carried "Documented on the news index" for that season with no
   notice number, which is how the gap stayed open.
-- **A notice page stays reachable by number after it leaves the index.** `news/16308` loads
-  fine. Probing a range of numbers found it: of 171 IDs tried between 16290 and 16460, only
-  17 returned 200, and two of those were the season notices. **That is the way to recover a
-  notice the index no longer shows** — but it is a search, not a lookup, so record the number
-  in the calendar the first time rather than finding it twice.
+- **A notice page stays reachable by number.** `news/16308` loads fine. Probing a range of
+  numbers found it: of 171 IDs tried between 16290 and 16460, only 17 returned 200. **That probe
+  was unnecessary** — see the correction above; walking `/news/page/N` finds the same notice
+  without guessing. Record the number in the calendar the first time either way.
 
 ### Top ordering returns posts from previous years
 
