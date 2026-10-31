@@ -70,16 +70,20 @@ but not the consent one. Described in articles where relevant, never quoted.
 **Stop when nothing is new.** The official accounts post one or two things a day. Checking again
 twenty minutes later returns the same answer.
 
-### The notice slot is 17:00 JST
+### The notice slot is usually 17:00 JST
 
-Every October notice checked carries a timestamp of **5:00 PM**: the four of 20 October
-(16416, 16418, 16420, 16454) and the three of 19 October (16410, 16412, 16414). X carries the same
-announcements at the same minute — the two card-change posts are 08:00 and 08:01 UTC, which is
-17:00 and 17:01 JST.
+**Usually. Read the next section before relying on this one** — this heading said "is 17:00" until
+31 October, and two October notices are not at 17:00.
+
+Seven October notices were timed when this section was written and all seven carried **5:00 PM**:
+the four of 20 October (16416, 16418, 16420, 16454) and the three of 19 October (16410, 16412,
+16414). X carries the same announcements at the same minute — the two card-change posts are 08:00
+and 08:01 UTC, which is 17:00 and 17:01 JST.
 
 **A check made before 17:00 is a check on yesterday.** Ask the day's question after 17:00. If
 something is being published, check again after 17:00 however recent the earlier look was — a check
-at 16:56 missed four notices by four minutes and put a false claim on the site.
+at 16:56 missed four notices by four minutes and put a false claim on the site. **That holds. What
+does not hold is treating 17:00 as the last check of the day.**
 
 ### 17:00 is the usual slot, not the only one
 
