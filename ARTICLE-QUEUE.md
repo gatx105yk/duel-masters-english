@@ -87,14 +87,23 @@ What not to write: how to pilot anything. That is the Japanese guides' work.
 Nobody else is translating this. English readers can find a ban list; they cannot find out that a
 card is making people quit, or that a format is being called a grind.
 
-### The hard limit, measured
+### The limit that was not a limit
 
-X search **returns 6–11 posts and stops.** Scrolling does not load more — tested repeatedly, in
-both latest and top ordering, with and without date ranges. Whether that is rate limiting or
-automation detection is unknown, and working around it is not something to attempt.
+**This section said until 1 November 2026 that X search "returns 6–11 posts and stops", that
+scrolling does not load more, and that it had been "tested repeatedly". That was wrong.** It pages
+properly with real input scrolling — one query reached **40 posts over a 1 hour 46 minute window**
+and was still climbing when the test stopped. The cap was an artefact of scripted scrolling, the
+same artefact `WATCH-TASK.md` had already diagnosed for the timeline; the search entry was simply
+never re-run after the fix. The method is in `WATCH-TASK.md`.
 
-**So statistical claims about sentiment are off the table.** Eleven posts cannot support "players
-are unhappy."
+**What still holds.** A search returns what the index gives for that term over that window. It is
+not a census of players, it is not weighted, and a term people reach for when annoyed will return
+annoyed posts. **So "players are unhappy" is still off the table** — not because the sample is
+eleven, but because no search can support a claim about players in general.
+
+**What is newly allowed.** Counting over a stated window, with the query and the window named:
+"of the 40 posts this query returned between 22:45 and 00:31, nine raise the card selection". That
+is a measurement, and it was not available while the cap was believed in.
 
 ### What to write instead
 

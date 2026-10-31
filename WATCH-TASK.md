@@ -44,7 +44,7 @@ was advertised but never documented.
 
 | Source | Limit |
 |---|---|
-| X search for `デュエプレ` | **Returns 6–11 posts and stops.** Not fixable. Use it for individual large posts, never for proportions. **Top ordering mixes years** — see below |
+| X search for `デュエプレ` | **Pages properly with real input scrolling** — see below; the old "6–11 and stops" entry was wrong. Still a search sample, not a census. **Top ordering mixes years** — see below |
 | `r/DuelMastersPlays` | ~13 posts a week, mostly install and rules questions. Good signal for what confuses new English speakers |
 | Official comprehensive rules PDF | Authority for anything mechanical. **Check the version number** — 1.50 as of April 2026 |
 
@@ -289,6 +289,35 @@ real input scrolling    7 → 13 → 16 → 19, height 7205 → 12480, still cli
 So **X can be read back through properly**, and the official account is usable as a primary source
 on its own. Alternate scrolling with collecting, because only about ten posts stay mounted at once —
 anything scrolled past is discarded from the page.
+
+#### The same is true of search, and this file said otherwise for weeks
+
+**1 November 2026.** The fix above was found for the timeline and **never retested against search**.
+Both this file and `ARTICLE-QUEUE.md` went on saying a search "returns 6–11 posts and stops" and
+that this was "not fixable" and "tested repeatedly". Retested with real input scrolling, one query
+in latest ordering:
+
+```
+initial load   17 posts
+scroll  1      20
+scroll  2      23
+scroll  3      34
+scroll  4      40   — and still climbing when the test was stopped
+```
+
+Forty posts spanning **1 hour 46 minutes**, all of them this year. The cap was the scripted-scroll
+artefact all along; the entry describing it survived its own correction because nobody re-ran the
+query the fix applied to.
+
+**What this changes.** A sample of forty over a stated window is a different instrument from a
+sample of eleven. It is still a *search* — it returns what the index gives for that term, not every
+post — so claims about "players" in general stay out. But **counting over a window is now worth
+doing**: "of the 40 posts this query returned between 22:45 and 00:31, N raise X" is a sentence
+this site can stand behind, and could not before.
+
+**Mounted is not collected.** Only about twenty articles stay in the DOM, so collect after every
+scroll and keep a cumulative set keyed on the `datetime` attribute, or the count will look flat
+while the page is actually paging.
 
 ### The guide site's exclusive slot has a pattern
 
