@@ -373,7 +373,7 @@ wrong count of one deck's names, which is why the file exists, so leave them vis
 
 ## Uncovered, found on the news index
 
-**`news/16522`, 23 October: 「11月度公認大会開催！」** — November's official tournaments. Found during
+**`news/16522`, 23 October: 「11月度公認大会開催！」** **Timestamped 6:00 PM, not the 17:00 slot — read 31 October; it is one of the two October counterexamples now recorded in `WATCH-TASK.md`.** — November's official tournaments. Found during
 the pre-push source check on 26 October and **it is nowhere on this site**: not the calendar, not this
 file. It is the newest item on the news index, so nothing has been published since it.
 

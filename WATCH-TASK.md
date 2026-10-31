@@ -83,6 +83,19 @@ at 16:56 missed four notices by four minutes and put a false claim on the site.
 
 ### 17:00 is the usual slot, not the only one
 
+**The slot was never universal, and this file said it was.** Twelve October notices have had their
+timestamps read here. **Ten carry 5:00 PM.** Two do not:
+
+| Notice | Date | Time |
+|---|---|---|
+| `news/16522` 「11月度公認大会開催！」 | 23 October | **6:00 PM** |
+| `news/16475` 「【ショップ】サイン付きカードが…」 | 30 October | **11:00 PM** |
+
+`16522` had been sitting on the news index since the 23rd, listed in `TODO.md` as uncovered, and its
+timestamp was never read until 31 October. **The counterexample was there the whole time and the
+rule above was written without checking it.** Read the timestamp on every notice, and keep the
+count here honest rather than restating the pattern.
+
 **30 October 2026.** `news/16475`, the signed-card exchange, is timestamped **11:00 PM**. The
 collaboration stream began at 21:00; the X posts announcing what came out of it run **22:16 to
 22:42**, and the notice followed at 23:00, eighteen minutes after the last of them. **When the
