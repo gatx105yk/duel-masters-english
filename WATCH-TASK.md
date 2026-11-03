@@ -164,6 +164,20 @@ it except one:
 So the front-page habit cost exactly one error, which is luck rather than method. Check the
 paginated index before writing that something is not documented.
 
+#### The index itself can go quiet for days — read its newest date first
+
+**3 November 2026, 23:14 JST.** The newest entry on the index is **`news/16475`, 30 October**. The
+index has had **nothing new for four days**, while the X account posted eight times across
+31 October – 3 November.
+
+So the cheapest form of "is this on the index?" is **read the top entry's date**. If it predates
+the thing being checked, no amount of paging will find it and the absence is settled in one fetch.
+Paging back is for the opposite case: something old enough that it *could* be there.
+
+Read the dates from the **page source**, not the rendered page — the dates appear twice in the
+source, once as `2026-10-30` and once as `2026.10.30`, and the entries run in date order, not ID
+order (`16479` is dated 29 October and sits below `16475`, dated the 30th).
+
 ### What the front page shows, and the claim that was built on it
 
 **Found on 26 October.** The ranked season notice for the season that started 16 October
