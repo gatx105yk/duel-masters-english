@@ -285,6 +285,52 @@ scrolling, see below.
 | Japanese guide sites | Also given exclusives; their set roundups list every card known so far |
 | **Official YouTube** | **A whole card was shown here and nowhere else.** Not checked until 15 Sep |
 
+### Reading an official video: the order is not the obvious one
+
+**Added 4 November 2026**, out of reading `KuDSYUvXs3k` — the 439-second rules video for
+DM26-EX5, published **2 November 18:00 JST**. A pass had already reported on that video when the
+steps below showed it had covered **four of its six cards**.
+
+A video carries **two channels and they do not have equal standing:**
+
+| | What it is | Use |
+|---|---|---|
+| On-screen captions | Text the production put on the frame | **The only quotable one** |
+| Auto-generated subtitles | Machine transcription of speech | Index and cross-check. **Never quote** |
+
+This video has only Japanese ASR, and `timedtext` answers **200 with an empty body**, so there is
+no transcript to fetch. The text has to be read off the picture.
+
+**1. Force the quality up before reading anything.** `getAvailableQualityLevels()`, then
+`setPlaybackQualityRange(best, best)`. The tab was serving **1280x720** when the reading started; the quality
+setting behind that was never read, so treat the resolution itself as the thing to check. Forcing `hd1080` gives **1920x1080 — 2.25 times the pixels**, and wording that had
+been ambiguous became plain. It is one call, it is free, and it was done **last** instead of first.
+
+**2. Build an index before reading a single frame.** Turn captions on, play, and collect
+`.ytp-caption-segment` text into a page variable on a timer; two calls to start and read back. That
+produced **82 distinct lines** and showed that **two whole cards and one whole ruling had never
+been looked at** — after a pass that had already reported the video as read. The index is not for
+accuracy. It is for knowing **what you have not seen**, which no amount of careful reading supplies.
+
+**3. Read the caption band, not the frame.** The authored caption sits in a band across the bottom.
+Zooming the whole player at reduced scale spends most of the budget on faces and shelves.
+
+**4. Where speech and screen disagree, stop — do not pick one.** The ASR around 40s says the set has
+no new keyword; the card on screen prints `■超無限進化` as one. **Unresolved, and therefore
+unpublished.**
+
+**5. Never take a name off a frame.** Dashes and small kana do not survive the read. Names go to the
+official card database or the translation patch, as everywhere else on this site.
+
+**Two things that destroy the work:**
+
+- **The index lives in the page.** Navigating that tab, or letting autoplay run past the end,
+  deletes it. Pause before the end rather than relying on autoplay being off.
+- **A background tab does not honour the rate you set.** Playback ran slower than the 2x asked
+  for -- by how much was never measured, which is the point: **read `currentTime` for where you
+  are and never compute it from the rate.** A long in-page polling loop also froze the renderer
+  once and cost the tab, so keep in-page loops short.
+
 ### Scrolling X: use real input, not scripted scrolling
 
 **This was wrong for most of a day and cost two missed reveals.** Scripted scrolling — calling
