@@ -181,6 +181,20 @@ sat third, dated 29 October, titled 【10月29日更新】; on 5 November it sat
 2:00 PM, titled 【11月4日更新】. Same notice, same ID, rewritten, re-dated, back at the top. The
 29 October text is gone and there is no archive of it.
 
+**By that evening the shortcut was worth less than it looked.** At **21:27 on 5 November**
+`news/10180` was at the top again, re-dated **11月5日 3:15 PM**. Three readings, three dates:
+29 October, 4 November, 5 November, all the same ID. **It is not on a daily cycle** — on 3 November
+it still read 29 October, untouched for at least five days — but it was re-dated **on two
+consecutive days** here, so a top entry dated today may just be this notice again.
+
+**The usable form: skip `10180` and read the newest date below it.** That was **30 October**
+(`news/16475`) on 3 November and it is still 30 October now — **six days with no new notice on the
+index** while the X account kept posting.
+
+**How fast the content turns over:** the bug read that morning as newly confirmed — 《テック団の波壊Go！》
+and 「P'S封印」 — was listed as **fixed** in the evening version, with a 15:10 deployment noted.
+A sentence about "the issues currently confirmed" on this notice can be stale in hours, not days.
+
 So the top entry's date answers **"could this be on the index?"** and nothing else. A date that has
 moved means **either** a new notice **or** an old one rewritten, and the two look identical from the
 listing. **Compare the ID against what was there last time**, not just the date. When a standing
