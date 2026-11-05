@@ -174,6 +174,26 @@ So the cheapest form of "is this on the index?" is **read the top entry's date**
 the thing being checked, no amount of paging will find it and the absence is settled in one fetch.
 Paging back is for the opposite case: something old enough that it *could* be there.
 
+**The rule above has an exception, found the next morning.** On **5 November at 11:00** the top
+entry was dated **4 November** — and nothing had been added. `news/10180`,
+「確認している不具合について」, is a **standing notice the publisher edits in place**: on 3 November it
+sat third, dated 29 October, titled 【10月29日更新】; on 5 November it sat first, dated 4 November
+2:00 PM, titled 【11月4日更新】. Same notice, same ID, rewritten, re-dated, back at the top. The
+29 October text is gone and there is no archive of it.
+
+So the top entry's date answers **"could this be on the index?"** and nothing else. A date that has
+moved means **either** a new notice **or** an old one rewritten, and the two look identical from the
+listing. **Compare the ID against what was there last time**, not just the date. When a standing
+notice has been rewritten, the previous wording is unrecoverable.
+
+**This site already has a claim resting on a rewritten version of this very notice.**
+`2026-10-07-legend-battle-split.html` says two of the thirteen issues newly listed in the
+**6 October** update were in chapter three against 《ガ・リュミーズ》 at 伝説級. That update has been
+overwritten at least twice since — 29 October, then 4 November — so **the sentence can no longer be
+checked against its source.** It is not known to be wrong; it is no longer verifiable, which is a
+different thing and is now said on the page. Before resting anything on this notice again, **copy
+the wording into the article or the data file at the time of reading.**
+
 Read the dates from the **page source**, not the rendered page — the dates appear twice in the
 source, once as `2026-10-30` and once as `2026.10.30`, and the entries run in date order, not ID
 order (`16479` is dated 29 October and sits below `16475`, dated the 30th).
