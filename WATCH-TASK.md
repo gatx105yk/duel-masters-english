@@ -290,6 +290,28 @@ to understand what the thing actually is.
 2. `dmwiki.net` — has product codes, price, contents, usually within a day
 3. The shop listing, if it is a Mall exclusive — purchase limits and the close date
 
+### The official card search: only one way in, and always run a control
+
+**6 November 2026.** `dm.takaratomy.co.jp/card/` is the authoritative text source for paper cards,
+and it is the fastest way to test whether a keyword, mechanic or wording is actually new. Three
+things about it, found the hard way in one sitting:
+
+- **Only an in-page form submit works.** Fill `#search_cond`'s `keyword` and click
+  「検索する」. POSTing the form with `fetch` returns the input page again, and navigating to the
+  `?v={json}` URL the submit produces **drops the keyword and returns the whole database** —
+  23,931 cards, which reads exactly like a successful broad search.
+- **Read the count from 「カード検索 N枚」**, after a pause. The result tiles are images, so the
+  card names are not in the page text.
+- **Always run a control.** A search that silently does nothing returns the same page as a real
+  zero. 「ミザリィ」 returned 0 — meaningful only because 「ボルシャック」 returned 452 the same
+  way. And when a compound string returns a surprising number, test whether the engine is splitting
+  it: 「無限究極進化」, a word that should not exist, returned **0**, which is what proved
+  「超無限進化」's 46 were real matches rather than token hits.
+
+**Unreleased sets are not in it.** On 6 November, the day before DM26-EX5 shipped, both of the
+cards from it that were searched for — 「ミザリィ」 and 「無限龍王」 — returned 0. So this settles "is this new?" immediately, but "what is this card called?" waits
+for release.
+
 ### Before publishing anything card-shaped, check
 
 1. Card text against **two** sources minimum — the card database, the wiki, Kamigame's evaluation page

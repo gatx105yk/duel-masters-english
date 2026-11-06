@@ -40,6 +40,27 @@ paper", not "this is coming to PLAY'S".
 Sources: `dm.takaratomy.co.jp`, `@t2duema`, and `/rule/regulation/` every time regardless of what
 the front page says.
 
+### "New keyword" is a claim, and the card database settles it in one search
+
+**6 November 2026.** Reading the official rules video for DM26-EX5, two cards showed
+`■超無限進化` in their text and this was written down, over four days, as a **new keyword**. It is
+not. The official card search returns **46 cards** carrying that string, from `dm24ex3`, `dm25ex2`,
+`dm26ex1`, `dm26ex4` and others. The results are sorted newest-first and the newest of them is
+`dm26ex4`, so **none of the 46 is from DM26-EX5** — the keyword predates the set. `dm26ex4-012` reads
+「超無限進化：コストの合計が20以上になるように、進化ではない、コマンドまたはドラゴンいずれかのクリーチャー１体以上の上に置く。」
+
+It survived four days because it was never tested, only read. The video's own auto-subtitles said
+the opposite — that the set has no new keyword — and that disagreement was recorded, the claim was
+held back, and **nothing about it was ever published.** The holding back is the only reason this is
+a note and not a correction.
+
+**The actual story is narrower and checkable.** The existing cards condition on a **cost total**;
+the two DM26-EX5 cards condition on a **card count** — 「進化元のカードが2枚以上になるように」. A new
+wording of an old keyword is worth a paragraph. A new keyword is worth a headline, and it was not one.
+
+**So before writing that anything is new** — a keyword, a mechanic, a first — **search the card
+database for it.** It costs one search and it is the difference between the two.
+
 ### The Japan-only line, and the two times it has been crossed
 
 **"Anything requiring a Japanese address to act on" sits in the Skip column**, and the
