@@ -50,6 +50,24 @@ heading citing the official notice, which does not state it.
 Japanese card names, set names, event names: **copy the characters**. Never type them from reading.
 If the source cannot be copied from, say the name could not be verified rather than approximating it.
 
+**11 November 2026: this rule was broken without a single character being retyped.** A quotation
+from the official Q&A was copied correctly and then **tidied**. That page writes some card names in
+`«` `»` and others in `《` `》`, in the same answer; the two using `«` `»` were normalised to `《` `》`
+on the way into the article. The words were right. The quotation was not.
+
+So the rule is wider than it reads: **a quotation is the characters, including the ones that look
+like a formatting choice.** Brackets, spacing inside a name, full-width against half-width, a
+trailing 。 — none of it is yours to standardise. If the source is inconsistent, the page is
+inconsistent too, and a line saying so is better than a tidy quotation.
+
+**That was the third misquotation this site has shipped**, and the first two were caught only
+because a check was written for them. There is no check for this one: `check.py` verifies
+quotations of **other pages on this site** and cannot reach a publisher's page. Until something
+better exists, the pass is manual and it is this: pull every long Japanese passage out of the
+finished file, fetch each source, and compare them **whitespace-normalised but character for
+character** — not by eye. Doing exactly that on the day found these two and cleared the other
+thirteen.
+
 ### Say what the source does not say
 
 If the official notice omits something — price, pack count, a date — write that it is not stated, and
