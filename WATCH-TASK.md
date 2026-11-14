@@ -164,6 +164,36 @@ it except one:
 So the front-page habit cost exactly one error, which is luck rather than method. Check the
 paginated index before writing that something is not documented.
 
+#### Read every publisher page with a unique query string, or you are reading last week
+
+**14 November 2026.** Three reads of the same two URLs, inside about forty seconds, returned three
+different versions of the same notice:
+
+| How it was fetched | What came back |
+|---|---|
+| `fetch('/news/', {cache:'reload'})` | 【11月11日更新】, and **no `news/16622`** |
+| `fetch('/news/10180', {cache:'reload'})` | 【11月12日更新】 |
+| the same two URLs **plus `?nocache=<random>`** | 【11月13日更新】 on both, **and `news/16622` appeared** |
+
+Each read was internally consistent, so nothing looked wrong. **`{cache:'reload'}` is not enough.**
+Only the read with a unique query string matched the notice's own latest version, and only that read
+showed a notice that had been up for two days.
+
+**So: append `?nocache=` and something unique to every publisher URL, every time** — the index, a
+notice, a card page, a Q&A listing. This site already does it when confirming its own deploys;
+the same discipline had never been applied to reading the sources, which is the half that decides
+what gets published.
+
+**The cost of not doing it is a wrong report, not a slow one.** Today's check would have said
+"nothing new on the index, thirteen days" when a notice from 12 November was sitting there.
+
+**It also means a read that found nothing proves less than it looks.** Where this file or an
+article says the index had nothing new as of some time, that holds only if that particular read
+carried a cache-buster. **Before today the practice was inconsistent** — some daily checks appended
+one and some did not — so past "nothing new" lines are worth no more than the read behind them.
+Nothing published has been found wrong because of it, and `news/16622` went up at 15:00 on
+12 November, after that morning's check.
+
 #### The index itself can go quiet for days — read its newest date first
 
 **3 November 2026, 23:14 JST.** The newest entry on the index is **`news/16475`, 30 October**. The
