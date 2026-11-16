@@ -194,6 +194,27 @@ one and some did not — so past "nothing new" lines are worth no more than the 
 Nothing published has been found wrong because of it, and `news/16622` went up at 15:00 on
 12 November, after that morning's check.
 
+**16 November 2026 — the same thing, reproduced on demand in one run.** Three reads of the news
+index, twelve seconds apart, all with `{cache:'reload'}`, differing only in the query string:
+
+| Order | How it was fetched | Top ids returned |
+|---|---|---|
+| 1 | `/news` | `9739, 16626, 10180, 16622, …` |
+| 2 | `/news?n=<unique>` | `9739, `**`16638, 16636`**`, 16626, 10180, 16622` |
+| 3 | `/news` again | `9739, 16626, 10180, 16622, …` — **stale again** |
+
+The plain read missed two notices that were live, went stale again *after* a fresh read had
+already arrived in the same tab, and never corrected itself. **The stale copy is not a first-read
+artefact and it does not warm up**, so the rule is not "cache-bust the first read of the day" —
+it is every read, including the last-minute re-check before publishing, which is exactly where
+this one surfaced.
+
+The two it missed were `16638`（クイック・ピック 第61回シーズン）and `16636`
+（ランクマッチ「バラギアラカップ」）, both dated 2026年11月16日（月）12:00 and both running
+2026年11月16日 00:00 ～ 2026年12月15日 23:59. **Note the posted time is later than the time they
+were readable** — 12:00 against a 09:27 read. The publisher's displayed timestamp is not evidence
+of when a notice appeared, so do not use it to date a discovery; use the time of the read.
+
 #### The index itself can go quiet for days — read its newest date first
 
 **3 November 2026, 23:14 JST.** The newest entry on the index is **`news/16475`, 30 October**. The
