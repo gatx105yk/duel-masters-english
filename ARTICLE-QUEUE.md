@@ -80,6 +80,24 @@ fire: **any sentence containing a number you did not just read off a source is a
 and the set has to be enumerated.** One, two, first, only, largest, none. Write the search or the
 grep that enumerates it into the draft, and if it cannot be written, the sentence cannot either.
 
+**And two hours later, the same shape with no number in it at all.** The 16 November twinpact page
+argued that DMPX-04 shows the digital game giving a card a form paper never had. That was checked
+exhaustively for the campaign card — five printings, each page opened — and **not checked for the
+four cards the same page had just tabulated.** Three of those four are already paper twinpacts under
+the same full name, which is the opposite direction. The thesis had been generalised from the one
+card the evidence covered to the four it did not.
+
+So the rule is not about numbers. **A thesis is a claim about a set too.** If a page says what
+something *is doing*, the set it is doing it to has to be the set that was checked — and the names
+sitting in a table on the same page are the first things to check, because they are what a reader
+will test it against. The cost here was one card-name search per name, five searches in about four
+minutes, after the page was live.
+
+**Worth keeping as a working fact in its own right:** a PLAY'S card name existing in paper means
+nothing by itself. Of the five names that page ended up checking, three were paper twinpacts, one
+was absent from paper on both halves, and one existed in paper only as a plain creature.
+**The database has to be asked per card.**
+
 ### The Japan-only line, and the two times it has been crossed
 
 **"Anything requiring a Japanese address to act on" sits in the Skip column**, and the
