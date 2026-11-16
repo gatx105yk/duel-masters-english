@@ -68,6 +68,27 @@ finished file, fetch each source, and compare them **whitespace-normalised but c
 character** — not by eye. Doing exactly that on the day found these two and cleared the other
 thirteen.
 
+**16 November 2026: and the reading tool can drop characters before you ever see them.** Two
+notices were read by stripping the page text through a character class — something like
+`[^\u3000-\u30ff\u4e00-\u9faf0-9：:/（）「」・\n年月日時分～\-、。！]` — to get a tool result
+past a blocked-content filter. It worked, and it silently removed:
+
+| What the source says | What came back |
+|---|---|
+| `[All Division]`/`[New Division]` | `/` |
+| `DMPP-37 虹帝∞命動` | `DMPP-37虹帝命動` |
+| `DMPB-09 デッキビルダー2026 アークセット` | `DMPB-09デッキビルダー2026アークセット` |
+
+Every one of those reads looked complete and internally consistent. Latin letters, `∞` and spaces
+were all outside the class, so they vanished without a gap to notice. The draft had
+`AllDivision`/`NewDivision` in it on the strength of that read, and only a raw re-read caught it.
+
+**So: a sanitised read is for locating a passage, never for transcribing one.** Once the passage is
+found, re-fetch and read it **raw** — `JSON.stringify` a slice around it so escapes and spacing are
+visible — and copy from that. The same goes for anything that passes source text through a regex,
+an `innerText` normalisation or a `replace` on the way to you. **If a filter is needed to see the
+text at all, it is needed exactly once, and not on the copy you quote from.**
+
 ### Say what the source does not say
 
 If the official notice omits something — price, pack count, a date — write that it is not stated, and
