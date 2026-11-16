@@ -61,6 +61,25 @@ wording of an old keyword is worth a paragraph. A new keyword is worth a headlin
 **So before writing that anything is new** — a keyword, a mechanic, a first — **search the card
 database for it.** It costs one search and it is the difference between the two.
 
+**16 November 2026 — the same rule, the other way round: a count is a claim too.** A calendar entry
+for the ranked season <span>バラギアラカップ</span> said the name *"picks out two of them"* and named
+the two cards **this site had happened to cover**. A card-name search returns **20 printings under
+five names** — <span>天地命動 バラギアラ</span>, <span>天地革命 バラギアラ</span>,
+<span>暴命天 バラギアラ</span>, <span>バラギアラ-MAX</span> and
+<span>バラギアラ ＜ヴェロキボアロ.Star＞</span> — and the first of those alone is paired with six
+different spell halves across its printings. It was published and corrected inside the hour.
+
+**This was the third count of the day taken from the site's own coverage rather than from the
+series.** The other two were superlatives about view figures, one of them a correction of the other.
+The shape is identical every time: *the thing I can see is the thing there is.* The card database
+is the series for cards, the whole file is the series for anything this site has published, and
+**neither of them is what you happen to remember.**
+
+A sharper version of the rule, because "search the database" was already written down and did not
+fire: **any sentence containing a number you did not just read off a source is a claim about a set,
+and the set has to be enumerated.** One, two, first, only, largest, none. Write the search or the
+grep that enumerates it into the draft, and if it cannot be written, the sentence cannot either.
+
 ### The Japan-only line, and the two times it has been crossed
 
 **"Anything requiring a Japanese address to act on" sits in the Skip column**, and the
