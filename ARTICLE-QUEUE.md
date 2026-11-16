@@ -90,12 +90,13 @@ card the evidence covered to the four it did not.
 So the rule is not about numbers. **A thesis is a claim about a set too.** If a page says what
 something *is doing*, the set it is doing it to has to be the set that was checked — and the names
 sitting in a table on the same page are the first things to check, because they are what a reader
-will test it against. The cost here was one card-name search per name, five searches in about four
-minutes, after the page was live.
+will test it against. The cost here was one card-name search per name — six in all with the
+control, about four minutes — after the page was live.
 
 **Worth keeping as a working fact in its own right:** a PLAY'S card name existing in paper means
 nothing by itself. Of the five names that page ended up checking, three were paper twinpacts, one
-was absent from paper on both halves, and one existed in paper only as a plain creature.
+was absent from paper on both halves, and one existed in paper only as a creature with no spell
+half at all.
 **The database has to be asked per card.**
 
 ### The Japan-only line, and the two times it has been crossed
