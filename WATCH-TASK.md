@@ -363,6 +363,34 @@ things about it, found the hard way in one sitting:
 cards from it that were searched for — 「ミザリィ」 and 「無限龍王」 — returned 0. So this settles "is this new?" immediately, but "what is this card called?" waits
 for release.
 
+**17 November 2026: the result list stops at 50, and you cannot page past it.** A card-name search
+for 「魔弾」 reported **54 枚** and returned **50** ids. The form has a `pagenum` field, but setting
+it to 2 and submitting **resets it to 1** and returns page one again, and the `?v={json}` URL cannot
+be navigated (see above). So a search over 50 results can be counted but **not enumerated**, and a
+broad keyword is not a way to settle what exists: 「魔弾」's four unseen results left the status of
+《超煉獄魔弾 DOOM》 open until 「煉獄魔弾」 was searched instead and returned 2.
+
+**So narrow the keyword until the count is at or under 50, and check that it is.** The count and the
+number of ids returned should agree; when they do not, the list is short and any conclusion drawn
+from the absence of a name is worthless.
+
+**And search the distinctive half of a twinpact name.** To establish that no paper twinpact
+《A/B》 exists, searching A alone is enough, because any card with that full name contains A. That
+turns a two-search question into one.
+
+### Reading a card name before searching it: check the digits and the numerals
+
+**17 November 2026.** The reveal post for 《魔光大帝ネロ・グリフィス**II**世》 writes the numeral as
+**two Latin capital I characters** (U+0049 U+0049). The paper database writes the same card
+《魔光大帝ネロ・グリフィス**Ⅱ**世》 with **one Roman-numeral character** (U+2161). A card-name search
+using the publisher's spelling returns **0**; the database's spelling returns **2 printings**.
+
+This is the third time a character difference of this kind has mattered — after the full-width １
+against half-width 1 in the 12 November cap notice, and the « » against 《 》 misquotation on
+7 November. **Before concluding that a card is absent from the database, retype its numerals and
+its brackets the other way and search again.** A zero from a search is only a zero for the exact
+string searched.
+
 ### Before publishing anything card-shaped, check
 
 1. Card text against **two** sources minimum — the card database, the wiki, Kamigame's evaluation page
@@ -382,6 +410,36 @@ all four, and an article went out describing the set from the wrong half of it.
 
 **A big story pushes the ordinary posts down, it does not replace them.** On any day with a major announcement, scroll further than usual, not less — with real input
 scrolling, see below.
+
+**17 November 2026: this rule was already here and it still did not fire.** The 16 November
+twinpact article counted **four** reveals for DMPX-04. There were **fifteen**: seven on
+14 November, four on the 15th, four on the 16th. The seven were below the fold — and worse, that
+evening of the timeline had already been read for two other posts from it, so the problem was not
+reach but that **nothing was counting.**
+
+So stop treating this as something to remember and make it a step. **Reveals are harvested by tag
+into a map, not read off the screen:**
+
+1. Decide the tag. For this run it is `【#デュエプレツインパクト カード情報】`.
+2. Scroll with real input, harvesting every post into a `Map` keyed by its `datetime` after each
+   scroll — X unloads articles as you pass them, so anything not captured on the way down is gone.
+3. **Keep going until the oldest harvested post is older than the thing you are counting** — here,
+   older than the 13 November teaser. Stopping when the screen looks like it has enough is how you
+   get four out of fifteen.
+4. Then count from the map, and state the count with the time it was harvested.
+
+**And do not assume a cadence.** The 15th and 16th ran one card an hour from 18:00. The 14th ran
+one at 20:00 and then **six between 21:08 and 21:16** — eight minutes. An hourly pattern observed
+on two days is not a schedule, and "on the hour" was in the published standfirst as though it were.
+
+### Read the bracket, not the card name
+
+**17 November 2026.** In the middle of the same run the account posted
+`【ランクマッチ報酬 カード情報】《コンダマ/魂フエミドロ》（PR）` — a **ranked-season prize card**,
+not a pack reveal, at 17:01 on 16 November, between posts that were. The card name, the
+`カード情報` wording and the 《 》 all look identical to a reveal. **The only thing that separates
+them is the text inside the brackets**, so harvest on the full bracketed label and never on
+`カード情報` alone.
 
 ### Card reveals come through at least four channels
 
