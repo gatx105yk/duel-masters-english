@@ -391,12 +391,19 @@ turns a two-search question into one.
 using the publisher's spelling returns **0**; the database's spelling returns **2 printings**.
 
 Two different failures get confused here, so keep them apart. **This one is two sources spelling
-the same thing differently** — it breaks searches and cross-references, and the only other recorded
-instance is the full-width １ against half-width 1 in the 12 November cap notice. **The other is
+the same thing differently** — it breaks searches and cross-references. Three instances are on
+record: this Ⅱ against II; the full-width １ against half-width 1 in the 12 November cap notice; and
+the card database writing ` / ` with spaces where the X posts write `/` closed up. **The other is
 retyping a source's own characters** — the « » written back as 《 》 on 7 November, which broke a
 quotation rather than a search. Same cause, different damage. **Before concluding that a card is absent from the database, retype its numerals and
 its brackets the other way and search again.** A zero from a search is only a zero for the exact
 string searched.
+
+**For a Latin-script name that means half-width and full-width, and a control of each.** On
+17 November 《Dream idylle》 was called absent on the strength of `idylle` → 0. Closing it properly
+took four searches: `idylle` → 0, full-width `ｉｄｙｌｌｅ` → 0, `NEX` → 114 and `Dream` → 2 (two
+printings of 《God of Dream / Grenade of D-moll》). The second control is the one that matters — it
+shows the engine matching a Latin word **inside** a card name, which a bare count cannot.
 
 ### Before publishing anything card-shaped, check
 
