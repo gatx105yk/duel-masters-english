@@ -370,6 +370,11 @@ be navigated (see above). So a search over 50 results can be counted but **not e
 broad keyword is not a way to settle what exists: 「魔弾」's four unseen results left the status of
 《超煉獄魔弾 DOOM》 open until 「煉獄魔弾」 was searched instead and returned 2.
 
+**A card page mentioning 呪文 is not a card with a spell half.** 《魔光大帝ネロ・グリフィスⅡ世》's
+page contains 呪文 in its ability text and is a plain creature. The test for a two-faced card is the
+**title**: a twinpact's page title carries ` / ` between the two names, and 種類 names one type. Test
+the title, never a substring of the page.
+
 **So narrow the keyword until the count is at or under 50, and check that it is.** The count and the
 number of ids returned should agree; when they do not, the list is short and any conclusion drawn
 from the absence of a name is worthless.
@@ -427,6 +432,21 @@ into a map, not read off the screen:**
    older than the 13 November teaser. Stopping when the screen looks like it has enough is how you
    get four out of fifteen.
 4. Then count from the map, and state the count with the time it was harvested.
+
+**And the counts can come back stale.** On 17 November at 16:52, three reveal posts read
+`1779/4044/435605`, `651/1982/197984` and `1066/2803/367616` — **identical, to the digit, to figures
+read 31 hours earlier.** A fourth was truncated in that read and its day-old figures were published
+anyway. On a fresh load at 17:58 the four read `1851/4368/560523`, `670/2103/233721`,
+`1122/3053/506819` and `1017/3352/402782`. The stale set had already gone out.
+
+All three stale rows were in the **initial viewport** after navigation, and the posts reached by
+scrolling in the same pass had moved; that is suggestive of where the cached copy comes from, but it
+was not tested, so do not rely on it.
+
+**The tell is a number that has not moved at all.** Engagement on a live post always drifts, so
+identical figures across hours are evidence of a cached read, not of a quiet post. Harvest the whole
+set in one pass and **compare any row you have read before against its earlier value — if it is
+unchanged to the digit, re-read it before publishing it.**
 
 **And do not assume a cadence.** The 15th and 16th ran one card an hour from 18:00. The 14th ran
 one at 20:00 and then **six between 21:08 and 21:16** — eight minutes. An hourly pattern observed
