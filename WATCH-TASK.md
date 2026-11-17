@@ -390,9 +390,11 @@ turns a two-search question into one.
 《魔光大帝ネロ・グリフィス**Ⅱ**世》 with **one Roman-numeral character** (U+2161). A card-name search
 using the publisher's spelling returns **0**; the database's spelling returns **2 printings**.
 
-This is the third time a character difference of this kind has mattered — after the full-width １
-against half-width 1 in the 12 November cap notice, and the « » against 《 》 misquotation on
-7 November. **Before concluding that a card is absent from the database, retype its numerals and
+Two different failures get confused here, so keep them apart. **This one is two sources spelling
+the same thing differently** — it breaks searches and cross-references, and the only other recorded
+instance is the full-width １ against half-width 1 in the 12 November cap notice. **The other is
+retyping a source's own characters** — the « » written back as 《 》 on 7 November, which broke a
+quotation rather than a search. Same cause, different damage. **Before concluding that a card is absent from the database, retype its numerals and
 its brackets the other way and search again.** A zero from a search is only a zero for the exact
 string searched.
 
@@ -447,6 +449,12 @@ was not tested, so do not rely on it.
 identical figures across hours are evidence of a cached read, not of a quiet post. Harvest the whole
 set in one pass and **compare any row you have read before against its earlier value — if it is
 unchanged to the digit, re-read it before publishing it.**
+
+**A run can outlast your write-up.** The 16 November article was corrected on the 17th to add
+eleven missed reveals, and while that correction was being written the **sixteenth** card went up at
+18:00 — after a harvest at 17:58 had found nothing that day. A count of an ongoing run is only ever
+"as of", so write the time into the sentence and re-harvest immediately before publishing, not
+immediately before writing.
 
 **And do not assume a cadence.** The 15th and 16th ran one card an hour from 18:00. The 14th ran
 one at 20:00 and then **six between 21:08 and 21:16** — eight minutes. An hourly pattern observed
