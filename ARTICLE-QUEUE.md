@@ -93,6 +93,17 @@ sitting in a table on the same page are the first things to check, because they 
 will test it against. The cost here was one card-name search per name — six in all with the
 control, about four minutes — after the page was live.
 
+**21 November 2026: a claim can be true and still be unchecked, and that is the same fault.**
+The twinpact page said twelve of the thirty-one reveals were absent from paper **"on either half"**.
+Seven had been checked both ways; for five, only the creature half had been searched. The five spell
+halves were searched afterwards and all returned 0, so the sentence was correct — **and it had been
+published ahead of its evidence, which is the thing the rule is about.** Being lucky is not being
+right.
+
+So when a sentence quantifies over a set, the check is not "is this true" but **"have I run the
+search that makes it true, for every member"** — and if the answer is seven of twelve, the sentence
+says seven of twelve until the other five are done.
+
 **Worth keeping as a working fact in its own right:** a PLAY'S card name existing in paper means
 nothing by itself. Of the five names that page ended up checking, three were paper twinpacts, one
 was absent from paper on both halves, and one existed in paper only as a creature with no spell
