@@ -68,6 +68,39 @@ Recompute every claim **from the table on the page**, not from the sentence you 
 Superlatives are where the errors are: "first", "longest", "lowest" have to be checked
 against the whole series, not the window the article covers.
 
+**A sentence about a group of rows is checked by classifying the rows, not by reading them.**
+Write the throwaway script, print the tally, read it. If you cannot write down the test that sorts
+the rows, you cannot write the sentence either.
+
+**21 November.** The twinpact page said a quarter of the pack was "cards paper already has, getting
+a second face paper never gave them". That group is eight rows and **three** of them were posted
+with a slash; the other five were posted with no slash at all, and two paragraphs below, the same
+page says what that means is not stated anywhere and it will not guess. **The summary asserted
+exactly what the caveat refused.** Every number on the page was right. One script that
+classified the table's own cells found it in about a minute; **three fact-check passes of reading,
+the same morning, had not** — they found a wrong interval, a miscounted set of database titles, an
+ambiguous count of the page's own corrections, and walked past this.
+
+So this is a pass, not a check, and deliberately so. Three candidate checks were prototyped against
+the whole site the same morning and all three were rejected on measurements:
+
+- **Tally every table column.** 72 tables, 244 columns, **190 of them all-unique** — and the 21
+  that look like classes are mostly deck-copy counts. On the page that mattered the tally came back
+  as fourteen distinct strings, because the cells carry printing counts, so it **does not** group
+  into the stated ten/eight/twelve/one. It would not have caught this.
+- **Match "six of them" against a following list of 《...》 names.** 14 paragraphs on the site match
+  the shape; **8 mismatch and all 8 are false positives** — "four searches", "six entries",
+  "five printings". A check that cries wolf 8 times in 14 gets ignored, and `check_selftest_count`
+  exists because of exactly that.
+- **Reconcile prose counts against the table generally.** `check.py --list` already names this as
+  the first of the expensive ones it cannot do: *prose derived from a table is not comparable to a
+  stored figure.* The two probes above are why that is still true.
+
+**What is mechanisable is the declared version**: if a table's rows each carry their group in the
+markup, a count check needs no interpretation at all. That is the `<q cite>` pattern pointed inward,
+and it is worth building the first time a group count goes wrong — **it would not have caught the
+21 November error**, which was a claim about a property, not a count. Do not build it for this.
+
 **And ask which side of a boundary each figure is on.** A season change or a card change splits a
 window, and a figure from the wrong side of it reads as evidence. "Earlier" and "previous" are free;
 **"before the change" is a dated claim and costs a check.** `EDITORIAL.md` has the case, which happened
