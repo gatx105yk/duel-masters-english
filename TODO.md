@@ -405,6 +405,21 @@ reveal page is at **38 cards from 42 posts**. What is still open:
 
 ---
 
+## Measured 24 November, not acted on: the tables overflow at phone width
+
+The reveal page at a 390px viewport has `scrollWidth` **575** against `clientWidth` 390 — the table
+is **551px** and the page scrolls sideways. **This is not new**: the same measurement on the
+published version before the evidence cells were added gives 575 as well, so the `.ev` lines cost
+nothing. The cause is `td.n{white-space:nowrap}` on the engagement column, which cannot wrap
+`1,582 · 4,364 · 1,047,504`.
+
+It is on every page that uses that table style, and the site's whole indexing problem is mobile
+search. **Not fixed here because it is a site-wide style change and nobody asked for it** — but it
+is measured now, and the fix is either dropping `nowrap` on that column at narrow widths or giving
+the table a scroll container of its own.
+
+---
+
 ## Worth writing, not written
 
 | Piece | Why | Lifespan |

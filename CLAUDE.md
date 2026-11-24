@@ -115,11 +115,37 @@ sentence — "the claim was true but ahead of its evidence, which is the same fa
 wrong" — and the fault recurred because the note described the mistake instead of pinning the
 evidence to the rows.
 
-So: **after any pass that changes a row count, grep the page for the old count.** `--prose` shows
-the sentences you edited; it cannot show the one you should have. The declared-markup check that
-`check.py` does not have — each row carrying its own group and its own evidence in the markup —
-**now has its first real candidate**, because this is a claim about evidence per row and not a
-superlative. It is still not built.
+**So put the evidence in the row and delete the sentence that counts rows.** Done on the reveal
+page on 24 November: every row marked absent now carries the strings searched and what each
+returned, and the paragraph is gone. A row added without its searches shows an empty cell, which is
+visible; a paragraph that says "for those twelve" is not.
+
+This was chosen over two candidate checks, on measurements taken the same afternoon:
+
+- **Scope.** 65 pages, 44 with a table, 83 tables, 569 rows. **Row count ever changed after first
+  publish: 2 pages** — this one (15 commits, 6 distinct counts) and the returning-livers page (one
+  row, once). 8 pages have been revised five times or more and only those 2 grew, so repeated
+  revision is not the risk; a growing table is.
+- **The population of per-row evidence claims is ~15, and 14 of them are about a closed dataset** —
+  "all eleven charts were read", "each of the four printings opened", "every figure read off the
+  chart by hand". Those cannot fall behind, because nothing is added to them. **Exactly one sat on
+  a table that grew.**
+- **A declared-count check would not have caught either error.** On 24 November every count was
+  right; the evidence sentence was wrong. On 21 November it was a property claim. Measured twice
+  now, zero hits.
+- **An evidence-completeness check in `check.py` would have caught the 24th**, but it is opt-in:
+  a table with no annotations is silently unchecked, so the failure mode becomes forgetting to
+  annotate, in the same pass that forgot to search. Enforcing it in the row generator is stronger —
+  the row cannot be emitted without the field — but that means promoting a 59-line throwaway script
+  into the repository for one page.
+- **The calendar had already solved it.** 49 entries across 28 revisions, each carrying its own
+  "Read 24 November 11:23" inline, and **no group claim anywhere** — so there is nothing to fall
+  behind. No check, no code, no annotations. That is the pattern, and it is now the house form for
+  any table whose rows carry their own evidence.
+
+Filling those cells cost 28 card-name searches and found one thing worth keeping: **the search
+engine splits a keyword on a space and matches either token**, so `超煉獄魔弾 DOOM` returns 10 — the
+same ten as `DOOM` alone — while `超煉獄魔弾` returns 0. `WATCH-TASK.md` has it.
 
 **And ask which side of a boundary each figure is on.** A season change or a card change splits a
 window, and a figure from the wrong side of it reads as evidence. "Earlier" and "previous" are free;

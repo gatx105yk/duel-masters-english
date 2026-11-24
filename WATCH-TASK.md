@@ -375,6 +375,16 @@ page contains 呪文 in its ability text and is a plain creature. The test for a
 **title**: a twinpact's page title carries ` / ` between the two names, and 種類 names one type. Test
 the title, never a substring of the page.
 
+**24 November 2026: a space in the keyword is an OR, not part of the string.** A card-name search
+for `超煉獄魔弾 DOOM` returns **10**, which is **the same ten as `DOOM` on its own**; `超煉獄魔弾`
+alone returns **0**. The engine splits on the space and matches either token, so a compound keyword
+containing a space can report a healthy count while the string you meant is absent — the opposite of
+the zero-is-a-dead-search problem, and it reads like a hit. The same shape appeared in Latin script:
+`Grow in order` returned 28 and `Guard of Dolce` returned 5, while `Grow` and `Dolce` each returned
+**0** in both half-width and full-width, with `NEX` at 114 as the control. **So search the longest
+run of the name that contains no space**, and when a half's name has one, say in the output which
+token you searched.
+
 **So narrow the keyword until the count is at or under 50, and check that it is.** The count and the
 number of ids returned should agree; when they do not, the list is short and any conclusion drawn
 from the absence of a name is worthless.
