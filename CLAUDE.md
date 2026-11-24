@@ -117,7 +117,13 @@ evidence to the rows.
 
 **So put the evidence in the row and delete the sentence that counts rows.** Done on the reveal
 page on 24 November: every row marked absent now carries the strings searched and what each
-returned, and the paragraph is gone. A row added without its searches shows an empty cell, which is
+returned, and the paragraph is gone.
+
+**The note describing that change was itself wrong, and only the post-publish pass caught it.** It
+said "every absent row was measured again" — five of the cells carry figures from the 21 November
+session that were never re-run. **A method note is a claim and costs a check like any other**; the
+habit of treating the prose *about* the work as exempt is how the 24 November fault got written in
+the first place. A row added without its searches shows an empty cell, which is
 visible; a paragraph that says "for those twelve" is not.
 
 This was chosen over two candidate checks, on measurements taken the same afternoon:
@@ -143,7 +149,8 @@ This was chosen over two candidate checks, on measurements taken the same aftern
   behind. No check, no code, no annotations. That is the pattern, and it is now the house form for
   any table whose rows carry their own evidence.
 
-Filling those cells cost 28 card-name searches and found one thing worth keeping: **the search
+Filling those cells cost 28 card-name searches in one session and five in another, and found one
+thing worth keeping: **the search
 engine splits a keyword on a space and matches either token**, so `超煉獄魔弾 DOOM` returns 10 — the
 same ten as `DOOM` alone — while `超煉獄魔弾` returns 0. `WATCH-TASK.md` has it.
 
