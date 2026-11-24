@@ -383,6 +383,28 @@ the calendar, so there is no precedent here to copy.
 
 ---
 
+## Open after 24 November
+
+The twinpact run is finished for practical purposes — the pack is out on the 26th — and the
+reveal page is at **38 cards from 42 posts**. What is still open:
+
+- **The DP殿堂 lift has no notice.** The account promised one on 19 November; notice `16640`,
+  the November maintenance notice, does not contain `殿堂` or `インビンシブル` in 20,994
+  characters. Watch whether a notice naming the card appears before, during or after the 26th.
+  If the 26th passes with the lift unmentioned anywhere, **that silence is the story** and it
+  should be written as a silence, not as a reversal.
+- **What `Sec` and `PCC` mean** in the reveal posts. Neither is expanded in any post, and the
+  rarity claim that was drafted for the reveal page was cut for being unsupported. A post-release
+  in-game screen would settle it; nothing published does.
+- **The 17 December maintenance** exists only as the end of City Battle's window in `news/16632`.
+  No time, no contents. It is on the calendar as that and nothing more.
+- **The にじさんじ 7th-wave PR cards** (five revealed 23 November) and **DM26-RP4 先行公開カード**
+  are both still uncovered.
+- **Quick Pick 61 has now had two pool changes inside one season** — 22 October and 26 November.
+  A third would make the pool a thing worth its own page rather than a calendar note.
+
+---
+
 ## Worth writing, not written
 
 | Piece | Why | Lifespan |
