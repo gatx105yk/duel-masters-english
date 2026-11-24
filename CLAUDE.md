@@ -101,6 +101,26 @@ markup, a count check needs no interpretation at all. That is the `<q cite>` pat
 and it is worth building the first time a group count goes wrong — **it would not have caught the
 21 November error**, which was a claim about a property, not a count. Do not build it for this.
 
+**When a group grows, its evidence paragraph is part of the group.** The sentence that says
+*what was done for those N* is a claim about the same set as the sentence that says *there are N*,
+and the classifier run that re-counts the rows does not touch it.
+
+**24 November.** The reveal page's summary and all four description slots said fifteen cards are
+absent "on either half". The paragraph backing it said "for those **twelve**, both halves were
+searched" — written when the group was twelve, and the three names added three days later were never
+put through it. Five searches were outstanding; all five returned 0 against a control of 454, so the
+claim was true, and **it had been published five searches ahead of its evidence**. The same page
+already carried a dated note, from 21 November, recording that exact fault in that exact
+sentence — "the claim was true but ahead of its evidence, which is the same fault as getting it
+wrong" — and the fault recurred because the note described the mistake instead of pinning the
+evidence to the rows.
+
+So: **after any pass that changes a row count, grep the page for the old count.** `--prose` shows
+the sentences you edited; it cannot show the one you should have. The declared-markup check that
+`check.py` does not have — each row carrying its own group and its own evidence in the markup —
+**now has its first real candidate**, because this is a claim about evidence per row and not a
+superlative. It is still not built.
+
 **And ask which side of a boundary each figure is on.** A season change or a card change splits a
 window, and a figure from the wrong side of it reads as evidence. "Earlier" and "previous" are free;
 **"before the change" is a dated claim and costs a check.** `EDITORIAL.md` has the case, which happened
