@@ -383,6 +383,36 @@ the calendar, so there is no precedent here to copy.
 
 ---
 
+## The 24 November stream: measured, and deliberately not read yet
+
+`mQ360jxUEBk`, **デュエプレ魂 #28**, 24 November 19:00. Its own description says the pack was
+opened live and new cards shown (`生開封で新カード一挙公開`). **None of those cards were posted to
+the X account**, so the reveal page's count of thirty-eight is a count of the posts and now says so.
+
+Measured 25 November before deciding:
+
+- **12,116 seconds**, three hours twenty-two minutes.
+- **One caption track, `asr:ja`** — machine transcription. `WATCH-TASK.md` says that channel is for
+  indexing and cross-checking and is **never quotable**; the quotable channel is the on-screen
+  caption, read off the frame.
+- **`timedtext` answers 200 with an empty body**, exactly as it did for the rules video on
+  4 November. There is no transcript to fetch, so the index has to be built by playing the video and
+  collecting `.ytp-caption-segment` on a timer.
+- At 2x that is **about 101 minutes of playback** before a single frame is read, in short in-page
+  loops because a long one froze the renderer once and cost the tab. Then the frames themselves.
+- And **names may not be taken off a frame** — they go to the card database, which is another pass
+  per card.
+
+**Against that: the pack ships on 26 November.** The full list exists in the game that morning, and
+the publisher documents its packs. The expensive route buys a partial list one day early, from the
+channel this site is least allowed to quote.
+
+**So this is held, not skipped.** What makes it worth doing anyway is if the stream showed something
+the release does not: a card that is not in the pack, a developer statement, a date. Read the
+release notice first on the 26th, then decide whether the stream still has anything in it.
+
+---
+
 ## Open after 24 November
 
 The twinpact run is finished for practical purposes — the pack is out on the 26th — and the
