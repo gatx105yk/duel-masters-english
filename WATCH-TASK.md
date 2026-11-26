@@ -541,6 +541,34 @@ official card database or the translation patch, as everywhere else on this site
   are and never compute it from the rate.** A long in-page polling loop also froze the renderer
   once and cost the tab, so keep in-page loops short.
 
+### The PLAY'S card list: the filter needs a real click, and only on a fresh page
+
+**Added 26 November 2026**, out of counting `PLAY'S TWINPACT PROJECT PACK`. The digital card list
+at `dmps.takaratomy.co.jp/card/` is a POST form to `#`, and its result count is the thing to read:
+`検索結果 N枚`.
+
+**The recipe that works, in this order:**
+
+1. **Load `/card/` fresh.** A second submit on an already-filtered page silently does nothing — the
+   count stays where it was. This cost three failed attempts that each looked like the filter was
+   broken.
+2. **Set the card-set checkbox with the browser tool's own form input**, not with JavaScript. The
+   checkboxes are visually hidden behind labels, and `cb.checked = true` plus a dispatched `change`
+   does not register: the count comes back as the unfiltered **5,551**.
+3. **Click the submit button with a real mouse click.** A scripted `.click()` leaves it at 5,551 too.
+
+**The ids carry the variant structure, and they are in the DOM.** Each tile is
+`<a href="#modal-card-NNNNNNN">`, and the id splits as a four-digit card and a three-digit
+treatment. For this pack: 96 entries, **92 distinct four-digit prefixes**, suffixes
+`000` ×90, `120` ×4, `330` ×2. The four doubled prefixes are the four cards the account posted
+twice; rendering a pair of images side by side shows the same card with the same rules text and
+different art. **So a pack's card count comes out of the id set, with no need to read a single
+name.**
+
+**Names are not in the text.** The tiles are images with an empty `alt`, and the card names are set
+inside the artwork. The `dmpsCards` global holds an empty `cardsDataMap` until something populates
+it, and `timedtext`-style shortcuts do not exist here. Counting is cheap; enumerating is not.
+
 ### Scrolling X: use real input, not scripted scrolling
 
 **This was wrong for most of a day and cost two missed reveals.** Scripted scrolling — calling
