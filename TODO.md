@@ -383,6 +383,32 @@ the calendar, so there is no precedent here to copy.
 
 ---
 
+## Decided 27 November: do not read the stream; read the card images
+
+The condition written below was: read the release notice first, then decide whether the stream has
+anything the release does not. The notice is read. **It publishes ten featured cards and all ten
+were already posted**, and it gives **no card list and no card count**. So the pack's other
+fifty-odd cards are still unnamed anywhere in text.
+
+**But the stream is no longer the cheapest route to them, and it never was the best one.** The
+card list holds all 92 as the publisher's own card renders at `/card/img/card/{id}.png`, and the
+ids are already collected. Rendering ten of them in a grid and screenshotting it was done on the
+26th to compare the Secret pairs, and **the names were legible at five columns across a single
+screenshot**. So the whole pack is on the order of **ten screenshots**, against a hundred minutes
+of playback plus frame reads for the stream.
+
+It is also the better source. A name read off a card render is the publisher's own artwork at
+native resolution; a name read off a video frame is the thing `WATCH-TASK.md` says not to trust.
+
+**So the enumeration job is: 92 ids, ten grids, names read off the renders, each one then searched
+in the card list to confirm it as text before it goes on a page.** That last step is what keeps it
+inside the rule — the image locates the name, the search confirms it.
+
+**The stream stays unread**, and the reason is now that nothing needs it, not that it is expensive.
+If a card turns up in the game that is not in the card list, that is when to go back to it.
+
+---
+
 ## The 24 November stream: measured, and deliberately not read yet
 
 `mQ360jxUEBk`, **デュエプレ魂 #28**, 24 November 19:00. Its own description says the pack was
